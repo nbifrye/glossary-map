@@ -1,0 +1,16 @@
+{
+	"$schema": "../../../../schemas/glossary.schema.json",
+	"id": "example",
+	"title": "検証用の用語集",
+	"source": {
+		"name": "Example Glossary",
+		"version": "1.0",
+		"published": "2026-01",
+		"url": "https://example.com/glossary",
+		"retrieved": "2026-11-25"
+	},
+	"criteria": [
+		{ "id": "link", "description": "原典で用語集の項目にリンクしている表現" },
+		{ "id": "heading", "description": "2 語以上の見出しと同じ語句" }
+	]
+}

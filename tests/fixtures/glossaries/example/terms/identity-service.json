@@ -1,0 +1,82 @@
+{
+	"$schema": "../../../../../schemas/term.schema.json",
+	"heading": "identity service",
+	"headingTranslation": {
+		"text": "アイデンティティサービス",
+		"sourceHash": "0673232f18f62babdb2d104d4d539dfc7e901d33ef726771d0d6bc3536b0f2b2"
+	},
+	"definitions": [
+		{
+			"location": {
+				"label": "Section 2"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A service used by a "
+						},
+						{
+							"type": "link",
+							"href": "https://example.com/glossary#subscriber",
+							"children": [
+								{
+									"type": "emphasis",
+									"children": [
+										{
+											"type": "text",
+											"value": "subscriber"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "link",
+								"href": "https://example.com/glossary#subscriber",
+								"children": [
+									{
+										"type": "text",
+										"value": "加入者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "が利用するサービス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "fd6ed825c8c3a96358f5e65fdd1b40093a8ac94736e1dcc15c90181e904ff6ca"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "example",
+				"term": "subscriber"
+			},
+			"start": 20,
+			"end": 30,
+			"text": "subscriber",
+			"criterion": "link"
+		}
+	]
+}

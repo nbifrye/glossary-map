@@ -1,0 +1,53 @@
+{
+	"$schema": "../../../../../schemas/term.schema.json",
+	"heading": "subscriber",
+	"headingTranslation": {
+		"text": "加入者",
+		"sourceHash": "1f62becb1363bc86f7c3bf1f35196457b2d01ba085946a374854b4727f98df29"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://example.com/glossary#subscriber"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An individual enrolled in the identity service."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "アイデンティティサービスに登録された個人。"
+							}
+						]
+					}
+				],
+				"sourceHash": "68e9c6beb269a47a9da03ab60d20db992456c8c9dd6e033ea15ecd2f7febfa39"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "example",
+				"term": "identity-service"
+			},
+			"start": 30,
+			"end": 46,
+			"text": "identity service",
+			"criterion": "heading"
+		}
+	]
+}
