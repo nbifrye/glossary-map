@@ -28,7 +28,7 @@ Vite で単一ページアプリケーションとして作る方式も比較し
 
 ### グラフの描画
 
-グラフの描画には [sigma.js](https://www.sigmajs.org/) を、グラフのデータ構造には [Graphology](https://graphology.github.io/) を使います。sigma.js は WebGL で描画し、数千のノードと辺を扱う用途を想定して作られているため、約 2,000 語と約 10,000 件の参照という要件の規模に合います。どちらも MIT ライセンスです。
+グラフの描画には [sigma.js](https://www.sigmajs.org/) を、グラフのデータ構造には [Graphology](https://graphology.github.io/) を使います。sigma.js は WebGL で描画し、数千のノードと辺を扱う用途を想定して作られているため、約 2,000 語と約 10,000 件の参照という要件の規模に合います。
 
 Cytoscape.js も比較しました。機能は豊富ですが、標準の描画は Canvas 2D で、WebGL による描画は [2025 年 1 月にプレビューとして公開された](https://blog.js.cytoscape.org/2025/01/13/webgl-preview/) 機能です。要件の規模で円滑に操作できる見込みは、sigma.js の方が高いと判断しました。
 
@@ -39,7 +39,7 @@ Cytoscape.js も比較しました。機能は豊富ですが、標準の描画�
 - Louvain 法: モジュラリティを最大化する代表的な手法です。[graphology-communities-louvain](https://www.npmjs.com/package/graphology-communities-louvain) を使います
 - Leiden 法: Louvain 法を改良し、用語群の内部が必ずつながっていることを保証する手法です。[networkanalysis-ts](https://www.npmjs.com/package/networkanalysis-ts) を使います
 
-参照の向きを考慮する Infomap も候補にしました。しかし、JavaScript から使える公式実装 ([@mapequation/infomap](https://www.npmjs.com/package/@mapequation/infomap)) は GPL-3.0-or-later であり、リポジトリ全体のライセンスに影響するため、採用しません。参照の向きは、次に述べる階層配置で捉えます。
+参照の向きは、次に述べる階層配置で捉えます。
 
 ## 配置
 
@@ -53,7 +53,7 @@ Cytoscape.js も比較しました。機能は豊富ですが、標準の描画�
 
 ### 階層配置
 
-階層配置には、Sugiyama 法に基づく [@dagrejs/dagre](https://www.npmjs.com/package/@dagrejs/dagre) (MIT ライセンス) を使います。Sugiyama 法は、次の手順でノードを層に並べます。
+階層配置には、Sugiyama 法に基づく [@dagrejs/dagre](https://www.npmjs.com/package/@dagrejs/dagre) を使います。Sugiyama 法は、次の手順でノードを層に並べます。
 
 1. 循環を取り除く: 用語集には、2 つの用語が互いを参照する場合など、参照の循環があります。循環があると上下の順序を決められないため、一部の辺の向きを一時的に逆にして循環をなくします
 2. 層を割り当てる: すべての辺が上の層から下の層へ向かうように、各用語の層を決めます
@@ -62,7 +62,7 @@ Cytoscape.js も比較しました。機能は豊富ですが、標準の描画�
 
 手順 1 で向きを逆にした辺も、描画では本来の向き (参照元から参照先へ) で示します。そのため、循環の一部になっている参照は、下から上へ向かう矢印として表示されます。
 
-dagre が約 2,000 語と約 10,000 件の参照に対してビルド時の計算時間の目標値を満たせるかどうかは、実装時に試験用の用語集で確かめます。満たせない場合は、[elkjs](https://www.npmjs.com/package/elkjs) の階層配置に切り替えます。elkjs は EPL-2.0 と GPL-3.0-or-later のデュアルライセンスのため、EPL-2.0 を選んで使います。
+dagre が約 2,000 語と約 10,000 件の参照に対してビルド時の計算時間の目標値を満たせるかどうかは、実装時に試験用の用語集で確かめます。満たせない場合は、[elkjs](https://www.npmjs.com/package/elkjs) の階層配置に切り替えます。
 
 ## グラフの計算
 
@@ -141,5 +141,4 @@ glossaries/
 
 ## 未決事項
 
-- リポジトリのライセンスと、収録する原典・訳文のライセンスの扱い
 - History API で別の用語に切り替えたときに、詳細の領域に表示する内容を、用語ごとの JSON から描画するか、移動先となる用語のページの HTML から取り出すか
