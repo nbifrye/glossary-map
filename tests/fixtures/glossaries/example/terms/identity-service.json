@@ -20,7 +20,7 @@
 						},
 						{
 							"type": "link",
-							"href": "#subscriber",
+							"href": "https://example.com/glossary#subscriber",
 							"children": [
 								{
 									"type": "emphasis",
@@ -47,7 +47,7 @@
 						"children": [
 							{
 								"type": "link",
-								"href": "#subscriber",
+								"href": "https://example.com/glossary#subscriber",
 								"children": [
 									{
 										"type": "text",
@@ -62,7 +62,7 @@
 						]
 					}
 				],
-				"sourceHash": "c2a01e2b9a6d3ababfa8ab9d23d038ddf9a87bad59e05dd5ff07f0338b6a36bd"
+				"sourceHash": "fd6ed825c8c3a96358f5e65fdd1b40093a8ac94736e1dcc15c90181e904ff6ca"
 			}
 		}
 	],

@@ -1,7 +1,14 @@
+export type TextInline = { type: "text"; value: string };
+
+/** リンクの中に置けるインライン。リンクの中にリンクは置けない */
+export type LinkContent =
+	| TextInline
+	| { type: "emphasis"; children: LinkContent[] };
+
 export type Inline =
-	| { type: "text"; value: string }
+	| TextInline
 	| { type: "emphasis"; children: Inline[] }
-	| { type: "link"; href: string; children: Inline[] };
+	| { type: "link"; href: string; children: LinkContent[] };
 
 export type Block =
 	| { type: "paragraph"; children: Inline[] }
@@ -13,6 +20,7 @@ export interface Criterion {
 }
 
 export interface Glossary {
+	$schema?: string;
 	id: string;
 	title: string;
 	source: {
@@ -26,7 +34,7 @@ export interface Glossary {
 }
 
 export interface Definition {
-	location: { url?: string; label?: string };
+	location: { url: string; label?: string } | { url?: string; label: string };
 	source: Block[];
 	translation: { content: Block[]; sourceHash: string };
 }
@@ -41,7 +49,9 @@ export interface Reference {
 }
 
 export interface Term {
+	$schema?: string;
 	heading: string;
+	slug?: string;
 	headingTranslation: { text: string; sourceHash: string };
 	definitions: Definition[];
 	references: Reference[];

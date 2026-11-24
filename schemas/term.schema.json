@@ -9,8 +9,11 @@
 		"$schema": { "type": "string" },
 		"heading": {
 			"description": "用語の見出し。原典の表記のとおりに記録する",
-			"type": "string",
-			"minLength": 1
+			"$ref": "#/$defs/nonBlankString"
+		},
+		"slug": {
+			"description": "用語のスラッグ。見出しから作ったスラッグが空になる場合や、ほかの用語と重なる場合に限って記録する",
+			"$ref": "#/$defs/id"
 		},
 		"headingTranslation": {
 			"description": "見出しの訳文",
@@ -18,7 +21,7 @@
 			"additionalProperties": false,
 			"required": ["text", "sourceHash"],
 			"properties": {
-				"text": { "type": "string", "minLength": 1 },
+				"text": { "$ref": "#/$defs/nonBlankString" },
 				"sourceHash": { "$ref": "#/$defs/hash" }
 			}
 		},
@@ -33,6 +36,21 @@
 		}
 	},
 	"$defs": {
+		"id": {
+			"description": "小文字の英数字だけから成る語を、ハイフン 1 つずつでつないだ文字列",
+			"type": "string",
+			"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+		},
+		"nonBlankString": {
+			"description": "空白以外の文字を含む文字列",
+			"type": "string",
+			"pattern": "\\S"
+		},
+		"absoluteUrl": {
+			"description": "http:// または https:// で始まる絶対 URL",
+			"type": "string",
+			"pattern": "^https?://"
+		},
 		"hash": {
 			"description": "SHA-256 の値を小文字の 16 進数で表した文字列",
 			"type": "string",
@@ -44,13 +62,13 @@
 			"required": ["location", "source", "translation"],
 			"properties": {
 				"location": {
-					"description": "原典の該当箇所。リンクか記載位置の少なくとも一方を記録する",
+					"description": "原典の該当箇所。原典の該当箇所を開ける URL と記載位置の少なくとも一方を記録する",
 					"type": "object",
 					"additionalProperties": false,
 					"minProperties": 1,
 					"properties": {
-						"url": { "type": "string", "pattern": "^https?://" },
-						"label": { "type": "string", "minLength": 1 }
+						"url": { "$ref": "#/$defs/absoluteUrl" },
+						"label": { "$ref": "#/$defs/nonBlankString" }
 					}
 				},
 				"source": { "$ref": "#/$defs/blocks" },
@@ -80,14 +98,14 @@
 					"additionalProperties": false,
 					"required": ["glossary", "term"],
 					"properties": {
-						"glossary": { "type": "string", "minLength": 1 },
-						"term": { "type": "string", "minLength": 1 }
+						"glossary": { "$ref": "#/$defs/id" },
+						"term": { "$ref": "#/$defs/id" }
 					}
 				},
 				"start": { "type": "integer", "minimum": 0 },
 				"end": { "type": "integer", "minimum": 1 },
 				"text": { "type": "string", "minLength": 1 },
-				"criterion": { "type": "string", "minLength": 1 }
+				"criterion": { "$ref": "#/$defs/id" }
 			}
 		},
 		"blocks": {
@@ -96,6 +114,8 @@
 			"items": { "$ref": "#/$defs/block" }
 		},
 		"block": {
+			"type": "object",
+			"discriminator": { "propertyName": "type" },
 			"oneOf": [
 				{
 					"type": "object",
@@ -128,16 +148,10 @@
 			"items": { "$ref": "#/$defs/inline" }
 		},
 		"inline": {
+			"type": "object",
+			"discriminator": { "propertyName": "type" },
 			"oneOf": [
-				{
-					"type": "object",
-					"additionalProperties": false,
-					"required": ["type", "value"],
-					"properties": {
-						"type": { "const": "text" },
-						"value": { "type": "string", "minLength": 1 }
-					}
-				},
+				{ "$ref": "#/$defs/text" },
 				{
 					"type": "object",
 					"additionalProperties": false,
@@ -153,11 +167,42 @@
 					"required": ["type", "href", "children"],
 					"properties": {
 						"type": { "const": "link" },
-						"href": { "type": "string", "minLength": 1 },
-						"children": { "$ref": "#/$defs/inlines" }
+						"href": { "$ref": "#/$defs/absoluteUrl" },
+						"children": { "$ref": "#/$defs/linkContents" }
 					}
 				}
 			]
+		},
+		"linkContents": {
+			"description": "リンクの中に置けるインラインの配列。リンクの中にリンクは置けない",
+			"type": "array",
+			"minItems": 1,
+			"items": { "$ref": "#/$defs/linkContent" }
+		},
+		"linkContent": {
+			"type": "object",
+			"discriminator": { "propertyName": "type" },
+			"oneOf": [
+				{ "$ref": "#/$defs/text" },
+				{
+					"type": "object",
+					"additionalProperties": false,
+					"required": ["type", "children"],
+					"properties": {
+						"type": { "const": "emphasis" },
+						"children": { "$ref": "#/$defs/linkContents" }
+					}
+				}
+			]
+		},
+		"text": {
+			"type": "object",
+			"additionalProperties": false,
+			"required": ["type", "value"],
+			"properties": {
+				"type": { "const": "text" },
+				"value": { "type": "string", "minLength": 1 }
+			}
 		}
 	}
 }

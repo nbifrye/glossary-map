@@ -11,6 +11,14 @@ describe("canonicalJson", () => {
 			'{"a":"x","b":[1,{"c":null,"d":true}]}',
 		);
 	});
+
+	test("キーをコードポイントではなく UTF-16 のコード単位の順に並べる", () => {
+		expect(canonicalJson({ "\uE000": 1, "😀": 2 })).toBe('{"😀":2,"\uE000":1}');
+	});
+
+	test("ASCII 以外の文字はエスケープせず、制御文字はエスケープする", () => {
+		expect(canonicalJson('’—😀\n\u0001"\\')).toBe('"’—😀\\n\\u0001\\"\\\\"');
+	});
 });
 
 describe("ハッシュ値", () => {

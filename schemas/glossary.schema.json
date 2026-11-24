@@ -9,13 +9,11 @@
 		"$schema": { "type": "string" },
 		"id": {
 			"description": "用語集の ID。用語集のディレクトリ名と URL に使う",
-			"type": "string",
-			"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+			"$ref": "#/$defs/id"
 		},
 		"title": {
 			"description": "用語集の名前",
-			"type": "string",
-			"minLength": 1
+			"$ref": "#/$defs/nonBlankString"
 		},
 		"source": {
 			"description": "原典の書誌情報",
@@ -23,8 +21,8 @@
 			"additionalProperties": false,
 			"required": ["name", "version", "published", "url", "retrieved"],
 			"properties": {
-				"name": { "type": "string", "minLength": 1 },
-				"version": { "type": "string", "minLength": 1 },
+				"name": { "$ref": "#/$defs/nonBlankString" },
+				"version": { "$ref": "#/$defs/nonBlankString" },
 				"published": { "$ref": "#/$defs/date" },
 				"url": { "$ref": "#/$defs/absoluteUrl" },
 				"retrieved": { "$ref": "#/$defs/date" }
@@ -39,22 +37,30 @@
 				"additionalProperties": false,
 				"required": ["id", "description"],
 				"properties": {
-					"id": {
-						"type": "string",
-						"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
-					},
-					"description": { "type": "string", "minLength": 1 }
+					"id": { "$ref": "#/$defs/id" },
+					"description": { "$ref": "#/$defs/nonBlankString" }
 				}
 			}
 		}
 	},
 	"$defs": {
+		"id": {
+			"description": "小文字の英数字だけから成る語を、ハイフン 1 つずつでつないだ文字列",
+			"type": "string",
+			"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+		},
+		"nonBlankString": {
+			"description": "空白以外の文字を含む文字列",
+			"type": "string",
+			"pattern": "\\S"
+		},
 		"date": {
 			"description": "YYYY・YYYY-MM・YYYY-MM-DD のいずれかの形式の日付",
 			"type": "string",
 			"pattern": "^[0-9]{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$"
 		},
 		"absoluteUrl": {
+			"description": "http:// または https:// で始まる絶対 URL",
 			"type": "string",
 			"pattern": "^https?://"
 		}

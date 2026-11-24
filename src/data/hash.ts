@@ -1,8 +1,20 @@
 import { createHash } from "node:crypto";
 import type { Block } from "./types.ts";
 
-/** オブジェクトのキーを UTF-16 のコード単位の順に並べ、空白を入れずに JSON に変換する */
-export function canonicalJson(value: unknown): string {
+export type JsonValue =
+	| null
+	| boolean
+	| number
+	| string
+	| readonly JsonValue[]
+	| { readonly [key: string]: JsonValue };
+
+/**
+ * RFC 8785 (JSON Canonicalization Scheme) に従って JSON に変換する。
+ * オブジェクトのキーを UTF-16 のコード単位の順に並べ、空白を入れず、
+ * 文字列は JSON.stringify と同じ規則でエスケープする
+ */
+export function canonicalJson(value: JsonValue): string {
 	if (Array.isArray(value)) {
 		return `[${value.map(canonicalJson).join(",")}]`;
 	}
