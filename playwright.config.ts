@@ -6,7 +6,7 @@ export default defineConfig({
 	retries: process.env.CI ? 1 : 0,
 	reporter: process.env.CI ? "github" : "list",
 	use: {
-		baseURL: "http://localhost:4321/glossary-map/",
+		baseURL: "http://localhost:4322/glossary-map/",
 	},
 	projects: [
 		{ name: "chromium", use: { ...devices["Desktop Chrome"] } },
@@ -14,8 +14,8 @@ export default defineConfig({
 		{ name: "webkit", use: { ...devices["Desktop Safari"] } },
 	],
 	webServer: {
-		command: "npm run preview -- --port 4321 --ignore-lock",
-		url: "http://localhost:4321/glossary-map/",
-		reuseExistingServer: !process.env.CI,
+		command: "npm run preview -- --port 4322 --ignore-lock",
+		url: "http://localhost:4322/glossary-map/",
+		reuseExistingServer: false,
 	},
 });
