@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "Digital Identity Acceptance Statement (DIAS)",
 	"headingTranslation": {
-		"text": "デジタルアイデンティティ受容声明 (DIAS)",
+		"text": "Digital Identity Acceptance Statement (DIAS)",
 		"sourceHash": "bbcbe880a42e859f83488e431b4cf462ffd08dab28f04d630512b00171b3588f"
 	},
 	"definitions": [

@@ -70,26 +70,26 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "と"
+								"value": " と "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の間で交わされる定められた一連のメッセージ。要求者が有効な 1 つ以上の"
+								"value": " の間で交わされる定められた一連のメッセージ。claimant が有効な 1 つ以上の"
 							},
 							{
 								"type": "emphasis",
@@ -102,7 +102,7 @@
 							},
 							{
 								"type": "text",
-								"value": "を所持し管理していることを示してアイデンティティを確立し、任意で、要求者が意図した検証者と通信していることを示す。"
+								"value": "を所持し管理していることを示してアイデンティティを確立し、任意で、claimant が意図した verifier と通信していることを示す。"
 							}
 						]
 					}

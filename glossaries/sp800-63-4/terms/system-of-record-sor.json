@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "system of record (SOR)",
 	"headingTranslation": {
-		"text": "記録システム (SOR)",
+		"text": "system of record (SOR)",
 		"sourceHash": "93e8787b2eb507b8859d5f780daf39e7c82da82aeef3311586ac39326e7ceb14"
 	},
 	"definitions": [

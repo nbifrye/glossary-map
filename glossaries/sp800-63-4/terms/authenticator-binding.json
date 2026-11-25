@@ -93,20 +93,20 @@
 							},
 							{
 								"type": "text",
-								"value": "と"
+								"value": "と "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者アカウント"
+										"value": "subscriber account"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の間に関連付けを確立すること。これにより、場合によってはほかの認証器と組み合わせて、その"
+								"value": " の間に関連付けを確立すること。これにより、場合によってはほかの認証器と組み合わせて、その"
 							},
 							{
 								"type": "emphasis",
@@ -119,20 +119,20 @@
 							},
 							{
 								"type": "text",
-								"value": "でアカウントに関連付けられた"
+								"value": "でアカウントに関連付けられた "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "を認証できるようになる。"
+								"value": " を認証できるようになる。"
 							}
 						]
 					}

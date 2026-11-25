@@ -133,7 +133,7 @@
 							},
 							{
 								"type": "text",
-								"value": "を加入者の"
+								"value": "を subscriber の"
 							},
 							{
 								"type": "emphasis",
@@ -146,20 +146,20 @@
 							},
 							{
 								"type": "text",
-								"value": "にバインドするもの。証明書は、証明書で識別される"
+								"value": "にバインドするもの。証明書は、証明書で識別される "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が"
+								"value": " が"
 							},
 							{
 								"type": "emphasis",

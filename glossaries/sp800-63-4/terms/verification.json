@@ -89,20 +89,20 @@
 							},
 							{
 								"type": "text",
-								"value": "を受けている"
+								"value": "を受けている "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が、妥当性確認されたアイデンティティの"
+								"value": " が、妥当性確認されたアイデンティティの"
 							},
 							{
 								"type": "emphasis",

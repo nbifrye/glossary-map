@@ -74,26 +74,26 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "のアイデンティティに関する"
+								"value": " のアイデンティティに関する "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の"
+								"value": " の"
 							},
 							{
 								"type": "emphasis",

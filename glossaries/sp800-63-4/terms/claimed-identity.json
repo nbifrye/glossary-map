@@ -57,13 +57,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "による、妥当性確認も検証もされていない個人の"
+								"value": " による、妥当性確認も検証もされていない個人の"
 							},
 							{
 								"type": "emphasis",

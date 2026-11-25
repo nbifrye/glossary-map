@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "identity evidence",
 	"headingTranslation": {
-		"text": "身元証拠",
+		"text": "identity evidence",
 		"sourceHash": "ecdf47636bd5340d11e5c95f3647e53fe34d7f7ca899bff69088f0e7bb96b818"
 	},
 	"definitions": [
@@ -115,7 +115,7 @@
 							},
 							{
 								"type": "text",
-								"value": "が実在することを裏付ける情報や書類。身元証拠は、物理的なもの (例: 運転免許証) でも、デジタルのもの (例: モバイル運転免許証やデジタルの"
+								"value": "が実在することを裏付ける情報や書類。identity evidence は、物理的なもの (例: 運転免許証) でも、デジタルのもの (例: モバイル運転免許証やデジタルの"
 							},
 							{
 								"type": "emphasis",
@@ -174,13 +174,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が証拠の正当な所有者であることの確認) の両方に対応しなければならない。"
+								"value": " が証拠の正当な所有者であることの確認) の両方に対応しなければならない。"
 							}
 						]
 					}

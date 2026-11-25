@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "System of Records Notice (SORN)",
 	"headingTranslation": {
-		"text": "記録システム通知 (SORN)",
+		"text": "System of Records Notice (SORN)",
 		"sourceHash": "82554cdd150ce937670e20e0acbd59a91cdfc0c366cde91455bc184f06f0db34"
 	},
 	"definitions": [
@@ -41,20 +41,20 @@
 						"children": [
 							{
 								"type": "text",
-								"value": "連邦政府の機関が、自らの"
+								"value": "連邦政府の機関が、自らの "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "記録システム"
+										"value": "system of record"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "を説明するために連邦官報で公告する通知。"
+								"value": " を説明するために連邦官報で公告する通知。"
 							}
 						]
 					}

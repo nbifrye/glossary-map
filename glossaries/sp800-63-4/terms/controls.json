@@ -61,26 +61,26 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "追加的管理策"
+										"value": "supplemental controls"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "と"
+								"value": " と "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "補完的管理策"
+										"value": "compensating controls"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "を参照。"
+								"value": " を参照。"
 							}
 						]
 					}

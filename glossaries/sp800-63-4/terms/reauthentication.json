@@ -87,13 +87,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が引き続きその場にいて、"
+								"value": " が引き続きその場にいて、"
 							},
 							{
 								"type": "emphasis",

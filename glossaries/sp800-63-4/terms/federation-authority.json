@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "federation authority",
 	"headingTranslation": {
-		"text": "フェデレーション機関",
+		"text": "federation authority",
 		"sourceHash": "0f3a5fbc0cce3320ddfaf05d77d9c6ec8238cf6b225dc4b71a0ae5b767755c45"
 	},
 	"definitions": [
@@ -54,20 +54,20 @@
 						"children": [
 							{
 								"type": "text",
-								"value": "フェデレーションに参加する当事者の間で、1 つ以上の"
+								"value": "フェデレーションに参加する当事者の間で、1 つ以上の "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "トラスト合意"
+										"value": "trust agreement"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の確立と管理を促進する当事者。フェデレーション機関は、"
+								"value": " の確立と管理を促進する当事者。federation authority は、"
 							},
 							{
 								"type": "emphasis",

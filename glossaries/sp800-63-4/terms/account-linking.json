@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "account linking",
 	"headingTranslation": {
-		"text": "アカウントリンキング",
+		"text": "account linking",
 		"sourceHash": "346086655b38f84f16a0cba56d874896762088f158b496607d3ba8f7b0f1305a"
 	},
 	"definitions": [
@@ -74,13 +74,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "RP 加入者アカウント"
+										"value": "RP subscriber account"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "に関連付けること、またはそれらの関連付けを管理すること。"
+								"value": " に関連付けること、またはそれらの関連付けを管理すること。"
 							}
 						]
 					}

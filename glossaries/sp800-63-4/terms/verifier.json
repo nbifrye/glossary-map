@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "verifier",
 	"headingTranslation": {
-		"text": "検証者",
+		"text": "verifier",
 		"sourceHash": "88c9eae68eb300b2971a2bec9e5a26ff4179fd661d6b7d861e4c6557b9aaee14"
 	},
 	"definitions": [
@@ -96,13 +96,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が 1 つ以上の"
+								"value": " が 1 つ以上の"
 							},
 							{
 								"type": "emphasis",
@@ -115,20 +115,20 @@
 							},
 							{
 								"type": "text",
-								"value": "を所持し管理していることを検証することで、要求者のアイデンティティを確認する組織。そのために、検証者は、認証器と"
+								"value": "を所持し管理していることを検証することで、claimant のアイデンティティを確認する組織。そのために、verifier は、認証器と "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者アカウント"
+										"value": "subscriber account"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "のバインディングを確認し、加入者アカウントが有効であることを確かめる必要がある。"
+								"value": " のバインディングを確認し、subscriber account が有効であることを確かめる必要がある。"
 							}
 						]
 					}

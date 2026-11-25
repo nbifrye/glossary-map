@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "trusted referee",
 	"headingTranslation": {
-		"text": "信頼できる審査者",
+		"text": "trusted referee",
 		"sourceHash": "dcc6452c2a05aab7e40c257a80d6573cd2f40e738069d407e0384be8a18e569b"
 	},
 	"definitions": [
@@ -67,20 +67,20 @@
 						"children": [
 							{
 								"type": "text",
-								"value": "定められた IAL の身元確認プロセスで求められる要件を"
+								"value": "定められた IAL の身元確認プロセスで求められる要件を "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が満たせない場合に、その申請者の"
+								"value": " が満たせない場合に、その applicant の"
 							},
 							{
 								"type": "emphasis",

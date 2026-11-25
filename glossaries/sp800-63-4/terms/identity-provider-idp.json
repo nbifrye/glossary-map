@@ -96,13 +96,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の"
+								"value": " の"
 							},
 							{
 								"type": "emphasis",

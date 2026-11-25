@@ -57,13 +57,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "身元証拠"
+										"value": "identity evidence"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "として使えるデータ・デジタルの証拠 (つまり"
+								"value": " として使えるデータ・デジタルの証拠 (つまり"
 							},
 							{
 								"type": "emphasis",

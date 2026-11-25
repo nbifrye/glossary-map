@@ -167,20 +167,20 @@
 							},
 							{
 								"type": "text",
-								"value": "の文脈において"
+								"value": "の文脈において "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "を一意に識別できる。"
+								"value": " を一意に識別できる。"
 							}
 						]
 					}

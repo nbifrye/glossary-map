@@ -74,13 +74,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "RP 加入者アカウント"
+										"value": "RP subscriber account"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "にバインドされる。"
+								"value": " にバインドされる。"
 							}
 						]
 					}

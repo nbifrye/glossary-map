@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "sync fabric",
 	"headingTranslation": {
-		"text": "同期ファブリック",
+		"text": "sync fabric",
 		"sourceHash": "27f8c1071ae77739103c2f5161586e9186aa9d21286b48937752025d2fe3e98a"
 	},
 	"definitions": [

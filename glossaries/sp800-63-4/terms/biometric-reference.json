@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "biometric reference",
 	"headingTranslation": {
-		"text": "生体参照データ",
+		"text": "biometric reference",
 		"sourceHash": "b68fbfc5a8c6cdf28f21633e790bbfd7d07e855e4b382986db2347b90b9c867f"
 	},
 	"definitions": [

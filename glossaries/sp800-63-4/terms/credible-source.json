@@ -83,13 +83,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "身元証拠"
+										"value": "identity evidence"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "と"
+								"value": " と"
 							},
 							{
 								"type": "emphasis",

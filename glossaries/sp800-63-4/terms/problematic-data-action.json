@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "problematic data action",
 	"headingTranslation": {
-		"text": "問題のあるデータアクション",
+		"text": "problematic data action",
 		"sourceHash": "be7ed57d578de9a77e212c11306a5c9db55a11e6946a267e762fa84fd865bd6a"
 	},
 	"definitions": [

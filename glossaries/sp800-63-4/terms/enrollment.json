@@ -115,33 +115,33 @@
 							},
 							{
 								"type": "text",
-								"value": " が、身元確認に成功した"
+								"value": " が、身元確認に成功した "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "に"
+								"value": " に "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者アカウント"
+										"value": "subscriber account"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "を提供し、継続的なアクセスを許可するために"
+								"value": " を提供し、継続的なアクセスを許可するために"
 							},
 							{
 								"type": "emphasis",

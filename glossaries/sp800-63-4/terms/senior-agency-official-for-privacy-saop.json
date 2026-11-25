@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "Senior Agency Official for Privacy (SAOP)",
 	"headingTranslation": {
-		"text": "プライバシー担当上級機関職員 (SAOP)",
+		"text": "Senior Agency Official for Privacy (SAOP)",
 		"sourceHash": "867fd3b38535bc49a8ce4f307fb8b1389946edad23c89e4d10edb962f1ccae82"
 	},
 	"definitions": [

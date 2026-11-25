@@ -89,14 +89,14 @@
 							},
 							{
 								"type": "text",
-								"value": " や"
+								"value": " や "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},

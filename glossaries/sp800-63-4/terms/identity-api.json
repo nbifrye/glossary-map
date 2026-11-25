@@ -67,20 +67,20 @@
 						"children": [
 							{
 								"type": "text",
-								"value": "特定の"
+								"value": "特定の "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の"
+								"value": " の"
 							},
 							{
 								"type": "emphasis",

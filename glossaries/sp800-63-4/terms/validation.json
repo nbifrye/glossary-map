@@ -70,13 +70,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が提出した証拠と"
+								"value": " が提出した証拠と"
 							},
 							{
 								"type": "emphasis",

@@ -115,20 +115,20 @@
 							},
 							{
 								"type": "text",
-								"value": "の際に"
+								"value": "の際に "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が提出したアイデンティティの属性や証拠の有効性を確認できると "
+								"value": " が提出したアイデンティティの属性や証拠の有効性を確認できると "
 							},
 							{
 								"type": "emphasis",

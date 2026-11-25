@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "verifier impersonation",
 	"headingTranslation": {
-		"text": "検証者なりすまし",
+		"text": "verifier impersonation",
 		"sourceHash": "1ff660882ca1e80d410029814d43423641f2a0ca24d807d66a111759647b982c"
 	},
 	"definitions": [

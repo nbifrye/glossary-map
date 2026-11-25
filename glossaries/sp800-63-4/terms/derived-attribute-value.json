@@ -57,13 +57,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "のアイデンティティの限定的な"
+								"value": " のアイデンティティの限定的な"
 							},
 							{
 								"type": "emphasis",

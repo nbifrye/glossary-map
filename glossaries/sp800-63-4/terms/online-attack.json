@@ -76,33 +76,33 @@
 							},
 							{
 								"type": "text",
-								"value": "に対する攻撃で、攻撃者が、本物の"
+								"value": "に対する攻撃で、攻撃者が、本物の "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "に対して"
+								"value": " に対して "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の役割を装うか、認証のチャネルを能動的に改変するもの。"
+								"value": " の役割を装うか、認証のチャネルを能動的に改変するもの。"
 							}
 						]
 					}

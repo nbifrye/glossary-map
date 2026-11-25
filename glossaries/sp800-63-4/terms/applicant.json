@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "applicant",
 	"headingTranslation": {
-		"text": "申請者",
+		"text": "applicant",
 		"sourceHash": "42aef2f386567bd5a6a3c753ad0b0debc280a3b6231c084618992fc4c91b7644"
 	},
 	"definitions": [

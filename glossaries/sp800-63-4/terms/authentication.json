@@ -83,26 +83,26 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が、"
+								"value": " が、"
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者アカウント"
+										"value": "subscriber account"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "にバインドされた 1 つ以上の"
+								"value": " にバインドされた 1 つ以上の"
 							},
 							{
 								"type": "emphasis",
@@ -115,20 +115,20 @@
 							},
 							{
 								"type": "text",
-								"value": "を所持し管理していることを証明し、そのアカウントに関連付けられた"
+								"value": "を所持し管理していることを証明し、そのアカウントに関連付けられた "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "であることを示すプロセス。"
+								"value": " であることを示すプロセス。"
 							}
 						]
 					}

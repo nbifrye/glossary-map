@@ -57,13 +57,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の機器とは別の場所に置かれ、実行される "
+								"value": " の機器とは別の場所に置かれ、実行される "
 							},
 							{
 								"type": "emphasis",
@@ -76,7 +76,7 @@
 							},
 							{
 								"type": "text",
-								"value": " (例: リモートのサービス)。汎用 IdP は、複数の加入者を表せることが多い。"
+								"value": " (例: リモートのサービス)。汎用 IdP は、複数の subscriber を表せることが多い。"
 							}
 						]
 					}

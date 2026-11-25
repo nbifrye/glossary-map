@@ -93,20 +93,20 @@
 							},
 							{
 								"type": "text",
-								"value": " にアクセスするため、または正当な"
+								"value": " にアクセスするため、または正当な "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "による RP へのアクセスを妨げるために、RP に"
+								"value": " による RP へのアクセスを妨げるために、RP に"
 							},
 							{
 								"type": "emphasis",

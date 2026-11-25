@@ -87,13 +87,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者アカウント"
+										"value": "subscriber account"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "のプロビジョニングと管理のために、"
+								"value": " のプロビジョニングと管理のために、"
 							},
 							{
 								"type": "emphasis",
@@ -106,20 +106,20 @@
 							},
 							{
 								"type": "text",
-								"value": " が複数の"
+								"value": " が複数の "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "のアイデンティティの"
+								"value": " のアイデンティティの"
 							},
 							{
 								"type": "emphasis",

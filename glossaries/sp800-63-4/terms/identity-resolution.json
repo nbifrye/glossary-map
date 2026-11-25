@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "identity resolution",
 	"headingTranslation": {
-		"text": "アイデンティティ解決",
+		"text": "identity resolution",
 		"sourceHash": "3c89dc1f658bbc219ead4157b783ac4ffa73c0bfbc8a8d5ab9fa56bb50d878f0"
 	},
 	"definitions": [
@@ -70,13 +70,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "に関する情報を収集するプロセス。"
+								"value": " に関する情報を収集するプロセス。"
 							}
 						]
 					}

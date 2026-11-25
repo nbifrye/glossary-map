@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "process assistant",
 	"headingTranslation": {
-		"text": "プロセス補助者",
+		"text": "process assistant",
 		"sourceHash": "12ff0d26540e7effb7234cb73255dbf554af518c15a6044fef6038363efe77fe"
 	},
 	"definitions": [

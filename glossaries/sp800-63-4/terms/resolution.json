@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "resolution",
 	"headingTranslation": {
-		"text": "解決",
+		"text": "resolution",
 		"sourceHash": "f7fbd5853d11940e045abc7c4d7b8e3253947bcde21b8cd8555d71c6f02fd912"
 	},
 	"definitions": [
@@ -44,13 +44,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "アイデンティティ解決"
+										"value": "identity resolution"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "を参照。"
+								"value": " を参照。"
 							}
 						]
 					}

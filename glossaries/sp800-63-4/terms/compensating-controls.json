@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "compensating controls",
 	"headingTranslation": {
-		"text": "補完的管理策",
+		"text": "compensating controls",
 		"sourceHash": "d06dec53b13e1d91ac6ef1a5b54df817353b9fdee0222578296f3bfc87cbc2b9"
 	},
 	"definitions": [

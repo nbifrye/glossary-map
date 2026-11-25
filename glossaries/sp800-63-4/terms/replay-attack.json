@@ -54,33 +54,33 @@
 						"children": [
 							{
 								"type": "text",
-								"value": "正当な"
+								"value": "正当な "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "と"
+								"value": " と "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の間で以前に取得したメッセージを攻撃者が再送し、検証者に対してその要求者になりすます、またはその逆を行う攻撃。"
+								"value": " の間で以前に取得したメッセージを攻撃者が再送し、verifier に対してその claimant になりすます、またはその逆を行う攻撃。"
 							}
 						]
 					}

@@ -93,20 +93,20 @@
 							},
 							{
 								"type": "text",
-								"value": " が"
+								"value": " が "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "について何も推測できないようにしつつ、RP が複数のやり取りを単一の加入者に関連付けられるようにする。"
+								"value": " について何も推測できないようにしつつ、RP が複数のやり取りを単一の subscriber に関連付けられるようにする。"
 							}
 						]
 					}

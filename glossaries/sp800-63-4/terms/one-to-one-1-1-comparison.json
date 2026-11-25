@@ -67,20 +67,20 @@
 							},
 							{
 								"type": "text",
-								"value": "を"
+								"value": "を "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "生体参照データ"
+										"value": "biometric reference"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "と比較し、照合スコアを算出するプロセス。"
+								"value": " と比較し、照合スコアを算出するプロセス。"
 							}
 						]
 					}

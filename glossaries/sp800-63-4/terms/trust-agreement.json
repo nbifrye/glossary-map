@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "trust agreement",
 	"headingTranslation": {
-		"text": "トラスト合意",
+		"text": "trust agreement",
 		"sourceHash": "706f4b1863aba5697d9897bd3c632ad5a000046feb99bf23ca5ff3aec8b3503d"
 	},
 	"definitions": [
@@ -109,13 +109,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "と RP の間に認証された"
+								"value": " と RP の間に認証された"
 							},
 							{
 								"type": "emphasis",

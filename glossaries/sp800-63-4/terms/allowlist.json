@@ -113,13 +113,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の介在なしに "
+								"value": " の介在なしに "
 							},
 							{
 								"type": "emphasis",

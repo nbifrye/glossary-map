@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "subscriber-controlled wallet",
 	"headingTranslation": {
-		"text": "加入者管理ウォレット",
+		"text": "subscriber-controlled wallet",
 		"sourceHash": "116e7713291ab7f7a0c4b32c442c9ee79b5ad224602329f0ac2370fe254663c5"
 	},
 	"definitions": [
@@ -106,7 +106,7 @@
 							},
 							{
 								"type": "text",
-								"value": " の種類。加入者管理ウォレットは、加入者が管理する機器上に置かれるもの ("
+								"value": " の種類。subscriber-controlled wallet は、subscriber が管理する機器上に置かれるもの ("
 							},
 							{
 								"type": "emphasis",

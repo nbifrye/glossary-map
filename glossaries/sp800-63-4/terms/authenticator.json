@@ -122,13 +122,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が所持し管理するもの (例: "
+								"value": " が所持し管理するもの (例: "
 							},
 							{
 								"type": "emphasis",
@@ -161,13 +161,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "のアイデンティティを"
+								"value": " のアイデンティティを"
 							},
 							{
 								"type": "emphasis",

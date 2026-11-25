@@ -96,39 +96,39 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "と"
+								"value": " と "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の間の認証のやり取りが成功した後に、攻撃者がその 2 者の間に割り込む攻撃。攻撃者は、検証者に対して"
+								"value": " の間の認証のやり取りが成功した後に、攻撃者がその 2 者の間に割り込む攻撃。攻撃者は、verifier に対して "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "を装う、またはその逆を行うことで、"
+								"value": " を装う、またはその逆を行うことで、"
 							},
 							{
 								"type": "emphasis",
@@ -141,7 +141,7 @@
 							},
 							{
 								"type": "text",
-								"value": "のデータのやり取りを制御できる。要求者と "
+								"value": "のデータのやり取りを制御できる。claimant と "
 							},
 							{
 								"type": "emphasis",

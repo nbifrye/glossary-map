@@ -83,13 +83,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の"
+								"value": " の"
 							},
 							{
 								"type": "emphasis",
@@ -109,13 +109,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "アイデンティティ解決"
+										"value": "identity resolution"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "のために個人の"
+								"value": " のために個人の"
 							},
 							{
 								"type": "emphasis",

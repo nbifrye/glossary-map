@@ -93,20 +93,20 @@
 							},
 							{
 								"type": "text",
-								"value": "を通じた"
+								"value": "を通じた "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "との直接の通信によって、"
+								"value": " との直接の通信によって、"
 							},
 							{
 								"type": "emphasis",

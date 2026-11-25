@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "proofing agent",
 	"headingTranslation": {
-		"text": "身元確認担当者",
+		"text": "proofing agent",
 		"sourceHash": "32d43b81e9946777fd0ceb20e9b76a1c880c2ca77a2abceeaa088821eb024450"
 	},
 	"definitions": [
@@ -122,26 +122,26 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "身元証拠"
+										"value": "identity evidence"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "を物理的に調べたり、"
+								"value": " を物理的に調べたり、"
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "と身元証拠を照合したりするなど、リスクに基づく限られた判断を行える "
+								"value": " と identity evidence を照合したりするなど、リスクに基づく限られた判断を行える "
 							},
 							{
 								"type": "emphasis",

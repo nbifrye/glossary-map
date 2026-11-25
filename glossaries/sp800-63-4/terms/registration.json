@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "registration",
 	"headingTranslation": {
-		"text": "レジストレーション",
+		"text": "registration",
 		"sourceHash": "29c9c30e0604515ced98b3d14fd88751a8f8e4b9bc69d483a67a257c14ab79fb"
 	},
 	"definitions": [

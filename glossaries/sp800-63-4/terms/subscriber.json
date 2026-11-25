@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "subscriber",
 	"headingTranslation": {
-		"text": "加入者",
+		"text": "subscriber",
 		"sourceHash": "1f62becb1363bc86f7c3bf1f35196457b2d01ba085946a374854b4727f98df29"
 	},
 	"definitions": [

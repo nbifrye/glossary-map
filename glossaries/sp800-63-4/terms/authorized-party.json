@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "authorized party",
 	"headingTranslation": {
-		"text": "認可当事者",
+		"text": "authorized party",
 		"sourceHash": "c159a6cac8a8b107414cb6722b8de7ec4383735f531f3e8253361f44481bc9f8"
 	},
 	"definitions": [
@@ -128,7 +128,7 @@
 							},
 							{
 								"type": "text",
-								"value": "での情報、特に加入者の"
+								"value": "での情報、特に subscriber の"
 							},
 							{
 								"type": "emphasis",
@@ -141,14 +141,14 @@
 							},
 							{
 								"type": "text",
-								"value": "の開示について判断する責任を負う組織・人・団体。多くの場合、これは"
+								"value": "の開示について判断する責任を負う組織・人・団体。多くの場合、これは "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},

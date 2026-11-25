@@ -109,13 +109,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の認証イベントに関する情報を含む言明。アサーションには、加入者のアイデンティティの"
+								"value": " の認証イベントに関する情報を含む言明。アサーションには、subscriber のアイデンティティの"
 							},
 							{
 								"type": "emphasis",

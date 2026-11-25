@@ -70,20 +70,20 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が (通常は電子メールで) 誘い出されて偽の"
+								"value": " が (通常は電子メールで) 誘い出されて偽の "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},
@@ -102,7 +102,7 @@
 							},
 							{
 								"type": "text",
-								"value": " とやり取りし、本物の検証者/RP に対してその加入者になりすますために使える情報を明かすようにだまされる攻撃。"
+								"value": " とやり取りし、本物の verifier/RP に対してその subscriber になりすますために使える情報を明かすようにだまされる攻撃。"
 							}
 						]
 					}

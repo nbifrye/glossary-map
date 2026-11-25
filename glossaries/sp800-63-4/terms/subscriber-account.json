@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "subscriber account",
 	"headingTranslation": {
-		"text": "加入者アカウント",
+		"text": "subscriber account",
 		"sourceHash": "53c11d20f19f624f8d0d4b814a1124a735f4a13e3cd8f981e14cfb01dfc7e87c"
 	},
 	"definitions": [
@@ -76,20 +76,20 @@
 							},
 							{
 								"type": "text",
-								"value": " がアイデンティティサービスに登録された"
+								"value": " がアイデンティティサービスに登録された "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "ごとに確立するアカウントで、加入者に関する情報と、加入者に登録されたすべての"
+								"value": " ごとに確立するアカウントで、subscriber に関する情報と、subscriber に登録されたすべての"
 							},
 							{
 								"type": "emphasis",

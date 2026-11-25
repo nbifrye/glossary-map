@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "authentication intent",
 	"headingTranslation": {
-		"text": "認証の意図",
+		"text": "authentication intent",
 		"sourceHash": "3b1959abd8f9110e824fb1cdf45ad7c625845e485537396dc277a63a17e566b1"
 	},
 	"definitions": [
@@ -100,13 +100,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が"
+								"value": " が"
 							},
 							{
 								"type": "emphasis",
@@ -132,7 +132,7 @@
 							},
 							{
 								"type": "text",
-								"value": " (例: OTP) は、その動作の一部として認証の意図を確立する。それ以外の認証器では、ボタンを押すなどの特定の手順で意図を確立する必要がある。認証の意図は、"
+								"value": " (例: OTP) は、その動作の一部として authentication intent を確立する。それ以外の認証器では、ボタンを押すなどの特定の手順で意図を確立する必要がある。authentication intent は、"
 							},
 							{
 								"type": "emphasis",
@@ -152,13 +152,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "に知られずに攻撃者を認証させる代理として働くことへの対策である。"
+								"value": " に知られずに攻撃者を認証させる代理として働くことへの対策である。"
 							}
 						]
 					}

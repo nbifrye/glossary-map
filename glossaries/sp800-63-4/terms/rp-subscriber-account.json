@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "RP subscriber account",
 	"headingTranslation": {
-		"text": "RP 加入者アカウント",
+		"text": "RP subscriber account",
 		"sourceHash": "ab5b46a79a380d8de9dc29374537b6d648b12f35b58b64ba164e2b6a29bf42bb"
 	},
 	"definitions": [
@@ -106,20 +106,20 @@
 							},
 							{
 								"type": "text",
-								"value": " の"
+								"value": " の "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者アカウント"
+										"value": "subscriber account"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "に対する RP の見方に基づいて、"
+								"value": " に対する RP の見方に基づいて、"
 							},
 							{
 								"type": "emphasis",
@@ -132,7 +132,7 @@
 							},
 							{
 								"type": "text",
-								"value": " が確立し管理するアカウント。RP 加入者アカウントは、1 つ以上の"
+								"value": " が確立し管理するアカウント。RP subscriber account は、1 つ以上の"
 							},
 							{
 								"type": "emphasis",
@@ -145,7 +145,7 @@
 							},
 							{
 								"type": "text",
-								"value": "に関連付けられ、加入者が IdP との"
+								"value": "に関連付けられ、subscriber が IdP との"
 							},
 							{
 								"type": "emphasis",

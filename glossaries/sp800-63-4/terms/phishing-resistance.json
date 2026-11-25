@@ -96,13 +96,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の注意深さに頼ることなく、"
+								"value": " の注意深さに頼ることなく、"
 							},
 							{
 								"type": "emphasis",
@@ -128,20 +128,20 @@
 							},
 							{
 								"type": "text",
-								"value": "の出力が偽の"
+								"value": "の出力が偽の "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "検証者"
+										"value": "verifier"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "に開示されることを防ぐ、"
+								"value": " に開示されることを防ぐ、"
 							},
 							{
 								"type": "emphasis",

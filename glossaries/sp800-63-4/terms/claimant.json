@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "claimant",
 	"headingTranslation": {
-		"text": "要求者",
+		"text": "claimant",
 		"sourceHash": "702592427b0731310a5be2d1c8c20ec7d09c449866401abde0f171797e6c70cc"
 	},
 	"definitions": [

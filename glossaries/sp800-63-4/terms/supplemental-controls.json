@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "supplemental controls",
 	"headingTranslation": {
-		"text": "追加的管理策",
+		"text": "supplemental controls",
 		"sourceHash": "05c44d5ec1fd36b6675ccb83408be2908a54f082041ca8fe4cba92ab97936e1d"
 	},
 	"definitions": [

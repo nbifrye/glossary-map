@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "applicant reference",
 	"headingTranslation": {
-		"text": "申請者の保証人",
+		"text": "applicant reference",
 		"sourceHash": "7870aebf84a9b7076f778f4f40f0c85c0b32a555893f53eb03dc2b55cc5a5add"
 	},
 	"definitions": [
@@ -54,7 +54,7 @@
 						"children": [
 							{
 								"type": "text",
-								"value": "申請者のアイデンティティ、申請者に関する特定の"
+								"value": "applicant のアイデンティティ、applicant に関する特定の"
 							},
 							{
 								"type": "emphasis",
@@ -74,13 +74,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "申請者"
+										"value": "applicant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の代理人。"
+								"value": " の代理人。"
 							}
 						]
 					}

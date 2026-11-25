@@ -61,13 +61,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "要求者"
+										"value": "claimant"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "がその所持を証明する"
+								"value": " がその所持を証明する"
 							},
 							{
 								"type": "emphasis",

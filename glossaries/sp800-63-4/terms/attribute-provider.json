@@ -83,13 +83,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "加入者"
+										"value": "subscriber"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "が "
+								"value": " が "
 							},
 							{
 								"type": "emphasis",
@@ -102,7 +102,7 @@
 							},
 							{
 								"type": "text",
-								"value": " の前にいることを必ずしも主張することなく、加入者の"
+								"value": " の前にいることを必ずしも主張することなく、subscriber の"
 							},
 							{
 								"type": "emphasis",
