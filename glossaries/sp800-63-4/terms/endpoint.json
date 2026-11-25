@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "endpoint",
+	"headingTranslation": {
+		"text": "エンドポイント",
+		"sourceHash": "b6bf7bc8d96f3ea9d132c83b3da8e7760e420138485657372db4d6a981d3fd9e"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Any device that is used to access a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "digital identity"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " on a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "network"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", such as laptops, desktops, mobile phones, tablets, servers, Internet of Things devices, and virtual environments."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ネットワーク"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "上で"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "デジタルアイデンティティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "にアクセスするために使われるあらゆる機器。ノートパソコン・デスクトップパソコン・携帯電話・タブレット・サーバー・IoT 機器・仮想環境などがある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "d9c452c813d7f7d0f7b15d6b8988c27e4a04c680d1b221e93461838aa53134c5"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "digital-identity"
+			},
+			"start": 36,
+			"end": 52,
+			"text": "digital identity",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "network"
+			},
+			"start": 58,
+			"end": 65,
+			"text": "network",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "activation",
+	"headingTranslation": {
+		"text": "アクティベーション",
+		"sourceHash": "b15526c9c0e75acea3d1f8055de216c85f0330baf8604e13d8c6ce90fb90d6d7"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process of inputting an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "activation factor"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " into a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "multi-factor authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to enable its use for "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "多要素認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に使えるようにするために、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アクティベーション要素"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を入力するプロセス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "84a8aab20e5c1c91d4ed7114f845d4b5cb4008dd6d9e522bfa4b752239797ddb"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "activation-factor"
+			},
+			"start": 28,
+			"end": 45,
+			"text": "activation factor",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "multi-factor-authenticator"
+			},
+			"start": 53,
+			"end": 79,
+			"text": "multi-factor authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authentication"
+			},
+			"start": 102,
+			"end": 116,
+			"text": "authentication",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "side-channel attack",
+	"headingTranslation": {
+		"text": "サイドチャネル攻撃",
+		"sourceHash": "d40b6bd3c6dfa99f1264cf109f0e189ab7edc8a7489f56311938885f5e830ee7"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack enabled by the leakage of information from a physical cryptosystem. Characteristics that could be exploited in a side-channel attack include timing, power consumption, electromagnetic emissions, and acoustic emissions."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "物理的な暗号システムからの情報の漏洩によって可能になる攻撃。サイドチャネル攻撃で悪用され得る特性には、タイミング・消費電力・電磁放射・音響放射がある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "4caae36d1196b0004fad7399c9ef5d83adfe369527b0997501ba00cd88f8d31d"
+			}
+		}
+	],
+	"references": []
+}

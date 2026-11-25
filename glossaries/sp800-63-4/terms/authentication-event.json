@@ -1,0 +1,53 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authentication event",
+	"headingTranslation": {
+		"text": "認証イベント",
+		"sourceHash": "10761b2b3cc61af19103b869d3e0d24e5e6fe778cf6467ea7d6608f02df8bb8a"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attempt by a user to authenticate to an online service that ends in overall success or failure."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "利用者がオンラインサービスに認証しようとする試みで、最終的に成功または失敗で終わるもの。"
+							}
+						]
+					}
+				],
+				"sourceHash": "904589c9319830ce6d4fb137963ec679cba62a00137b6d3cc3d28568d75627a3"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "online-service"
+			},
+			"start": 43,
+			"end": 57,
+			"text": "online service",
+			"criterion": "unmarked"
+		}
+	]
+}

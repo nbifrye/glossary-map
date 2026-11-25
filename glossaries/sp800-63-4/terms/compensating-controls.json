@@ -1,0 +1,190 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "compensating controls",
+	"headingTranslation": {
+		"text": "補完的管理策",
+		"sourceHash": "d06dec53b13e1d91ac6ef1a5b54df817353b9fdee0222578296f3bfc87cbc2b9"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Alternative "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "controls"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to the normative controls for the assessed and selected xALs of an organization based on that organization’s mission, risk tolerance, business processes, "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "risk assessments"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", and considerations for the privacy, "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "usability"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", and customer experience of the populations served by the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "online service"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "組織が評価して選択した xAL の規範的な管理策に代わる"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "管理策"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。組織の使命・リスク許容度・業務プロセス・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "リスクアセスメント"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "オンラインサービス"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の対象となる人々のプライバシー・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ユーザビリティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・顧客体験への配慮に基づく。"
+							}
+						]
+					}
+				],
+				"sourceHash": "12d98d8c7aacadb2b2f31483cfb605fdbeb0d5151ea2ebd95fd4e4f2f6a162c8"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "controls"
+			},
+			"start": 12,
+			"end": 20,
+			"text": "controls",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "risk-assessment"
+			},
+			"start": 175,
+			"end": 191,
+			"text": "risk assessments",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "usability"
+			},
+			"start": 229,
+			"end": 238,
+			"text": "usability",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "online-service"
+			},
+			"start": 297,
+			"end": 311,
+			"text": "online service",
+			"criterion": "emphasis"
+		}
+	]
+}

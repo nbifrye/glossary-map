@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "subscriber account",
+	"headingTranslation": {
+		"text": "加入者アカウント",
+		"sourceHash": "53c11d20f19f624f8d0d4b814a1124a735f4a13e3cd8f981e14cfb01dfc7e87c"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An account established by the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " for each "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " enrolled in its identity service that contains information about the subscriber and a record of any "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticators"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " registered to the subscriber."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " がアイデンティティサービスに登録された"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "加入者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "ごとに確立するアカウントで、加入者に関する情報と、加入者に登録されたすべての"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の記録を含むもの。"
+							}
+						]
+					}
+				],
+				"sourceHash": "7dd6eca492c1a598e24b5fcdfe32b151f66cae6a3a6dc7e8f4dcf0fa7203bc5e"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 30,
+			"end": 33,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 43,
+			"end": 53,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 154,
+			"end": 168,
+			"text": "authenticators",
+			"criterion": "emphasis"
+		}
+	]
+}

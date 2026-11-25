@@ -1,0 +1,260 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authorized party",
+	"headingTranslation": {
+		"text": "認可当事者",
+		"sourceHash": "c159a6cac8a8b107414cb6722b8de7ec4383735f531f3e8253361f44481bc9f8"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "In "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", the organization, person, or entity that is responsible for making decisions regarding the release of information within the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation transaction"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", most notably subscriber "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attributes"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". This is often the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " (when runtime decisions are used) or the party operating the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " (when "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "allowlists"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " are used)."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "において、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーショントランザクション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "での情報、特に加入者の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の開示について判断する責任を負う組織・人・団体。多くの場合、これは"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "加入者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (実行時に判断する場合) か、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を運用する当事者 ("
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "許可リスト"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を使う場合) である。"
+							}
+						]
+					}
+				],
+				"sourceHash": "258409f57354b8ec59abf362b4ca8871d368bb9caf28863fc21728377a2ad376"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "federation"
+			},
+			"start": 3,
+			"end": 13,
+			"text": "federation",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "federation-transaction"
+			},
+			"start": 140,
+			"end": 162,
+			"text": "federation transaction",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "attribute"
+			},
+			"start": 188,
+			"end": 198,
+			"text": "attributes",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 218,
+			"end": 228,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 290,
+			"end": 293,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "allowlist"
+			},
+			"start": 300,
+			"end": 310,
+			"text": "allowlists",
+			"criterion": "emphasis"
+		}
+	]
+}

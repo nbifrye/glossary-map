@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "supplemental controls",
+	"headingTranslation": {
+		"text": "追加的管理策",
+		"sourceHash": "05c44d5ec1fd36b6675ccb83408be2908a54f082041ca8fe4cba92ab97936e1d"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "Controls"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that may be added to address specific threats or attacks in addition to those controls specified in the assurance levels in these guidelines."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "このガイドラインの保証レベルで規定された管理策に加えて、特定の脅威や攻撃に対処するために追加できる"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "管理策"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。"
+							}
+						]
+					}
+				],
+				"sourceHash": "9d81f288d458981bcca918f7c3fc5de6007335622360e31318b76b22b0e09d8f"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "controls"
+			},
+			"start": 0,
+			"end": 8,
+			"text": "Controls",
+			"criterion": "emphasis"
+		}
+	]
+}

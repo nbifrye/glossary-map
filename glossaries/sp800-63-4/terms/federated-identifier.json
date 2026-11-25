@@ -1,0 +1,249 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "federated identifier",
+	"headingTranslation": {
+		"text": "フェデレーション識別子",
+		"sourceHash": "971d4a021c4418dea58a16443cb0ada65239147e60dcccedb6c8478a13599656"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The combination of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subject identifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " within an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertion"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " for the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that issued that assertion. When combined, these pieces of information uniquely identify the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in the context of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation transaction"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "内の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "サブジェクト識別子"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と、そのアサーションを発行した "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "識別子"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の組み合わせ。これらの情報を組み合わせることで、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーショントランザクション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の文脈において"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "加入者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を一意に識別できる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "fff1f793e993a72d45f088c87d76fafd3e115e7655280a080931592a1893d363"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "assertion"
+			},
+			"start": 50,
+			"end": 59,
+			"text": "assertion",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identifier"
+			},
+			"start": 67,
+			"end": 77,
+			"text": "identifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 86,
+			"end": 89,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 183,
+			"end": 193,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "federation-transaction"
+			},
+			"start": 214,
+			"end": 236,
+			"text": "federation transaction",
+			"criterion": "emphasis"
+		}
+	]
+}

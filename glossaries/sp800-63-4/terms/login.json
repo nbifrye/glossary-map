@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "login",
+	"headingTranslation": {
+		"text": "ログイン",
+		"sourceHash": "428821350e9691491f616b754cd8315fb86d797ab35d843479e732ef90665324"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The establishment of an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticated"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "session"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " between a person and a system. Also known as “sign in,” “log on,” or “sign on.”"
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "人とシステムの間で、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証された"
+									}
+								]
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "セッション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を確立すること。「サインイン」「ログオン」「サインオン」とも呼ばれる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "2e9539340f6021a32446b6aa7ba3211e644d1aacb1b8d1a1a297ea2e8179dbb5"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticate"
+			},
+			"start": 24,
+			"end": 37,
+			"text": "authenticated",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "session"
+			},
+			"start": 38,
+			"end": 45,
+			"text": "session",
+			"criterion": "emphasis"
+		}
+	]
+}

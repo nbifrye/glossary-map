@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "cryptographic module",
+	"headingTranslation": {
+		"text": "暗号モジュール",
+		"sourceHash": "86343bdae5632930bc457bd7fc1363ff91f7a14fbf0e1444a1e115bfae42ac4c"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A set of hardware, software, or firmware that implements approved security functions, including cryptographic algorithms and key generation."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "暗号アルゴリズムや鍵の生成など、承認されたセキュリティ機能を実装するハードウェア・ソフトウェア・ファームウェアの集合。"
+							}
+						]
+					}
+				],
+				"sourceHash": "0ba16eca44818fd2bb5b0a955890aa3981b3221900f447d7b25dfd9a42ccdf6d"
+			}
+		}
+	],
+	"references": []
+}

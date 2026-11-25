@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "biometrics",
+	"headingTranslation": {
+		"text": "バイオメトリクス",
+		"sourceHash": "12058869d451800667c1f43654c9810a39c9ded448a0424254b5c84f38eeba5c"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Automated recognition of individuals based on their biological or behavioral characteristics. Biological characteristics include but are not limited to fingerprints, palm prints, facial features, iris and retina patterns, voice prints, and vein patterns. Behavioral characteristics include keystroke cadence, the angle of holding a smartphone, screen pressure, typing speed, mouse or mobile phone movements, and gyroscope position, among others."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "生物学的または行動的な特性に基づいて個人を自動的に認識すること。生物学的な特性には、指紋・掌紋・顔の特徴・虹彩と網膜のパターン・声紋・静脈のパターンなどが含まれるが、これらに限らない。行動的な特性には、キーストロークのリズム、スマートフォンを持つ角度、画面を押す圧力、入力の速さ、マウスや携帯電話の動き、ジャイロスコープの位置などがある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "e3c3667dd7da0934bb61d4c258127714dea3752f3cfc275558758ad031e0b06c"
+			}
+		}
+	],
+	"references": []
+}

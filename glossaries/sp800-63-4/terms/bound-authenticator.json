@@ -1,0 +1,127 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "bound authenticator",
+	"headingTranslation": {
+		"text": "バインドされた認証器",
+		"sourceHash": "cab13bdfe3bc10053410792b4d7e9f044d13a5ba2d453e4870b9fbb107f2b031"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " verified by the RP in addition to an assertion at FAL3. The bound authenticator is bound to the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP subscriber account"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "FAL3 において、RP がアサーションに加えて検証する"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。バインドされた認証器は、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP 加入者アカウント"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "にバインドされる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "bdc1fa9b44ae8a8e1bd869990eddb98aca797ad2fbba6ff979265a0322e79e01"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 3,
+			"end": 16,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "relying-party-rp"
+			},
+			"start": 33,
+			"end": 35,
+			"text": "RP",
+			"criterion": "unmarked"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "rp-subscriber-account"
+			},
+			"start": 113,
+			"end": 134,
+			"text": "RP subscriber account",
+			"criterion": "emphasis"
+		}
+	]
+}

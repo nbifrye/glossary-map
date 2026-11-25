@@ -1,0 +1,179 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "tailoring",
+	"headingTranslation": {
+		"text": "テーラリング",
+		"sourceHash": "f892ad646ff295d0773ce60e0a4f6fedf81dc39b26f50e6e33d6bb8d01e8143a"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process by which xALs and specified "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "controls"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " are modified by considering impacts on "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "privacy"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "usability"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", and customer experience of the user population; considering specific threats to the organization; identifying and designating common controls; scoping considerations on the applicability and implementation of specified controls; selecting any "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "compensating controls"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "; assigning specific values to organization-defined security control parameters; supplementing xAL controls with additional controls or control enhancements; and specifying additional information for control implementation."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "xAL と規定された"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "管理策"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を修正するプロセス。利用者の集団の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "プライバシー"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ユーザビリティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・顧客体験への影響を考慮すること、組織に対する特定の脅威を考慮すること、共通の管理策を特定し指定すること、規定された管理策の適用範囲と実装について検討すること、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "補完的管理策"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を選択すること、組織が定めるセキュリティ管理策のパラメーターに特定の値を割り当てること、xAL の管理策を追加の管理策や管理策の強化で補うこと、管理策の実装に関する追加の情報を規定することによって行う。"
+							}
+						]
+					}
+				],
+				"sourceHash": "f8128bde1d88310e7d586118d643c6b3ccd2e19572305f2bee6052e19e8939ed"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "controls"
+			},
+			"start": 40,
+			"end": 48,
+			"text": "controls",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "usability"
+			},
+			"start": 97,
+			"end": 106,
+			"text": "usability",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "compensating-controls"
+			},
+			"start": 351,
+			"end": 372,
+			"text": "compensating controls",
+			"criterion": "emphasis"
+		}
+	]
+}

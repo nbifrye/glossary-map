@@ -1,0 +1,190 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "provisioning API",
+	"headingTranslation": {
+		"text": "プロビジョニング API",
+		"sourceHash": "f2a29e9b028f04b95f6d60654f1fee674ba03bff76febf70a55bdf381a40a488"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A protected API that allows an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to access identity "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attributes"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " for multiple "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscribers"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " for the purposes of provisioning and managing RP "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber accounts"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "RP "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "加入者アカウント"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のプロビジョニングと管理のために、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が複数の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "加入者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のアイデンティティの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "にアクセスできるようにする、保護された API。"
+							}
+						]
+					}
+				],
+				"sourceHash": "71f905798fbe85ef7f3af618cc401be43d16521423a4f4c0acea54259e2ad2f1"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "relying-party-rp"
+			},
+			"start": 31,
+			"end": 33,
+			"text": "RP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "attribute"
+			},
+			"start": 53,
+			"end": 63,
+			"text": "attributes",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 77,
+			"end": 88,
+			"text": "subscribers",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber-account"
+			},
+			"start": 138,
+			"end": 157,
+			"text": "subscriber accounts",
+			"criterion": "emphasis"
+		}
+	]
+}

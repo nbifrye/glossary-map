@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "replay resistance",
+	"headingTranslation": {
+		"text": "リプレイ耐性",
+		"sourceHash": "a9a390e9ec73fd7e9ed9cdcbb1728dbcac132d551b63901cb44891f849f488b9"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The property of an authentication process to resist "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "replay attacks"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", typically by the use of an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " output that is only valid for a specific authentication."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "通常は特定の認証に対してだけ有効な"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の出力を使うことで、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "リプレイ攻撃"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に耐える認証プロセスの性質。"
+							}
+						]
+					}
+				],
+				"sourceHash": "8db79ab8e37f28cf160c49af2edc53a90229230b4b84cd29004cae4b765ef16d"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "replay-attack"
+			},
+			"start": 52,
+			"end": 66,
+			"text": "replay attacks",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 95,
+			"end": 108,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		}
+	]
+}

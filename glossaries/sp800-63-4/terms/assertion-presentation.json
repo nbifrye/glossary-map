@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "assertion presentation",
+	"headingTranslation": {
+		"text": "アサーションの提示",
+		"sourceHash": "07a602838c3621cf753fb440416a8c9b31a2c8a8ab166fae3a218c390d7aac7c"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The method by which an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertion"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " is transmitted to the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に送信する方法。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ca53f0022aeb5409b5486db968d0a7ea590285c6034713880682d04f2d2410a5"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "assertion"
+			},
+			"start": 23,
+			"end": 32,
+			"text": "assertion",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "relying-party-rp"
+			},
+			"start": 55,
+			"end": 57,
+			"text": "RP",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "federation proxy",
+	"headingTranslation": {
+		"text": "フェデレーションプロキシ",
+		"sourceHash": "41c2208ba9fc3dfa9cbb8ada96aed10f52f914b789b926a83e084bd80126a885"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A component that acts as a logical "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to a set of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdPs"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and a logical IdP to a set of RPs, bridging the two systems with a single component. These are sometimes referred to as “brokers.”"
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "一連の "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に対しては論理的な "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " として、一連の RP に対しては論理的な IdP として振る舞い、単一の構成要素で 2 つのシステムを橋渡しする構成要素。「ブローカー」と呼ばれることもある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "98e79dcb04207a0683805dbb2d008d6439dd43b469b3619fc6e19946559b018b"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "relying-party-rp"
+			},
+			"start": 35,
+			"end": 37,
+			"text": "RP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 50,
+			"end": 54,
+			"text": "IdPs",
+			"criterion": "emphasis"
+		}
+	]
+}

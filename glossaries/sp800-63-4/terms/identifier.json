@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "identifier",
+	"headingTranslation": {
+		"text": "識別子",
+		"sourceHash": "285437db8c5e1541aa49708b4abd51642a065b66e4bac0901e75b44ce2d0cebe"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A data object that is associated with a single, unique entity (e.g., individual, device, or "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "session"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ") within a given context and is never assigned to any other entity within that context."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "特定の文脈の中で、単一の一意な実体 (例: 個人・機器・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "セッション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": ") に関連付けられ、その文脈の中でほかの実体に割り当てられることのないデータオブジェクト。"
+							}
+						]
+					}
+				],
+				"sourceHash": "09c446be5efb5e2dc378b3ed4ccc031b5f06e6f13434848ace954279384f499f"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "session"
+			},
+			"start": 92,
+			"end": 99,
+			"text": "session",
+			"criterion": "emphasis"
+		}
+	]
+}

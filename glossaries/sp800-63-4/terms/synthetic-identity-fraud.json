@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "synthetic identity fraud",
+	"headingTranslation": {
+		"text": "合成アイデンティティ詐欺",
+		"sourceHash": "fde50bdccb0e8c94d8c546fe6271923f862055af0747f20f02c279ae4d60e985"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The use of a combination of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "personal information"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to fabricate a person or entity to commit a dishonest act for personal or financial gain."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "個人情報"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を組み合わせて人や組織をでっち上げ、個人的または金銭的な利益のために不正な行為を行うこと。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a5660d44684ae76ae556df04c7162bc6e71c0452ee0063ad5c897fee623aaa48"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "personal-information"
+			},
+			"start": 28,
+			"end": 48,
+			"text": "personal information",
+			"criterion": "emphasis"
+		}
+	]
+}

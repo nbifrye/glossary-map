@@ -1,0 +1,157 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authentication factor",
+	"headingTranslation": {
+		"text": "認証要素",
+		"sourceHash": "d67ced993ae728cb1e66d4ab3d6368ca88635f0de9fc00e967adc0cd762bed9b"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The three types of authentication factors are "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "something you know"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "something you have"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", and "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "something you are"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". Every "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " has one or more authentication factors."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "認証要素には、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "知っているもの"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (something you know)・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "持っているもの"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (something you have)・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "自分自身の特性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (something you are) の 3 種類がある。すべての"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "は、1 つ以上の認証要素を持つ。"
+							}
+						]
+					}
+				],
+				"sourceHash": "cb38dc48dec71360dc4ec4eb61b701fc27bed6e4e99489d8eeba87d00dd55fe3"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 115,
+			"end": 128,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		}
+	]
+}

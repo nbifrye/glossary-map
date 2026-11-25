@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "Digital Identity Acceptance Statement (DIAS)",
+	"headingTranslation": {
+		"text": "デジタルアイデンティティ受容声明 (DIAS)",
+		"sourceHash": "bbcbe880a42e859f83488e431b4cf462ffd08dab28f04d630512b00171b3588f"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Documents the results of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "digital identity"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "risk management"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " process. This includes the impact assessment, initial assurance level selection, and "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "tailoring"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " process."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "デジタルアイデンティティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "リスクマネジメント"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のプロセスの結果を文書化したもの。影響評価、初期の保証レベルの選択、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "テーラリング"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のプロセスを含む。"
+							}
+						]
+					}
+				],
+				"sourceHash": "66939879772947a46149c66add354f6c18c83211d877c75520e11574966b0853"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "digital-identity"
+			},
+			"start": 29,
+			"end": 45,
+			"text": "digital identity",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "risk-management"
+			},
+			"start": 46,
+			"end": 61,
+			"text": "risk management",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "tailoring"
+			},
+			"start": 147,
+			"end": 156,
+			"text": "tailoring",
+			"criterion": "emphasis"
+		}
+	]
+}

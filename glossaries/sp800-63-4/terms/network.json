@@ -1,0 +1,223 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "network",
+	"headingTranslation": {
+		"text": "ネットワーク",
+		"sourceHash": "3009be769fb8f956e8413ee9f3e0836e34968bc40457d0a10c549d2edcf00cc1"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An open communications medium, typically the internet, used to transport messages between the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and other parties. Unless otherwise stated, networks are assumed to be open and subject to active (e.g., impersonation, "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "session"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " hijacking) and passive (e.g., eavesdropping) attacks at any point between the parties (e.g., claimant, "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ")."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "要求者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "とほかの当事者の間でメッセージを運ぶために使われる、開かれた通信媒体。通常はインターネットである。特に断りがない限り、ネットワークは開かれており、当事者 (例: 要求者・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "検証者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": ") の間のあらゆる地点で、能動的な攻撃 (例: なりすまし・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "セッション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "ハイジャック) と受動的な攻撃 (例: 盗聴) を受けるものと想定する。"
+							}
+						]
+					}
+				],
+				"sourceHash": "b43a9218bc1d051605cb0059563637b05da479c942c9fb1c57a11583afa0cab8"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "claimant"
+			},
+			"start": 94,
+			"end": 102,
+			"text": "claimant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "session"
+			},
+			"start": 223,
+			"end": 230,
+			"text": "session",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "verifier"
+			},
+			"start": 334,
+			"end": 342,
+			"text": "verifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 344,
+			"end": 347,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "relying-party-rp"
+			},
+			"start": 349,
+			"end": 351,
+			"text": "RP",
+			"criterion": "emphasis"
+		}
+	]
+}

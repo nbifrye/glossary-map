@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "applicant reference",
+	"headingTranslation": {
+		"text": "申請者の保証人",
+		"sourceHash": "7870aebf84a9b7076f778f4f40f0c85c0b32a555893f53eb03dc2b55cc5a5add"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A representative of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "applicant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " who can vouch for the identity of the applicant, specific "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attributes"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " related to the applicant, or conditions relative to the context of the individual (e.g., emergency status, homelessness)."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "申請者のアイデンティティ、申請者に関する特定の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "、または個人の状況に関する条件 (例: 緊急事態にあること、住居がないこと) を保証できる、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "申請者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の代理人。"
+							}
+						]
+					}
+				],
+				"sourceHash": "2434e7f46d0f1dcf2b097b337340c368d6b31d6e28fb451f5bd67c7e02abc52f"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "applicant"
+			},
+			"start": 24,
+			"end": 33,
+			"text": "applicant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "attribute"
+			},
+			"start": 92,
+			"end": 102,
+			"text": "attributes",
+			"criterion": "emphasis"
+		}
+	]
+}

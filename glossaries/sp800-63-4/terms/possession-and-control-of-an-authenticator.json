@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "possession and control of an authenticator",
+	"headingTranslation": {
+		"text": "認証器の所持と管理",
+		"sourceHash": "c66a7d3536a92b8b7d093ead73924f7fe50b27bdcd51f55aa157dede49d705c6"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The ability to activate and use the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication protocol"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証プロトコル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "において"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "をアクティベートし、使用する能力。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ee2eef5cdd1b16e01a514dbac5c81b2b5f20a68444a3f4bc57c2d7766e14c18d"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 36,
+			"end": 49,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authentication-protocol"
+			},
+			"start": 56,
+			"end": 79,
+			"text": "authentication protocol",
+			"criterion": "emphasis"
+		}
+	]
+}

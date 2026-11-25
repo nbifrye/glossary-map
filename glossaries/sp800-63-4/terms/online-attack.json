@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "online attack",
+	"headingTranslation": {
+		"text": "オンライン攻撃",
+		"sourceHash": "acd3fa29296e8fabff53542bcf4545ac3b98dfbb8fd664bda78cdae83c077283"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack against an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication protocol"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in which the attacker either assumes the role of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " with a genuine "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or actively alters the authentication channel."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証プロトコル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に対する攻撃で、攻撃者が、本物の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "検証者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に対して"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "要求者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の役割を装うか、認証のチャネルを能動的に改変するもの。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a12d22d7dd84026f9122d88b7c2e46163886723dcd7cc2f3244acf650f26c7e1"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authentication-protocol"
+			},
+			"start": 21,
+			"end": 44,
+			"text": "authentication protocol",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "claimant"
+			},
+			"start": 96,
+			"end": 104,
+			"text": "claimant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "verifier"
+			},
+			"start": 120,
+			"end": 128,
+			"text": "verifier",
+			"criterion": "emphasis"
+		}
+	]
+}

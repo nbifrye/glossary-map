@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "identity verification",
+	"headingTranslation": {
+		"text": "アイデンティティの検証",
+		"sourceHash": "e323b4a3bf0530ed152698cd4582aebfac5d2bec0be345f6badff1b9f93f9026"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "See "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verification"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "検証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "4041ae72695bff1dcbc4711900739b1ad6088c624837ac5772eddf7207925f7d"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "verification"
+			},
+			"start": 4,
+			"end": 16,
+			"text": "verification",
+			"criterion": "see"
+		}
+	]
+}

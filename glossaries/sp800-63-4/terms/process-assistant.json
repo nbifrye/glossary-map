@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "process assistant",
+	"headingTranslation": {
+		"text": "プロセス補助者",
+		"sourceHash": "12ff0d26540e7effb7234cb73255dbf554af518c15a6044fef6038363efe77fe"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An individual who provides support for the proofing process but does not support decision-making or risk-based evaluation (e.g., translation, transcription, or accessibility support)."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "身元確認のプロセスを支援するが、意思決定やリスクに基づく評価は支援しない個人 (例: 翻訳・書き起こし・アクセシビリティの支援)。"
+							}
+						]
+					}
+				],
+				"sourceHash": "998774a1cb318f6828a09c886fd70e4037be37fa2314ce9ec686446c2159ba49"
+			}
+		}
+	],
+	"references": []
+}

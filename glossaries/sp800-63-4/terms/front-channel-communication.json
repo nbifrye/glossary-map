@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "front-channel communication",
+	"headingTranslation": {
+		"text": "フロントチャネル通信",
+		"sourceHash": "4c42d4055e914519aacbedd8c3367cc271398b737da18b87650ad01eafcd7299"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Communication between two systems that relies on passing messages through an intermediary, such as using redirects through the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "’s browser."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "加入者"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のブラウザーを経由するリダイレクトを使うなど、仲介者を経由してメッセージを渡すことに依存する 2 つのシステム間の通信。"
+							}
+						]
+					}
+				],
+				"sourceHash": "829b43143e7c51455b15b5243c1b1809dd4690ea7da372c161d92ba209ceb16f"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 127,
+			"end": 137,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}

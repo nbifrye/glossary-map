@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "social engineering",
+	"headingTranslation": {
+		"text": "ソーシャルエンジニアリング",
+		"sourceHash": "c7606357dbfcf5f00ab709c0896152d99918ce15154b545cb9f7d20bb43c7d92"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The act of deceiving an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by associating with the individual to gain confidence and trust."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "個人と関わって信用と信頼を得ることで、その個人をだまして機密情報を明かさせたり、不正なアクセスを得たり、詐欺を行ったりする行為。"
+							}
+						]
+					}
+				],
+				"sourceHash": "b0ef546bf150473159fd12fc386e04eb0553af398e12fcebd8b1af7522e082de"
+			}
+		}
+	],
+	"references": []
+}

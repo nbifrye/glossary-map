@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "one-to-one (1:1) comparison",
+	"headingTranslation": {
+		"text": "1 対 1 (1:1) 照合",
+		"sourceHash": "f469155ba149c454f560a11a30b27848947d91c1e2c69dfc0ef5bd4cd71ad54c"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process in which a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "biometric sample"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " from an individual is compared to a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "biometric reference"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to produce a comparison score."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "個人の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "生体サンプル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "生体参照データ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と比較し、照合スコアを算出するプロセス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "f733606c258bbe604bf7c84c23d463d5f9973c2d9f8f006282108165f6dd4263"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "biometric-sample"
+			},
+			"start": 23,
+			"end": 39,
+			"text": "biometric sample",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "biometric-reference"
+			},
+			"start": 76,
+			"end": 95,
+			"text": "biometric reference",
+			"criterion": "emphasis"
+		}
+	]
+}
