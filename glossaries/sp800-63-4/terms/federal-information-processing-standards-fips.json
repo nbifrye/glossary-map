@@ -1,0 +1,69 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "Federal Information Processing Standards (FIPS)",
+	"headingTranslation": {
+		"text": "連邦情報処理標準 (FIPS)",
+		"sourceHash": "0121e2f7844409b4aa0c45deb480b52c026903f9e0f589e54965df0abb9a8169"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Standards for adoption and use by federal departments and agencies that are developed by NIST, a part of the U.S. Department of Commerce. FIPS address topics in information technology to achieve common levels of quality, security, and interoperability. FIPS documents are available online on the FIPS home page: "
+						},
+						{
+							"type": "link",
+							"href": "https://www.nist.gov/itl/fips.cfm",
+							"children": [
+								{
+									"type": "text",
+									"value": "https://www.nist.gov/itl/fips.cfm"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "米国商務省に属する NIST が策定し、連邦政府の省庁が採用して使用するための標準。FIPS は、情報技術において共通の水準の品質・セキュリティ・相互運用性を実現するための事項を扱う。FIPS の文書は、FIPS のホームページ "
+							},
+							{
+								"type": "link",
+								"href": "https://www.nist.gov/itl/fips.cfm",
+								"children": [
+									{
+										"type": "text",
+										"value": "https://www.nist.gov/itl/fips.cfm"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " で公開されている。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a3b68420cefaff52d656b4cdb14610bfb507e11091a1f2e9634cb4a03fe45da5"
+			}
+		}
+	],
+	"references": []
+}

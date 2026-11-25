@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "approved cryptography",
+	"headingTranslation": {
+		"text": "承認された暗号技術",
+		"sourceHash": "718b525cd1c5fbc9395065d785406fb4f52a70793afce54b1a9f0563b41b113a"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An encryption algorithm, "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "hash function"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", random bit generator, or similar technique that is "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "Federal Information Processing Standards"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " (FIPS)-approved or NIST-recommended. Approved algorithms and techniques are either specified or adopted in a FIPS or NIST recommendation."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "連邦情報処理標準"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (FIPS) で承認されているか NIST が推奨している、暗号化アルゴリズム・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ハッシュ関数"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・乱数ビット生成器、またはこれらに類する技術。承認されたアルゴリズムと技術は、FIPS または NIST の推奨文書で規定されているか、採用されている。"
+							}
+						]
+					}
+				],
+				"sourceHash": "24c3a1c5cfa3df997a910f525d1f35607f6430775aa2aab36ca1dd48352549dc"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "hash-function"
+			},
+			"start": 25,
+			"end": 38,
+			"text": "hash function",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "federal-information-processing-standards-fips"
+			},
+			"start": 91,
+			"end": 131,
+			"text": "Federal Information Processing Standards",
+			"criterion": "emphasis"
+		}
+	]
+}
