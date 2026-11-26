@@ -1,16 +1,25 @@
 ---
+import Page from "../layouts/Page.astro";
+import { loadSite } from "../site/data.ts";
+import { glossaryPath } from "../site/paths.ts";
+
+const site = await loadSite();
 ---
 
-<!doctype html>
-<html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Glossary Map</title>
-	</head>
-	<body>
-		<main>
-			<h1>Glossary Map</h1>
-		</main>
-	</body>
-</html>
+<Page title="Glossary Map">
+	<h1>Glossary Map</h1>
+	<p>
+		文書の用語集を対象に、各用語の定義と、定義中に登場する用語への参照を示します。
+	</p>
+	<h2>用語集</h2>
+	<ul>
+		{
+			site.map(({ glossary, terms }) => (
+				<li>
+					<a href={glossaryPath(glossary.id)}>{glossary.title}</a>
+					{` (${terms.length} 語)`}
+				</li>
+			))
+		}
+	</ul>
+</Page>

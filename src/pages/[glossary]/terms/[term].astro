@@ -1,0 +1,187 @@
+---
+import Blocks from "../../../components/Blocks.astro";
+import type { Reference } from "../../../data/types.ts";
+import Page from "../../../layouts/Page.astro";
+import {
+	type IncomingReference,
+	loadSite,
+	type SiteGlossary,
+	type SiteTerm,
+} from "../../../site/data.ts";
+import { glossaryPath, termPath } from "../../../site/paths.ts";
+import { applyReferences } from "../../../site/rich-text.ts";
+
+export async function getStaticPaths() {
+	const site = await loadSite();
+	return site.flatMap((entry) =>
+		entry.terms.map((item) => ({
+			params: { glossary: entry.glossary.id, term: item.slug },
+			props: { entry, item },
+		})),
+	);
+}
+
+interface Props {
+	entry: SiteGlossary;
+	item: SiteTerm;
+}
+
+const { entry, item } = Astro.props;
+const { glossary } = entry;
+const { term } = item;
+const glossaryId = glossary.id;
+const multiple = term.definitions.length > 1;
+
+const target = (slug: string): SiteTerm => {
+	const found = entry.bySlug.get(slug);
+	if (found === undefined) {
+		throw new Error(`${glossaryId}/${item.slug}: 参照先 ${slug} がありません`);
+	}
+	return found;
+};
+
+const definitions = term.definitions.map((definition, index) => ({
+	definition,
+	source: applyReferences(
+		definition.source,
+		term.references
+			.filter((reference) => reference.definition === index)
+			.map((reference) => ({
+				start: reference.start,
+				end: reference.end,
+				href: termPath(reference.target.glossary, reference.target.term),
+			})),
+	),
+	translation: applyReferences(definition.translation.content, []),
+}));
+
+/** 参照先ごとに、原文に現れる順に参照をまとめる */
+const outgoing = Map.groupBy(term.references, (reference) =>
+	target(reference.target.term),
+);
+const incoming = Map.groupBy(
+	entry.incoming.get(item.slug) ?? [],
+	(reference: IncomingReference) => reference.source,
+);
+
+/** 根拠の位置。参照元の用語に定義が複数ある場合は、定義の番号も示す */
+const evidence = (reference: Reference, source: SiteTerm) =>
+	`${source.term.definitions.length > 1 ? `定義 ${reference.definition + 1} の ` : ""}${reference.start + 1}〜${reference.end} 文字目`;
+const criterionHref = (id: string) =>
+	`${glossaryPath(glossaryId)}#criterion-${id}`;
+---
+
+<Page title={term.heading}>
+	<nav aria-label="現在位置">
+		<a href={glossaryPath(glossaryId)}>{glossary.title}</a>
+	</nav>
+	<h1 lang="en">{term.heading}</h1>
+	{
+		term.headingTranslation.text !== term.heading && (
+			<p class="translation">{term.headingTranslation.text}</p>
+		)
+	}
+
+	{
+		definitions.map(({ definition, source, translation }, index) => (
+			<section>
+				<h2>{multiple ? `定義 ${index + 1}` : "定義"}</h2>
+				<h3>原文</h3>
+				<div lang="en">
+					<Blocks blocks={source} />
+				</div>
+				<h3>訳文</h3>
+				<div class="translation">
+					<Blocks blocks={translation} />
+				</div>
+				<p>
+					原典の該当箇所:{" "}
+					{definition.location.url !== undefined ? (
+						<a href={definition.location.url}>
+							{definition.location.label ?? "原典を開く"}
+						</a>
+					) : (
+						definition.location.label
+					)}
+				</p>
+			</section>
+		))
+	}
+
+	<section>
+		<h2>参照</h2>
+		<p class="note">
+			参照は、ある用語の定義の中でほかの用語を指している箇所を示します。概念上の必須の依存関係や、推奨される学習順序を示すものではありません。
+		</p>
+
+		<h3>参照先 ({outgoing.size} 語)</h3>
+		<p>この用語の定義が参照している用語です。</p>
+		{
+			outgoing.size === 0 ? (
+				<p>ありません。</p>
+			) : (
+				<ul>
+					{[...outgoing].map(([to, references]) => (
+						<li>
+							<a href={termPath(glossaryId, to.slug)} lang="en">
+								{to.term.heading}
+							</a>
+							{" "}
+							{to.term.headingTranslation.text !== to.term.heading && (
+								<span class="translation">
+									{to.term.headingTranslation.text}
+								</span>
+							)}
+							<ul>
+								{references.map((reference) => (
+									<li>
+										「<span lang="en">{reference.text}</span>」 ({evidence(reference, item)}、基準:{" "}
+										<a href={criterionHref(reference.criterion)}>
+											<code>{reference.criterion}</code>
+										</a>
+										)
+									</li>
+								))}
+							</ul>
+						</li>
+					))}
+				</ul>
+			)
+		}
+
+		<h3>参照元 ({incoming.size} 語)</h3>
+		<p>定義の中でこの用語を参照している用語です。</p>
+		{
+			incoming.size === 0 ? (
+				<p>ありません。</p>
+			) : (
+				<ul>
+					{[...incoming].map(([from, references]) => (
+						<li>
+							<a href={termPath(glossaryId, from.slug)} lang="en">
+								{from.term.heading}
+							</a>
+							{" "}
+							{from.term.headingTranslation.text !== from.term.heading && (
+								<span class="translation">
+									{from.term.headingTranslation.text}
+								</span>
+							)}
+							<ul>
+								{references.map(({ reference }) => (
+									<li>
+										「<span lang="en">{reference.text}</span>」 ({evidence(reference, from)}、基準:{" "}
+										<a href={criterionHref(reference.criterion)}>
+											<code>{reference.criterion}</code>
+										</a>
+										)
+									</li>
+								))}
+							</ul>
+						</li>
+					))}
+				</ul>
+			)
+		}
+	</section>
+</Page>
