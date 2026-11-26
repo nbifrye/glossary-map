@@ -1,0 +1,153 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "multi-factor authentication (MFA)",
+	"headingTranslation": {
+		"text": "多要素認証 (MFA)",
+		"sourceHash": "3de087d9e43ed1829ab57721af1b8c9b49417b5d900ab2410419c7c1df0332a6"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An authentication system that requires more than one distinct type of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication factor"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " for successful authentication. MFA can be performed using a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "multi-factor authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or by combining "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "single-factor"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " authenticators that provide different types of factors."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "認証を成功させるために、2 種類以上の異なる"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証要素"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を必要とする認証システム。MFA は、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "多要素認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を使うか、異なる種類の要素を提供する"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "単一要素"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の認証器を組み合わせることで実行できる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "0792852e858655f5231d1d486270dbc463fed8c290a04112bc93382e16a49328"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication-factor"
+			},
+			"start": 70,
+			"end": 91,
+			"text": "authentication factor",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "multi-factor-authenticator"
+			},
+			"start": 152,
+			"end": 178,
+			"text": "multi-factor authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "single-factor"
+			},
+			"start": 195,
+			"end": 208,
+			"text": "single-factor",
+			"criterion": "emphasis"
+		}
+	]
+}

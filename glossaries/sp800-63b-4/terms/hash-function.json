@@ -1,0 +1,97 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "hash function",
+	"headingTranslation": {
+		"text": "ハッシュ関数",
+		"sourceHash": "04ce4af53ae1b0f46451715ffc43092eab5b23330a6584462d0723732b147c4b"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A function that maps a bit string of arbitrary length to a fixed-length bit string. Approved hash functions satisfy the following properties:"
+						}
+					]
+				},
+				{
+					"type": "list",
+					"ordered": true,
+					"items": [
+						[
+							{
+								"type": "paragraph",
+								"children": [
+									{
+										"type": "text",
+										"value": "One-way — It is computationally infeasible to find any input that maps to any pre-specified output."
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "paragraph",
+								"children": [
+									{
+										"type": "text",
+										"value": "Collision-resistant — It is computationally infeasible to find any two distinct inputs that map to the same output."
+									}
+								]
+							}
+						]
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "任意の長さのビット列を固定長のビット列に写像する関数。承認されたハッシュ関数は、次の性質を満たす。"
+							}
+						]
+					},
+					{
+						"type": "list",
+						"ordered": true,
+						"items": [
+							[
+								{
+									"type": "paragraph",
+									"children": [
+										{
+											"type": "text",
+											"value": "一方向性: 事前に指定された任意の出力に写像される入力を見つけることが、計算量的に困難である。"
+										}
+									]
+								}
+							],
+							[
+								{
+									"type": "paragraph",
+									"children": [
+										{
+											"type": "text",
+											"value": "衝突耐性: 同じ出力に写像される 2 つの異なる入力を見つけることが、計算量的に困難である。"
+										}
+									]
+								}
+							]
+						]
+					}
+				],
+				"sourceHash": "50fec3f42a1dbad09d679e86d6ffa7a9c20f5a2783600e06eb5a5dc3d7a7826d"
+			}
+		}
+	],
+	"references": []
+}

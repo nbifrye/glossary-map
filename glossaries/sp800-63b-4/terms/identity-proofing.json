@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "identity proofing",
+	"headingTranslation": {
+		"text": "身元確認",
+		"sourceHash": "fe788a1a9da9fec1b6b73fd2beff4ea4d02d9519566c2d06df8d24f45dbc3877"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The processes used to collect, validate, and verify information about a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subject"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to establish assurance in the subject’s "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimed identity"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subject"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "主張されたアイデンティティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の保証を確立するために、subject に関する情報を収集し、妥当性確認し、検証するのに使われるプロセス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "7fa3dec33e9627e1ccea2d6f9606b0f0b53758a9221a6f306966276bc8f823c3"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subject"
+			},
+			"start": 72,
+			"end": 79,
+			"text": "subject",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "claimed-identity"
+			},
+			"start": 120,
+			"end": 136,
+			"text": "claimed identity",
+			"criterion": "emphasis"
+		}
+	]
+}

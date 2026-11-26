@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "online guessing attack",
+	"headingTranslation": {
+		"text": "オンライン推測攻撃",
+		"sourceHash": "998582cda3c31392dcd7ead7a70111e9ddcfc1d9d7301c1be3221bbd36acbf09"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack in which an attacker performs repeated logon trials by guessing possible values of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " output."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "攻撃者が、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の出力として取り得る値を推測して、ログオンを繰り返し試行する攻撃。"
+							}
+						]
+					}
+				],
+				"sourceHash": "0e67a3459697c72e946b26bbd4c481ccfc7bed84b6131e68adcee186edb13ab1"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 97,
+			"end": 110,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		}
+	]
+}

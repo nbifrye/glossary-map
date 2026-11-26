@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "personal information",
+	"headingTranslation": {
+		"text": "個人情報",
+		"sourceHash": "5d7a0f8c2c280b6b0cf1d13ae234f8456e6a74640a984a6d77144d02966b5628"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "単独で、または特定の個人に結び付いているか結び付け得るほかの情報と組み合わせることで、個人のアイデンティティを識別または追跡するために使用できる情報。"
+							}
+						]
+					}
+				],
+				"sourceHash": "3dc697746e2823f3a7fa9400458158e7f61dff4cd7d2a9058f1300058afb0a54"
+			}
+		}
+	],
+	"references": []
+}

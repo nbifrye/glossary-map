@@ -1,0 +1,186 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "verifier",
+	"headingTranslation": {
+		"text": "verifier",
+		"sourceHash": "88c9eae68eb300b2971a2bec9e5a26ff4179fd661d6b7d861e4c6557b9aaee14"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An entity that confirms the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant’s"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " identity by verifying the claimant’s possession and control of one or more "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticators"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " using an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication protocol"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". To do this, the verifier needs to confirm the binding of the authenticators with the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber account"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and check that the subscriber account is active."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証プロトコル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を使って、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "claimant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が 1 つ以上の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を所持し管理していることを検証することで、claimant のアイデンティティを確認する組織。そのために、verifier は、認証器と "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber account"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のバインディングを確認し、subscriber account が有効であることを確かめる必要がある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "1067d1ca75e9adb649ba99117294b36756ceff5b655a0648ef7fce23f7b0ed4d"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "claimant"
+			},
+			"start": 28,
+			"end": 38,
+			"text": "claimant’s",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 114,
+			"end": 128,
+			"text": "authenticators",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication-protocol"
+			},
+			"start": 138,
+			"end": 161,
+			"text": "authentication protocol",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subscriber-account"
+			},
+			"start": 248,
+			"end": 266,
+			"text": "subscriber account",
+			"criterion": "emphasis"
+		}
+	]
+}

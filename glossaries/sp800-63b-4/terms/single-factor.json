@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "single-factor",
+	"headingTranslation": {
+		"text": "単一要素",
+		"sourceHash": "133a4ef38f6fc832df8dde3fe59c3385a3af42dbf0121d5c5a93bd3503d362fe"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A characteristic of an authentication system or an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that requires only one "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication factor"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " (i.e., something you know, something you have, or something you are) for successful authentication."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "認証を成功させるために、1 つの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証要素"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (つまり、知っているもの・持っているもの・自分自身の特性のいずれか) だけを必要とする、認証システムや"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の特性。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ab7d6d6a8b32f3c39b717591390c37533c0fa8291f7c4e7d1df57c02d58b6170"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 51,
+			"end": 64,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication-factor"
+			},
+			"start": 88,
+			"end": 109,
+			"text": "authentication factor",
+			"criterion": "emphasis"
+		}
+	]
+}

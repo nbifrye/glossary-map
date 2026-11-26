@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "applicant",
+	"headingTranslation": {
+		"text": "applicant",
+		"sourceHash": "42aef2f386567bd5a6a3c753ad0b0debc280a3b6231c084618992fc4c91b7644"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subject"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " undergoing the processes of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity proofing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "enrollment"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "身元確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "登録"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のプロセスを受けている "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subject"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。"
+							}
+						]
+					}
+				],
+				"sourceHash": "e19c9d1c1fa3dc471bbd91731f18711b9b701e6453872fecd358287a56b688f9"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subject"
+			},
+			"start": 2,
+			"end": 9,
+			"text": "subject",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "identity-proofing"
+			},
+			"start": 38,
+			"end": 55,
+			"text": "identity proofing",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "enrollment"
+			},
+			"start": 60,
+			"end": 70,
+			"text": "enrollment",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "multi-factor authenticator",
+	"headingTranslation": {
+		"text": "多要素認証器",
+		"sourceHash": "19379f60aa3ab6c22c04d6a1968d21d5a16b6515d27770ae5a59cbc0541ca8a6"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that provides more than one distinct "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication factor"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", such as a cryptographic authentication device with an integrated biometric sensor that is required to activate the device."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "2 種類以上の異なる"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証要素"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を提供する"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。たとえば、機器のアクティベーションに必要な生体センサーを内蔵した、暗号による認証デバイスなどがある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "52ae3d7803b5531523cb0d1c433b3da22ff0ebb4387934506105bde38a08eec1"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 3,
+			"end": 16,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication-factor"
+			},
+			"start": 54,
+			"end": 75,
+			"text": "authentication factor",
+			"criterion": "emphasis"
+		}
+	]
+}

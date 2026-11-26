@@ -1,0 +1,153 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "attestation",
+	"headingTranslation": {
+		"text": "アテステーション",
+		"sourceHash": "813a89a296973e35545cfa74fe3efd172a7d19443c97c625d699e9737229b0a2"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Information conveyed to the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", generally at the time that an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " is bound, to describe the characteristics of a connected authenticator or the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "endpoint"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " involved in an authentication operation."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "一般に"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "をバインドする時点で "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に伝えられる情報。接続された認証器や、認証の操作に関わる"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "エンドポイント"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の特性を示す。"
+							}
+						]
+					}
+				],
+				"sourceHash": "b7368a18b346fd08870fcefbbe5f31d84aeda8816a51516c9585de48fa5885b3"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 28,
+			"end": 31,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 63,
+			"end": 76,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "endpoint"
+			},
+			"start": 155,
+			"end": 163,
+			"text": "endpoint",
+			"criterion": "emphasis"
+		}
+	]
+}

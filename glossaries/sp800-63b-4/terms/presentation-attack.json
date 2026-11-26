@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "presentation attack",
+	"headingTranslation": {
+		"text": "プレゼンテーション攻撃",
+		"sourceHash": "9ee08f98b2af0789a136fd16f77d91a2abe293aba4815771e9a9f7e3a891ae38"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Presentation to the biometric data capture subsystem with the goal of interfering with the operation of the biometric system."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "生体システムの動作を妨げることを目的とした、生体データ取得サブシステムへの提示。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ceab6466d6752e0b2ab59fd4708b5147ed8a1e575a743f8f0585bf0585e1230d"
+			}
+		}
+	],
+	"references": []
+}
