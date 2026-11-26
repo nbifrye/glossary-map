@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "account linking",
+	"headingTranslation": {
+		"text": "account linking",
+		"sourceHash": "346086655b38f84f16a0cba56d874896762088f158b496607d3ba8f7b0f1305a"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The association of multiple "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federated identifiers"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " with a single "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP subscriber account"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or the management of those associations."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "複数の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーション識別子"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を 1 つの "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP subscriber account"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に関連付けること、またはそれらの関連付けを管理すること。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ecc31226bc622dd347dd328f40a57cb787d81c2a16336169cd7d4f4d526e724d"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "federated-identifier"
+			},
+			"start": 28,
+			"end": 49,
+			"text": "federated identifiers",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "rp-subscriber-account"
+			},
+			"start": 64,
+			"end": 85,
+			"text": "RP subscriber account",
+			"criterion": "emphasis"
+		}
+	]
+}

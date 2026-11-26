@@ -1,0 +1,153 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "reauthentication",
+	"headingTranslation": {
+		"text": "再認証",
+		"sourceHash": "57a446148aecfb2de928adae49b53cb732cf4b33f114702592c27978282a6ecd"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process of confirming the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "’s continued presence and intent to be "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticated"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " during an extended usage "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "session"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "長時間にわたる利用の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "セッション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の間に、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が引き続きその場にいて、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "される意図を持っていることを確認するプロセス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "743d5abe4a5e0e268177f389dcc8bcd0640d926cf33a59d2d2d2129f01c8d34b"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 30,
+			"end": 40,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticate"
+			},
+			"start": 79,
+			"end": 92,
+			"text": "authenticated",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "session"
+			},
+			"start": 118,
+			"end": 125,
+			"text": "session",
+			"criterion": "emphasis"
+		}
+	]
+}

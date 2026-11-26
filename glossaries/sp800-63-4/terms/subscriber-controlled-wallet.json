@@ -1,0 +1,179 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "subscriber-controlled wallet",
+	"headingTranslation": {
+		"text": "subscriber-controlled wallet",
+		"sourceHash": "116e7713291ab7f7a0c4b32c442c9ee79b5ad224602329f0ac2370fe254663c5"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A type of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that is issued "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attribute bundles"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " by the CSP. The subscriber-controlled wallet that is either housed on a subscriber-controlled device (sometimes known as a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "digital wallet"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ") or as a remote service (sometimes known as a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "cloud wallet"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ")."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "CSP から"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性バンドル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を発行される "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の種類。subscriber-controlled wallet は、subscriber が管理する機器上に置かれるもの ("
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "デジタルウォレット"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と呼ばれることもある) か、リモートのサービスとして提供されるもの ("
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "クラウドウォレット"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と呼ばれることもある) のいずれかである。"
+							}
+						]
+					}
+				],
+				"sourceHash": "4778cb9902faa507748c37ef48c30a14262fbd3dc20d8ce976bea205e459b7a9"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 10,
+			"end": 13,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "attribute-bundle"
+			},
+			"start": 29,
+			"end": 46,
+			"text": "attribute bundles",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 54,
+			"end": 57,
+			"text": "CSP",
+			"criterion": "unmarked"
+		}
+	]
+}

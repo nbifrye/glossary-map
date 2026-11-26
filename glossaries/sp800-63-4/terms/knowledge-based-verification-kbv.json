@@ -1,0 +1,186 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "knowledge-based verification (KBV)",
+	"headingTranslation": {
+		"text": "知識ベース検証 (KBV)",
+		"sourceHash": "a523feafb74672bbb56126aaffb774f8ab8fbc7ea2bb813f45f6b7976021889b"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A process of validating the knowledge of personal or private information associated with an individual for the purpose of verifying the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimed identity"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " of an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "applicant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". KBV does not include collecting personal "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attributes"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " for the purposes of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity resolution"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "applicant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "主張されたアイデンティティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を検証するために、個人に関連付けられた個人的な情報や私的な情報の知識を確認するプロセス。KBV には、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "identity resolution"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のために個人の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を収集することは含まれない。"
+							}
+						]
+					}
+				],
+				"sourceHash": "222f90963d30aa8f2f35027bf63fdf3df1362a63ec9a19ffab682988173579ac"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "claimed-identity"
+			},
+			"start": 136,
+			"end": 152,
+			"text": "claimed identity",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "applicant"
+			},
+			"start": 159,
+			"end": 168,
+			"text": "applicant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "attribute"
+			},
+			"start": 211,
+			"end": 221,
+			"text": "attributes",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-resolution"
+			},
+			"start": 242,
+			"end": 261,
+			"text": "identity resolution",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,223 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "enrollment",
+	"headingTranslation": {
+		"text": "登録",
+		"sourceHash": "2791bd4394efbf10623f3cd301dc57f37ff18ff2a806b2c013403e85bc62c530"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process through which a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "/"
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " provides a successfully identity-proofed "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "applicant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " with a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber account"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and binds "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticators"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to grant persistent access."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "/"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が、身元確認に成功した "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "applicant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber account"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を提供し、継続的なアクセスを許可するために"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "をバインドするプロセス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "9b2de324bd4be3405538641b59bbe6e47af9fe8f8f42ead1aa7eba0c18b26f77"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 28,
+			"end": 31,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 32,
+			"end": 35,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "applicant"
+			},
+			"start": 77,
+			"end": 86,
+			"text": "applicant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber-account"
+			},
+			"start": 94,
+			"end": 112,
+			"text": "subscriber account",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 123,
+			"end": 137,
+			"text": "authenticators",
+			"criterion": "emphasis"
+		}
+	]
+}

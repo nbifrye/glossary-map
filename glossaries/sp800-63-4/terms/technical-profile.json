@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "technical profile",
+	"headingTranslation": {
+		"text": "技術プロファイル",
+		"sourceHash": "e7df4c70be11968450bf497ae71ba380c75315e4d1cdad9706db63ee0c91fd91"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A fully conformant subset of functionality of a protocol or standard. Technical profiles are used to enhance interoperability."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "プロトコルや標準の機能のうち、完全に適合するサブセット。技術プロファイルは、相互運用性を高めるために使われる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "31da91cd41357431c5f51b45d5c3e8b2587078d914e99c3b4e62685097275f52"
+			}
+		}
+	],
+	"references": []
+}

@@ -1,0 +1,127 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "verification key",
+	"headingTranslation": {
+		"text": "検証鍵",
+		"sourceHash": "e9c419d8ec93c4ed4a8b64ae7512591c4865820c8a6a91796bb219c68f86dbb9"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The cryptographic key used to verify a signature. In asymmetric cryptography, the verification key refers to the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "public key"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " of the cryptographic key pair. In symmetric cryptography, the verification key is the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "symmetric key"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "署名を検証するために使われる暗号鍵。非対称暗号では、検証鍵は暗号鍵のペアのうちの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "公開鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を指す。対称暗号では、検証鍵は"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "対称鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "である。"
+							}
+						]
+					}
+				],
+				"sourceHash": "35f44c072b246882d4972c7ba97c784eacdc8c0f19e9e98841382a07e1e5b5f6"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "cryptographic-key"
+			},
+			"start": 4,
+			"end": 21,
+			"text": "cryptographic key",
+			"criterion": "unmarked"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "public-key"
+			},
+			"start": 113,
+			"end": 123,
+			"text": "public key",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "symmetric-key"
+			},
+			"start": 210,
+			"end": 223,
+			"text": "symmetric key",
+			"criterion": "emphasis"
+		}
+	]
+}

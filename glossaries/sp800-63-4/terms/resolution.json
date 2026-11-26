@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "resolution",
+	"headingTranslation": {
+		"text": "resolution",
+		"sourceHash": "f7fbd5853d11940e045abc7c4d7b8e3253947bcde21b8cd8555d71c6f02fd912"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "See "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity resolution"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "identity resolution"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a0a4c982e91fb0b5fb9f7e0b8068b5b0cb1e009787b1f4afcddc0d5aded20c8a"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-resolution"
+			},
+			"start": 4,
+			"end": 23,
+			"text": "identity resolution",
+			"criterion": "see"
+		}
+	]
+}

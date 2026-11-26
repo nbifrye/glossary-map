@@ -1,0 +1,64 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authentication key",
+	"headingTranslation": {
+		"text": "認証鍵",
+		"sourceHash": "614043a0f919c7cb28fd20f03d827ba64130d7bb436f909d6ec329b722611960"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A private or symmetric key used by an authenticator to generate the authenticator output."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "認証器が認証器出力を生成するために使う、秘密鍵または対称鍵。"
+							}
+						]
+					}
+				],
+				"sourceHash": "9917ee85f537a977136c9de86a90947f1c13de471063deeb74c5e480ae7528c2"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "symmetric-key"
+			},
+			"start": 13,
+			"end": 26,
+			"text": "symmetric key",
+			"criterion": "unmarked"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator-output"
+			},
+			"start": 68,
+			"end": 88,
+			"text": "authenticator output",
+			"criterion": "unmarked"
+		}
+	]
+}

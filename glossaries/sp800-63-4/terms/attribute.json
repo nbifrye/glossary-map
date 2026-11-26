@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "attribute",
+	"headingTranslation": {
+		"text": "属性",
+		"sourceHash": "a92bfd02c450af0360dea55f99018b267c91eb4d4dbe50142135af7282c612e6"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A quality or characteristic ascribed to someone or something. An identity attribute is an attribute about the identity of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " (e.g., name, date of birth, address)."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "人や物に帰属する性質や特徴。アイデンティティの属性は、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のアイデンティティに関する属性である (例: 氏名・生年月日・住所)。"
+							}
+						]
+					}
+				],
+				"sourceHash": "c3240aa3a4b54397e72126f81a07246898cd6a72fb819bdc03f1b59786d74584"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 124,
+			"end": 134,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "digital authentication",
+	"headingTranslation": {
+		"text": "デジタル認証",
+		"sourceHash": "876e957409378c74a23240dd5a58f620586a5338734cbde0444b8086a4cf217f"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process of establishing confidence in user identities that are digitally presented to a system. In previous editions of SP 800-63, this was referred to as “electronic authentication.”"
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "システムにデジタルで提示された利用者のアイデンティティについて、確信を確立するプロセス。SP 800-63 の以前の版では、これを「電子認証」と呼んでいた。"
+							}
+						]
+					}
+				],
+				"sourceHash": "5dcfc21b748d4024720098fefd001ad34b167e65fa0d1e0cb5a87e02a3e6f911"
+			}
+		}
+	],
+	"references": []
+}

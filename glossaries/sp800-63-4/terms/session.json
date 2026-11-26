@@ -1,0 +1,197 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "session",
+	"headingTranslation": {
+		"text": "セッション",
+		"sourceHash": "3f3af1ecebbd1410ab417ec0d27bbfcb5d340e177ae159b59fc8626c2dfd9175"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A persistent interaction between a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "endpoint"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", either an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". A session begins with an authentication event and ends with a session termination event. A session is bound by the use of a session secret that the subscriber’s software (e.g., browser, application, OS) can present to the RP to prove association of the session with the authentication event."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " と"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "エンドポイント"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " ("
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " または "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": ") の間の継続的なやり取り。セッションは、認証イベントで始まり、セッションの終了イベントで終わる。セッションは、subscriber のソフトウェア (例: ブラウザー・アプリケーション・OS) が RP に提示して、セッションと認証イベントの関連付けを証明できるセッションシークレットの使用によってバインドされる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "9f01615a1f18678394573aa0b57c0245c0cd758a38f6eefba6c8c98c872be6b6"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 35,
+			"end": 45,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "endpoint"
+			},
+			"start": 53,
+			"end": 61,
+			"text": "endpoint",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "relying-party-rp"
+			},
+			"start": 73,
+			"end": 75,
+			"text": "RP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 81,
+			"end": 84,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authentication-event"
+			},
+			"start": 111,
+			"end": 131,
+			"text": "authentication event",
+			"criterion": "unmarked"
+		}
+	]
+}

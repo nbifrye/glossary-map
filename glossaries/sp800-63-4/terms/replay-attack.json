@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "replay attack",
+	"headingTranslation": {
+		"text": "リプレイ攻撃",
+		"sourceHash": "909af7c3bda060529d6602f956d9be5107f722dc8d1139247d4e2e586b474426"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack in which the attacker is able to replay previously captured messages between a legitimate "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to masquerade as that claimant to the verifier or vice versa."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "正当な "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "claimant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " と "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "verifier"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の間で以前に取得したメッセージを攻撃者が再送し、verifier に対してその claimant になりすます、またはその逆を行う攻撃。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ee256e475a77d6423ddfaddf081c300f9ec2a6eb86a1833ebca31c8868d2d86f"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "claimant"
+			},
+			"start": 100,
+			"end": 108,
+			"text": "claimant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "verifier"
+			},
+			"start": 115,
+			"end": 123,
+			"text": "verifier",
+			"criterion": "emphasis"
+		}
+	]
+}

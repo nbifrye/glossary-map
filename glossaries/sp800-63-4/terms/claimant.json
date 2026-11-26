@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "claimant",
+	"headingTranslation": {
+		"text": "claimant",
+		"sourceHash": "702592427b0731310a5be2d1c8c20ec7d09c449866401abde0f171797e6c70cc"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subject"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " whose identity is to be verified using one or more "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication protocols"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "1 つ以上の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証プロトコル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を使ってアイデンティティを検証される "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subject"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。"
+							}
+						]
+					}
+				],
+				"sourceHash": "da1890dd1ad57b6f561815cc4b195073b8c7e14c193cbab20cd0da3b46bd2f3c"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subject"
+			},
+			"start": 2,
+			"end": 9,
+			"text": "subject",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authentication-protocol"
+			},
+			"start": 61,
+			"end": 85,
+			"text": "authentication protocols",
+			"criterion": "emphasis"
+		}
+	]
+}

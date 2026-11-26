@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "risk management",
+	"headingTranslation": {
+		"text": "リスクマネジメント",
+		"sourceHash": "47ac95fd8f8738cd3c763ae43ae0791bb3a815b16464bd2ad6eb5c8a3bcde550"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The program and supporting processes that manage information security risk to organizational operations (i.e., mission, functions, image, reputation), organizational assets, individuals, and other organizations and that include (i) establishing the context for risk-related activities, (ii) assessing risk, (iii) responding to risk once determined, and (iv) monitoring risk over time."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "組織の業務 (つまり、使命・機能・イメージ・評判)・組織の資産・個人・ほかの組織に対する情報セキュリティのリスクを管理するプログラムと、それを支えるプロセス。(i) リスクに関わる活動の状況を確立すること、(ii) リスクを評価すること、(iii) 判明したリスクに対応すること、(iv) リスクを継続的に監視することを含む。"
+							}
+						]
+					}
+				],
+				"sourceHash": "18aad9f10d9eaa481050367656cfc2ce84345c1dd356ae49137725c7dc765f9d"
+			}
+		}
+	],
+	"references": []
+}

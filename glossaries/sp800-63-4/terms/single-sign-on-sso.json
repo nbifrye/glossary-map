@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "single sign-on (SSO)",
+	"headingTranslation": {
+		"text": "シングルサインオン (SSO)",
+		"sourceHash": "0b0df1991eaff669f7d94e4ca0aac176a3868c1ce7dd88cf4f2aabf973d16c3d"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An authentication process by which one account and its "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticators"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " are used to access multiple applications in a seamless manner, generally implemented with a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation protocol"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "1 つのアカウントとその"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を使って、複数のアプリケーションにシームレスにアクセスする認証プロセス。一般に、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーションプロトコル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "で実装される。"
+							}
+						]
+					}
+				],
+				"sourceHash": "fedfe63aaa8b21aed3627625c6c38b7e5498bd9d87a1d2f988ad88946f6ded03"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 55,
+			"end": 69,
+			"text": "authenticators",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "federation-protocol"
+			},
+			"start": 162,
+			"end": 181,
+			"text": "federation protocol",
+			"criterion": "emphasis"
+		}
+	]
+}

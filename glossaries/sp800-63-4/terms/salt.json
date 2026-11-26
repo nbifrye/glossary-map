@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "salt",
+	"headingTranslation": {
+		"text": "ソルト",
+		"sourceHash": "63479ad69a090b258277ec8fba6f99419a2ffb248981510657c944ccd1148e97"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A non-secret value used in a cryptographic process, usually to ensure that the results of computations for one instance cannot be reused by an attacker."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "暗号のプロセスで使われる秘密でない値。通常は、あるインスタンスの計算結果を攻撃者が再利用できないようにするために使われる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "24629a54b4f08341060773264e76b6bd8cb6b1ba4564a2791f6144605b31b765"
+			}
+		}
+	],
+	"references": []
+}

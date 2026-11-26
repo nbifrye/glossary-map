@@ -1,0 +1,234 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "attribute bundle",
+	"headingTranslation": {
+		"text": "属性バンドル",
+		"sourceHash": "7b4c0ac3008b8d8b555267853c52ab7d5eb515a748d9ab72e4e340e5b548e0c1"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A package of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attribute values"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "derived attribute values"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " from a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". The package has the necessary cryptographic protection to allow for the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "validation"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " of the bundle independent from interaction with the CSP or "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". Attribute bundles are often used with subscriber-controlled wallets."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が発行する、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性値"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "派生属性値"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のパッケージ。このパッケージには、CSP や "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " とのやり取りなしにバンドルの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "妥当性確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を行えるようにするための、必要な暗号による保護が施されている。属性バンドルは、subscriber-controlled wallet とともに使われることが多い。"
+							}
+						]
+					}
+				],
+				"sourceHash": "c3632b0e41bb1375cadcfe27cce6398e0812ed9c4c5a86c39636d314e6c6203d"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "attribute-value"
+			},
+			"start": 13,
+			"end": 29,
+			"text": "attribute values",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "derived-attribute-value"
+			},
+			"start": 34,
+			"end": 58,
+			"text": "derived attribute values",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 66,
+			"end": 69,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "validation"
+			},
+			"start": 143,
+			"end": 153,
+			"text": "validation",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 213,
+			"end": 216,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber-controlled-wallet"
+			},
+			"start": 256,
+			"end": 285,
+			"text": "subscriber-controlled wallets",
+			"criterion": "unmarked"
+		}
+	]
+}

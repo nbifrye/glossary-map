@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "natural person",
+	"headingTranslation": {
+		"text": "自然人",
+		"sourceHash": "2f0adc838f63220fe16d8b6d51dd4ed9002c4ec59c6138c813a4b20b765c3487"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A real-life human being, not synthetic or artificial."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "合成されたものや人工的なものではない、実在の人間。"
+							}
+						]
+					}
+				],
+				"sourceHash": "1cedfe12e4fd52bf558359fe7aae4a291e7e1fa0c7ee3d89bbab077691dddc1b"
+			}
+		}
+	],
+	"references": []
+}

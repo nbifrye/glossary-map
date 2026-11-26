@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "controls",
+	"headingTranslation": {
+		"text": "管理策",
+		"sourceHash": "1e2135d1b50f14d3d3d6cbe24a4294bcb9e4d5d3c28eb1ce4980ff2a17c5d3b6"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Policies, procedures, guidelines, practices, or organizational structures that manage security, privacy, and other risks. See "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "supplemental controls"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "compensating controls"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "セキュリティ・プライバシー・その他のリスクを管理する、ポリシー・手順・ガイドライン・慣行・組織構造。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "supplemental controls"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " と "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "compensating controls"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "825366bf288bec9408f2fbda58be954f6b0972d7e03d3ec8aebb3bd3af830c38"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "supplemental-controls"
+			},
+			"start": 126,
+			"end": 147,
+			"text": "supplemental controls",
+			"criterion": "see"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "compensating-controls"
+			},
+			"start": 152,
+			"end": 173,
+			"text": "compensating controls",
+			"criterion": "see"
+		}
+	]
+}

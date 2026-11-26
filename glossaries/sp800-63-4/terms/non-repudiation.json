@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "non-repudiation",
+	"headingTranslation": {
+		"text": "否認防止",
+		"sourceHash": "e733e45f056205a9c7fa763b0e218101ab8fc8139b00082e66612db56f6fefd8"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The capability to protect against an individual falsely denying having performed a particular transaction."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "個人が特定のトランザクションを行ったことを偽って否認することを防ぐ能力。"
+							}
+						]
+					}
+				],
+				"sourceHash": "b7008343b5b7b8d1a89d2673cd1655bc0327daafb6534a396d01ec9ca01ef0fd"
+			}
+		}
+	],
+	"references": []
+}

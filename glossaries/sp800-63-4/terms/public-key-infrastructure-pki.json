@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "public-key infrastructure (PKI)",
+	"headingTranslation": {
+		"text": "公開鍵基盤 (PKI)",
+		"sourceHash": "5a29af0801c39559cfc6fc346a3fa608026df081062394fbf048815cb3cef716"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A set of policies, processes, server platforms, software, and workstations used to administer certificates and public-private key pairs, including the ability to issue, maintain, and revoke "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "public-key certificates"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "証明書と公開鍵・秘密鍵のペアを管理するために使われる、ポリシー・プロセス・サーバープラットフォーム・ソフトウェア・ワークステーションの集合。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "公開鍵証明書"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を発行・維持・失効させる能力を含む。"
+							}
+						]
+					}
+				],
+				"sourceHash": "3e6c4096e38a8e83bbc4f5503b01b3f46064c9e1a4becf586b21fe368c860938"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "public-key-certificate"
+			},
+			"start": 190,
+			"end": 213,
+			"text": "public-key certificates",
+			"criterion": "emphasis"
+		}
+	]
+}

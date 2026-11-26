@@ -1,0 +1,216 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "allowlist",
+	"headingTranslation": {
+		"text": "許可リスト",
+		"sourceHash": "bcd475104a873a42ffaaed1aca9434981ce857adba97ebec4adc9e74e4d852f4"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A documented list of specific elements that are allowed, per policy decision. In "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " contexts, this is most commonly used to refer to the list of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RPs"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that are allowed to connect to an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " without "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " intervention. This concept has historically been known as a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "whitelist"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "ポリシーに基づく決定によって許可される特定の要素を記載したリスト。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の文脈では、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の介在なしに "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " への接続を許可される "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のリストを指すのに最もよく使われる。この概念は、従来は"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ホワイトリスト"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と呼ばれていた。"
+							}
+						]
+					}
+				],
+				"sourceHash": "38bc9e2f1892a926d2f83ba5c2d974a1a5f8effbbd9162daebc254701b8a8e89"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "federation"
+			},
+			"start": 81,
+			"end": 91,
+			"text": "federation",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "relying-party-rp"
+			},
+			"start": 153,
+			"end": 156,
+			"text": "RPs",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 191,
+			"end": 194,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 203,
+			"end": 213,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}

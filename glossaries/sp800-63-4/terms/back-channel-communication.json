@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "back-channel communication",
+	"headingTranslation": {
+		"text": "バックチャネル通信",
+		"sourceHash": "12fe56c8bfd0f26258ba435d7f7986e015862512f2c6f7d5db8a047f91d464bc"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Communication between two systems that relies on a direct connection without using redirects through an intermediary, such as a browser."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "ブラウザーなどの仲介者を経由するリダイレクトを使わず、直接の接続に依存する 2 つのシステム間の通信。"
+							}
+						]
+					}
+				],
+				"sourceHash": "919025ce78743587e9d4240da18f81f6d4eff02c6455c765b8bd588d71b9e7bd"
+			}
+		}
+	],
+	"references": []
+}

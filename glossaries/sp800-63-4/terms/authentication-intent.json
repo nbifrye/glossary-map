@@ -1,0 +1,227 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authentication intent",
+	"headingTranslation": {
+		"text": "authentication intent",
+		"sourceHash": "3b1959abd8f9110e824fb1cdf45ad7c625845e485537396dc277a63a17e566b1"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process of confirming the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant’s"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " intent to "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticate"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or reauthenticate by requiring user intervention in the authentication flow. Some "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticators"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " (e.g., OTPs) establish authentication intent as part of their operation. Others require a specific step to establish intent, such as pressing a button. Authentication intent is a countermeasure against malware at the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "endpoint"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " as a proxy for authenticating an attacker without the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "’s knowledge."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "認証の流れの中で利用者の操作を求めることで、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "claimant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "または再認証する意図を確認するプロセス。一部の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (例: OTP) は、その動作の一部として authentication intent を確立する。それ以外の認証器では、ボタンを押すなどの特定の手順で意図を確立する必要がある。authentication intent は、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "エンドポイント"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "上のマルウェアが、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に知られずに攻撃者を認証させる代理として働くことへの対策である。"
+							}
+						]
+					}
+				],
+				"sourceHash": "08e56674146b061829e355b5edec63df09b53c256511249f640df21f7f6f8b31"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "claimant"
+			},
+			"start": 30,
+			"end": 40,
+			"text": "claimant’s",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticate"
+			},
+			"start": 51,
+			"end": 63,
+			"text": "authenticate",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 146,
+			"end": 160,
+			"text": "authenticators",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "endpoint"
+			},
+			"start": 378,
+			"end": 386,
+			"text": "endpoint",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 441,
+			"end": 451,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}

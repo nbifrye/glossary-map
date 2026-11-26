@@ -1,0 +1,214 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authenticated protected channel",
+	"headingTranslation": {
+		"text": "認証された保護チャネル",
+		"sourceHash": "fae5d7e04983e04d8fbf783045f0c8cc16a0609d5c4db53f47c15c457231f194"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An encrypted communication channel that uses "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "approved cryptography"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in which the connection initiator (client) has "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticated"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " the recipient (server). Authenticated protected channels are encrypted to provide confidentiality and protection against active intermediaries and are frequently used in the user "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " process. "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "Transport Layer Security"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " (TLS) and Datagram Transport Layer Security (DTLS) "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63/references/#ref-RFC9325",
+							"children": [
+								{
+									"type": "text",
+									"value": "[RFC9325]"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " are examples of authenticated protected channels in which the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the server to authenticate the client. Authentication of the server is often accomplished through a certificate chain that leads to a trusted root rather than individually with each server."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "承認された暗号技術"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を使い、接続の開始側 (クライアント) が受信側 (サーバー) を"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "している、暗号化された通信チャネル。認証された保護チャネルは、機密性を確保し、能動的な仲介者から保護するために暗号化されており、利用者の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "プロセスでよく使われる。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "トランスポート層セキュリティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (TLS) と Datagram Transport Layer Security (DTLS) "
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63/references/#ref-RFC9325",
+								"children": [
+									{
+										"type": "text",
+										"value": "[RFC9325]"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " は、受信側が提示した証明書を開始側が検証する、認証された保護チャネルの例である。特に指定がない限り、認証された保護チャネルでは、サーバーがクライアントを認証する必要はない。サーバーの認証は、サーバーごとに個別に行うのではなく、信頼されたルートにつながる証明書チェーンによって行われることが多い。"
+							}
+						]
+					}
+				],
+				"sourceHash": "c9062dd99215e60ed0ece2eb21d378bbacf80a9a3bce4466f3177856beb58341"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "approved-cryptography"
+			},
+			"start": 45,
+			"end": 66,
+			"text": "approved cryptography",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticate"
+			},
+			"start": 114,
+			"end": 127,
+			"text": "authenticated",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authentication"
+			},
+			"start": 307,
+			"end": 321,
+			"text": "authentication",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "transport-layer-security-tls"
+			},
+			"start": 331,
+			"end": 355,
+			"text": "Transport Layer Security",
+			"criterion": "emphasis"
+		}
+	]
+}

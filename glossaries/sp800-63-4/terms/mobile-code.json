@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "mobile code",
+	"headingTranslation": {
+		"text": "モバイルコード",
+		"sourceHash": "62a95713f29e55951ea35283c0f0147c0c7704c8ae8ce9a2b31772241e9f3ef8"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Executable code that is normally transferred from its source to another computer system for execution. This transfer is often through the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "network"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " (e.g., JavaScript embedded in a web page) but may transfer through physical media as well."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "通常、元の場所から別のコンピューターシステムに転送されて実行される実行可能コード。この転送は"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ネットワーク"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を通じて行われることが多い (例: ウェブページに埋め込まれた JavaScript) が、物理的な媒体を通じて行われることもある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "08bf47c3747e3c3997ff17ff69305a2eb4b71407804b21dffd0c2d66eec28b26"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "network"
+			},
+			"start": 138,
+			"end": 145,
+			"text": "network",
+			"criterion": "emphasis"
+		}
+	]
+}

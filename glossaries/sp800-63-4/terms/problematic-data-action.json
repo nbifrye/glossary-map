@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "problematic data action",
+	"headingTranslation": {
+		"text": "problematic data action",
+		"sourceHash": "be7ed57d578de9a77e212c11306a5c9db55a11e6946a267e762fa84fd865bd6a"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A data action that could cause an adverse effect for individuals."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "個人に悪影響を及ぼすおそれのあるデータアクション。"
+							}
+						]
+					}
+				],
+				"sourceHash": "10b8d4ac1c820a4c00858730643ed056f0a84fe41b102bc45d3a1d681d54da5b"
+			}
+		}
+	],
+	"references": []
+}

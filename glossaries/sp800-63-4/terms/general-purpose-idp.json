@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "general-purpose IdP",
+	"headingTranslation": {
+		"text": "汎用 IdP",
+		"sourceHash": "65297dbaa8c899641db26aea6ab15cd8109fc58fa79f6a1357a6da135747cffe"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that is housed and executed separately from a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "’s device (e.g., a remote service). Often, a general-purpose IdP will be capable of representing multiple subscribers."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の機器とは別の場所に置かれ、実行される "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " (例: リモートのサービス)。汎用 IdP は、複数の subscriber を表せることが多い。"
+							}
+						]
+					}
+				],
+				"sourceHash": "8e26501dddd69746c17315f0975f3c6eeb89f1d7e8372a039a1cb4efc67e4c7e"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 3,
+			"end": 6,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "subscriber"
+			},
+			"start": 53,
+			"end": 63,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}

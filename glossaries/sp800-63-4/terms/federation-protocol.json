@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "federation protocol",
+	"headingTranslation": {
+		"text": "フェデレーションプロトコル",
+		"sourceHash": "1e16679fe8db419d731d2433afb1e1c1100f45729b192d4f0866e044e433f710"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A technical protocol that is used in a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation transaction"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " between "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "networked"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " systems."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ネットワークでつながった"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "システムの間の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーショントランザクション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "で使われる技術的なプロトコル。"
+							}
+						]
+					}
+				],
+				"sourceHash": "46f9ca098bb621656eb1c6a286a382104ccea89938b859836ef5a48cca0640cc"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "federation-transaction"
+			},
+			"start": 39,
+			"end": 61,
+			"text": "federation transaction",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "network"
+			},
+			"start": 70,
+			"end": 79,
+			"text": "networked",
+			"criterion": "emphasis"
+		}
+	]
+}

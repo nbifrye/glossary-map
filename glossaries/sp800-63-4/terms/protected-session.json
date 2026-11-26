@@ -1,0 +1,216 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "protected session",
+	"headingTranslation": {
+		"text": "保護されたセッション",
+		"sourceHash": "b52582d49a53862e4330f5a7442ca47bb9b1fa2d9677fdec0d3a5c52103b1b73"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "session"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in which messages between two participants are encrypted and integrity is protected using a set of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "shared secrets"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " called “session keys.” A protected session is said to be "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticated"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " if one participant proves possession of one or more "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticators"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in addition to the session keys and if the other party can verify the identity associated with the authenticators during the session. If both participants are authenticated, the protected session is said to be "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "mutually authenticated"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "2 つの参加者の間のメッセージが、「セッション鍵」と呼ばれる一連の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "共有シークレット"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を使って暗号化され、完全性が保護される"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "セッション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。一方の参加者がセッション鍵に加えて 1 つ以上の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の所持を証明し、もう一方の当事者がその認証器に関連付けられたアイデンティティをセッション中に検証できる場合、その保護されたセッションは"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証されている"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "という。両方の参加者が認証されている場合、その保護されたセッションは"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "相互に認証されている"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "という。"
+							}
+						]
+					}
+				],
+				"sourceHash": "86dab78082de8ee4b6683d57f33b288b6447238686c6b78574145ba0c47000c6"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "session"
+			},
+			"start": 2,
+			"end": 9,
+			"text": "session",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "shared-secret"
+			},
+			"start": 109,
+			"end": 123,
+			"text": "shared secrets",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticate"
+			},
+			"start": 181,
+			"end": 194,
+			"text": "authenticated",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "authenticator"
+			},
+			"start": 247,
+			"end": 261,
+			"text": "authenticators",
+			"criterion": "emphasis"
+		}
+	]
+}

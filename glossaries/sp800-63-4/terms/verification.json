@@ -1,0 +1,186 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "verification",
+	"headingTranslation": {
+		"text": "検証",
+		"sourceHash": "4183b7793fd28ba47ea9e79e7697f2915da218567e6657a158b51bd14bce91cd"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process or act of confirming that the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "applicant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " undergoing "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity proofing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " holds the claimed real-life identity represented by the validated identity "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attributes"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and associated evidence. Synonymous with "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity verification"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "身元確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を受けている "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "applicant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が、妥当性確認されたアイデンティティの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と関連する証拠が表す、主張された実在のアイデンティティを持つ者であることを確認するプロセスまたは行為。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アイデンティティの検証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と同義である。"
+							}
+						]
+					}
+				],
+				"sourceHash": "c6585f5ee8e6b5ed74c4d7b79413bca7e8bb9ab761c5112279afa4946f3d433a"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "applicant"
+			},
+			"start": 42,
+			"end": 51,
+			"text": "applicant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-proofing"
+			},
+			"start": 63,
+			"end": 80,
+			"text": "identity proofing",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "attribute"
+			},
+			"start": 156,
+			"end": 166,
+			"text": "attributes",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identity-verification"
+			},
+			"start": 208,
+			"end": 229,
+			"text": "identity verification",
+			"criterion": "emphasis"
+		}
+	]
+}

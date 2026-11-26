@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "system of record (SOR)",
+	"headingTranslation": {
+		"text": "system of record (SOR)",
+		"sourceHash": "93e8787b2eb507b8859d5f780daf39e7c82da82aeef3311586ac39326e7ceb14"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A collection of records that contain information about individuals and are under the control of an agency. The records can be retrieved by the individual’s name, an identifying number, a symbol, or other "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "個人に関する情報を含み、機関の管理下にある記録の集まり。記録は、個人の氏名・識別番号・記号・その他の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "識別子"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "によって検索できる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "7bddd2bed8ac8aeb4e5293f60fa16f61799581b441b5a7b9c46646251b4a02ba"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63-4",
+				"term": "identifier"
+			},
+			"start": 204,
+			"end": 214,
+			"text": "identifier",
+			"criterion": "emphasis"
+		}
+	]
+}

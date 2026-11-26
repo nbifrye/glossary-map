@@ -1,0 +1,93 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "entropy",
+	"headingTranslation": {
+		"text": "エントロピー",
+		"sourceHash": "67671a2f53dd910a8b35840edb6a0a1e751ae5532178ca7f025b823eee317992"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63.html#def"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The amount of uncertainty that an attacker faces to determine the value of a secret. Entropy is usually stated in bits. A value with "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "n"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " bits of entropy has the same degree of uncertainty as a uniformly distributed "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "n"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "-bit random value."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "攻撃者がシークレットの値を特定する際に直面する不確実性の量。エントロピーは、通常はビット数で表す。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "n"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " ビットのエントロピーを持つ値は、一様に分布した "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "n"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " ビットの乱数と同じ程度の不確実性を持つ。"
+							}
+						]
+					}
+				],
+				"sourceHash": "24b4fe37762c2a5cbc6e69e1a403bfc860f6e3c4bfc9ae0d506e81d595760c7b"
+			}
+		}
+	],
+	"references": []
+}
