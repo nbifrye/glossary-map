@@ -39,7 +39,7 @@ test("参照先と参照元を、根拠とともに確認できる", async ({ pa
 		page.getByRole("heading", { name: "参照元 (1 語)" }),
 	).toBeVisible();
 	await expect(
-		page.getByText("「hash function」 (26〜38 文字目、基準: emphasis)"),
+		page.getByText("「hash function」 (26 〜 38 文字目、基準: emphasis)"),
 	).toBeVisible();
 	await page
 		.getByRole("link", { name: "authenticated protected channel" })

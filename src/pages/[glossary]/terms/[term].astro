@@ -66,7 +66,7 @@ const incoming = Map.groupBy(
 
 /** 根拠の位置。参照元の用語に定義が複数ある場合は、定義の番号も示す */
 const evidence = (reference: Reference, source: SiteTerm) =>
-	`${source.term.definitions.length > 1 ? `定義 ${reference.definition + 1} の ` : ""}${reference.start + 1}〜${reference.end} 文字目`;
+	`${source.term.definitions.length > 1 ? `定義 ${reference.definition + 1} の ` : ""}${reference.start + 1} 〜 ${reference.end} 文字目`;
 const criterionHref = (id: string) =>
 	`${glossaryPath(glossaryId)}#criterion-${id}`;
 ---
