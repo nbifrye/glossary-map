@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "account recovery",
+	"headingTranslation": {
+		"text": "アカウントリカバリー",
+		"sourceHash": "1aae255a275212a119d007ada723fa5458180591ffdc300d7171275ac42c16b5"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The ability to regain ownership of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber account"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and its associated information and privileges."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber account"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " と、それに関連する情報と権限の所有権を取り戻す能力。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a4a5c5d5ddc15bd4f266583aaeddcb17423ace34f00369cb118f77e89bf9f4a3"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subscriber-account"
+			},
+			"start": 37,
+			"end": 55,
+			"text": "subscriber account",
+			"criterion": "emphasis"
+		}
+	]
+}

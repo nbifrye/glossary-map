@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "offline attack",
+	"headingTranslation": {
+		"text": "オフライン攻撃",
+		"sourceHash": "496fb8e73c485e1d9ec1bf4d2a4069023fc2b89dd4cd1b53189c72d0f4e65de5"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack in which the attacker obtains some data (e.g., by eavesdropping on an authentication transaction or by penetrating a system and stealing security files) that the attacker is able to analyze in a system of their own choosing."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "攻撃者が何らかのデータを入手し (例: 認証のトランザクションを盗聴する、またはシステムに侵入してセキュリティに関するファイルを盗む)、自ら選んだシステムで分析できる攻撃。"
+							}
+						]
+					}
+				],
+				"sourceHash": "3a9206dde6ecf96f7aeada4d2aa3f8b28933e00a9ab016dab13646d16996b5c8"
+			}
+		}
+	],
+	"references": []
+}

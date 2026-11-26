@@ -1,0 +1,223 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "phishing resistance",
+	"headingTranslation": {
+		"text": "フィッシング耐性",
+		"sourceHash": "5ea8a6386a5bd727004a62586538f32e86a57bf154056d00c4f4307e023a5ee6"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The ability of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication protocol"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to prevent the disclosure of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication secrets"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and valid "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " outputs to an impostor "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " without reliance on the vigilance of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "claimant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の注意深さに頼ることなく、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証シークレット"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と有効な"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の出力が偽の "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "verifier"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に開示されることを防ぐ、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証プロトコル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の能力。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a37e2b1854a9e1540cda6ba74087aeb06fe4bdac36403613995e00f1463653e9"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication-protocol"
+			},
+			"start": 19,
+			"end": 42,
+			"text": "authentication protocol",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication-secret"
+			},
+			"start": 72,
+			"end": 94,
+			"text": "authentication secrets",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 105,
+			"end": 118,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "verifier"
+			},
+			"start": 142,
+			"end": 150,
+			"text": "verifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "claimant"
+			},
+			"start": 192,
+			"end": 200,
+			"text": "claimant",
+			"criterion": "emphasis"
+		}
+	]
+}

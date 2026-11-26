@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "phishing",
+	"headingTranslation": {
+		"text": "フィッシング",
+		"sourceHash": "2ce4ce947f548d483889bf6b6c4731ebd50a8f8e48fc7b84373c5cc4cf1d35b3"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack in which the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " is lured (usually through an email) to interact with a counterfeit "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "/"
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and tricked into revealing information that can be used to masquerade as that subscriber to the real verifier/RP."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が (通常は電子メールで) 誘い出されて偽の "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "verifier"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "/"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " とやり取りし、本物の verifier/RP に対してその subscriber になりすますために使える情報を明かすようにだまされる攻撃。"
+							}
+						]
+					}
+				],
+				"sourceHash": "922f26d11a689ac17f5a8963f85c96eb9c70ddd7966bcd7ee050e83978bb97f2"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subscriber"
+			},
+			"start": 23,
+			"end": 33,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "verifier"
+			},
+			"start": 101,
+			"end": 109,
+			"text": "verifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "relying-party-rp"
+			},
+			"start": 110,
+			"end": 112,
+			"text": "RP",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "restricted authenticator",
+	"headingTranslation": {
+		"text": "制限付き認証器",
+		"sourceHash": "288ac8ed442ba33bd2f4be44181f6d0547cc1568213417012b82b6179ac35f04"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " type, class, or instantiation that has additional risk of false acceptance associated with its use and is therefore subject to additional requirements."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "使用に伴う誤受け入れのリスクが高いために、追加の要件の対象となる"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の種類・クラス・インスタンス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "347803c4fa94ba4b90edb0b346fad96c4609ff629d22a61ae1fd26135c1f7f05"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 3,
+			"end": 16,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		}
+	]
+}

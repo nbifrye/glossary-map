@@ -1,0 +1,297 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authenticator",
+	"headingTranslation": {
+		"text": "認証器",
+		"sourceHash": "21c9fca2dceaa54532d8f24fc52960ece739bdc177781dba570998576fe08a52"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Something that the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " possesses and controls (e.g., a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "cryptographic module"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "password"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ") and that is used to "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticate"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant’s"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " identity. See "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator type"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "multi-factor authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が所持し管理するもの (例: "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "暗号モジュール"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "や"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "パスワード"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": ") で、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "claimant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のアイデンティティを"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "するために使われるもの。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器の種類"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "多要素認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "b2be2011943aed97619a4640d98c679b2e1ca3da6c1ad901d24498df6d85fd93"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subscriber"
+			},
+			"start": 19,
+			"end": 29,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "cryptographic-module"
+			},
+			"start": 62,
+			"end": 82,
+			"text": "cryptographic module",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "password"
+			},
+			"start": 86,
+			"end": 94,
+			"text": "password",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticate"
+			},
+			"start": 116,
+			"end": 128,
+			"text": "authenticate",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "claimant"
+			},
+			"start": 131,
+			"end": 141,
+			"text": "claimant’s",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator-type"
+			},
+			"start": 156,
+			"end": 174,
+			"text": "authenticator type",
+			"criterion": "see"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "multi-factor-authenticator"
+			},
+			"start": 179,
+			"end": 205,
+			"text": "multi-factor authenticator",
+			"criterion": "see"
+		}
+	]
+}

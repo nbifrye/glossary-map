@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "pseudonym",
+	"headingTranslation": {
+		"text": "仮名",
+		"sourceHash": "70a011a20493ce402b5bdebba2018072d839215ea745789a5a14f11c71726783"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A name other than a legal name."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "法的な氏名以外の名前。"
+							}
+						]
+					}
+				],
+				"sourceHash": "e2b360b4f9e613b22eb140841f69ade0778cd4e7569e541c10d772a576d4af42"
+			}
+		}
+	],
+	"references": []
+}

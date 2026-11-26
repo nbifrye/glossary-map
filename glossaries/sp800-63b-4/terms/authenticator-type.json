@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authenticator type",
+	"headingTranslation": {
+		"text": "認証器の種類",
+		"sourceHash": "5a2cb452ee750370960e66f5a3e0155443b5d52ad779a2e67a45daa59f55d5e1"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A category of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticators"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " with common characteristics, such as the types of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication factors"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " they provide and the mechanisms by which they operate."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "提供する"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証要素"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の種類や動作の仕組みなど、共通の特性を持つ"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の区分。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a9763f5916a50a5716d2d7b83a5cfa50b7dddb25b0cdacd565000cb4a2bc4faa"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 14,
+			"end": 28,
+			"text": "authenticators",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication-factor"
+			},
+			"start": 79,
+			"end": 101,
+			"text": "authentication factors",
+			"criterion": "emphasis"
+		}
+	]
+}

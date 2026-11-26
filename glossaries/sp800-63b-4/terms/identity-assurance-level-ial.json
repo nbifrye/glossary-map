@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "identity assurance level (IAL)",
+	"headingTranslation": {
+		"text": "身元保証レベル (IAL)",
+		"sourceHash": "63f3b17cd2acd8c9cd608c05cc0a60c5f18ac3092106147249528741b82955bc"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A category that conveys the degree of confidence that the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subject"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "’s "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimed identity"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " is their real identity."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subject"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "主張されたアイデンティティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "が本当のアイデンティティであることの確信の度合いを示す区分。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a1c9ac35a3d9fcde18b69ac861f63335f80290d8762a10623f72bafad79aa0fa"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subject"
+			},
+			"start": 58,
+			"end": 65,
+			"text": "subject",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "claimed-identity"
+			},
+			"start": 68,
+			"end": 84,
+			"text": "claimed identity",
+			"criterion": "emphasis"
+		}
+	]
+}

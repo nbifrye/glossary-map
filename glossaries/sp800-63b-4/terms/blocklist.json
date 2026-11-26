@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "blocklist",
+	"headingTranslation": {
+		"text": "拒否リスト",
+		"sourceHash": "8e7f7b6938c53365a8f3c1a9c781fe405c5045a2a976f7c44c650df74df42c06"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A documented list of specific elements that are blocked, per policy decision. This concept has historically been known as a “blacklist.”"
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "ポリシーに基づく決定によって拒否される特定の要素を記載したリスト。この概念は、従来は「ブラックリスト」と呼ばれていた。"
+							}
+						]
+					}
+				],
+				"sourceHash": "692c7849a2c83739754f0814b561ed912ea3544257a432e6b2aefd65d730c0bd"
+			}
+		}
+	],
+	"references": []
+}

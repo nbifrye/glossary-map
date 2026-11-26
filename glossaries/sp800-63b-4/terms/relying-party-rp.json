@@ -1,0 +1,153 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "relying party (RP)",
+	"headingTranslation": {
+		"text": "依拠当事者 (RP)",
+		"sourceHash": "cd6d20b3c7ae3ca918043a9f9e724ce61426d120f231aad4defb948ed72d9d5a"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An entity that relies on a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "’s "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertion"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "’s identity, typically to process a transaction or grant access to information or a system."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "通常はトランザクションを処理したり、情報やシステムへのアクセスを許可したりするために、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のアイデンティティに関する "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "verifier"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に依拠する組織。"
+							}
+						]
+					}
+				],
+				"sourceHash": "7fe3018cdc308fcdb3be1d8c4c0bc4f46da319015eefb940e390629391dbc4a0"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "verifier"
+			},
+			"start": 27,
+			"end": 35,
+			"text": "verifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "assertion"
+			},
+			"start": 38,
+			"end": 47,
+			"text": "assertion",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subscriber"
+			},
+			"start": 53,
+			"end": 63,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}

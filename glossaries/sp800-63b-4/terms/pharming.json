@@ -1,0 +1,153 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "pharming",
+	"headingTranslation": {
+		"text": "ファーミング",
+		"sourceHash": "2c4f2616dbb3d4aaecf27ac56df204e0e7592d836788a479e7cc783957e89021"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack in which an attacker causes the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to be redirected to a fraudulent website, typically a fraudulent "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "/"
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in the context of authentication. This could cause the subscriber to reveal sensitive information (e.g., a password) to the attacker, download harmful software, or contribute to a fraudulent act. This may be accomplished by corrupting an infrastructure service (e.g., the DNS) or the subscriber’s endpoint."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "攻撃者が、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を不正なウェブサイト、典型的には認証の文脈における不正な "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "verifier"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "/"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " にリダイレクトさせる攻撃。これにより、subscriber が攻撃者に機密情報 (例: パスワード) を明かしたり、有害なソフトウェアをダウンロードしたり、不正な行為に加担したりするおそれがある。これは、インフラストラクチャーのサービス (例: DNS) や subscriber のエンドポイントを改ざんすることで実行される場合がある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "9898320218825b13d3730ecfc0674e7c106d3f773d6aef9205a3cb08248fd41b"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "subscriber"
+			},
+			"start": 42,
+			"end": 52,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "verifier"
+			},
+			"start": 118,
+			"end": 126,
+			"text": "verifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "relying-party-rp"
+			},
+			"start": 127,
+			"end": 129,
+			"text": "RP",
+			"criterion": "emphasis"
+		}
+	]
+}

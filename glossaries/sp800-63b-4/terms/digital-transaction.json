@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "digital transaction",
+	"headingTranslation": {
+		"text": "デジタルトランザクション",
+		"sourceHash": "5c71699e4b792ee041ed0ba4a898aa5d526b9e21d86adb19652aa48f2abcfcd2"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A discrete digital event between a user and a system that supports a business or programmatic purpose."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "業務上またはプログラム上の目的を支える、利用者とシステムの間の個別のデジタルなイベント。"
+							}
+						]
+					}
+				],
+				"sourceHash": "cca2cbb04486463706f20e1aa9d6447eb267ab3a2fc38545a537584588bc38ee"
+			}
+		}
+	],
+	"references": []
+}

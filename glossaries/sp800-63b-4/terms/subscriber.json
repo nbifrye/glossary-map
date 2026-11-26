@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "subscriber",
+	"headingTranslation": {
+		"text": "subscriber",
+		"sourceHash": "1f62becb1363bc86f7c3bf1f35196457b2d01ba085946a374854b4727f98df29"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An individual enrolled in the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " identity service."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のアイデンティティサービスに登録された個人。"
+							}
+						]
+					}
+				],
+				"sourceHash": "4281092a62e79e77bab9db9038b70114445fedfcd9463125c675c8b4c1138fdf"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 30,
+			"end": 33,
+			"text": "CSP",
+			"criterion": "emphasis"
+		}
+	]
+}

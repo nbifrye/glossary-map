@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "passphrase",
+	"headingTranslation": {
+		"text": "パスフレーズ",
+		"sourceHash": "1e089e3c5323ad80a90767bdd5907297b4138163f027097fd3bdbeab528d2d68"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "password"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that consists of a sequence of words or other text that a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " uses to "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticate"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " their identity. A passphrase is similar to a password in usage but is generally longer for added security."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "claimant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が自らのアイデンティティを"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "するために使う、単語の並びやその他のテキストから成る"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "パスワード"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。パスフレーズは、使い方はパスワードと似ているが、セキュリティを高めるために一般にパスワードより長い。"
+							}
+						]
+					}
+				],
+				"sourceHash": "96c8b4cbc83fb729818dce87f9321e941ca3a49e6a26c907d2d0b2be8f2390ba"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "password"
+			},
+			"start": 2,
+			"end": 10,
+			"text": "password",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "claimant"
+			},
+			"start": 69,
+			"end": 77,
+			"text": "claimant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticate"
+			},
+			"start": 86,
+			"end": 98,
+			"text": "authenticate",
+			"criterion": "emphasis"
+		}
+	]
+}

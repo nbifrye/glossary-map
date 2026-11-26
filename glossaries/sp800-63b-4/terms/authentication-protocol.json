@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authentication protocol",
+	"headingTranslation": {
+		"text": "認証プロトコル",
+		"sourceHash": "30d624c372ed223c9509bcce21b3e15e0db7318dc2caa010e9669e255a6a89d5"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A defined sequence of messages between a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that demonstrates that the claimant has possession and control of one or more valid "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticators"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to establish their identity and, optionally, demonstrates that the claimant is communicating with the intended verifier."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "claimant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " と "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "verifier"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の間で交わされる定められた一連のメッセージ。claimant が有効な 1 つ以上の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を所持し管理していることを示してアイデンティティを確立し、任意で、claimant が意図した verifier と通信していることを示す。"
+							}
+						]
+					}
+				],
+				"sourceHash": "7c8284fcd75d942dc34f09ae6bd05332c26a17c95059406f0dab1ed73798a2c2"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "claimant"
+			},
+			"start": 41,
+			"end": 49,
+			"text": "claimant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "verifier"
+			},
+			"start": 56,
+			"end": 64,
+			"text": "verifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authenticator"
+			},
+			"start": 149,
+			"end": 163,
+			"text": "authenticators",
+			"criterion": "emphasis"
+		}
+	]
+}

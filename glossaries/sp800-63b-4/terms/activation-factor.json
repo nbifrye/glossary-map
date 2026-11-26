@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "activation factor",
+	"headingTranslation": {
+		"text": "アクティベーション要素",
+		"sourceHash": "78e4d97fd9a85c0bdc6b2495fe9663fd6055b15f8e2df3eb7ec4bda7fa08ad68"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An additional "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication factor"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that is used to enable successful "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " with a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "multi-factor authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "多要素認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "による"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を成功させるために使われる、追加の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証要素"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。"
+							}
+						]
+					}
+				],
+				"sourceHash": "0d0f46a09d63cddb70169d4b4b3fd425c50cc3b2adeaba8bde8ef6846441ef85"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication-factor"
+			},
+			"start": 14,
+			"end": 35,
+			"text": "authentication factor",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "authentication"
+			},
+			"start": 70,
+			"end": 84,
+			"text": "authentication",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "multi-factor-authenticator"
+			},
+			"start": 92,
+			"end": 118,
+			"text": "multi-factor authenticator",
+			"criterion": "emphasis"
+		}
+	]
+}

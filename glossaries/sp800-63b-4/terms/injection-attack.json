@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "injection attack",
+	"headingTranslation": {
+		"text": "インジェクション攻撃",
+		"sourceHash": "6a0434d2d411ba2cc2abe3c0e813f5b1043bef28bc01ce79dcedffe2d109f132"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack in which an attacker supplies untrusted "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "biometric"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " information or media into a program or process. For example, this could include injecting a falsified image of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity evidence"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", a forged video of a user, or a morphed image to defeat evidence validation technology or biometric and visual comparisons for user verification."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "攻撃者が、信頼できない"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "生体"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "情報やメディアをプログラムやプロセスに与える攻撃。たとえば、証拠の妥当性確認の技術や、利用者の検証のための生体照合や目視の照合を破るために、偽造された "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "identity evidence"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の画像・偽造された利用者の動画・モーフィングされた画像を注入することが含まれる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "f0a9eee644ec745dd6ca40d54d2a695324c8a1a7939b23b86185e6e2041c36d3"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "biometrics"
+			},
+			"start": 50,
+			"end": 59,
+			"text": "biometric",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "identity-evidence"
+			},
+			"start": 171,
+			"end": 188,
+			"text": "identity evidence",
+			"criterion": "emphasis"
+		}
+	]
+}

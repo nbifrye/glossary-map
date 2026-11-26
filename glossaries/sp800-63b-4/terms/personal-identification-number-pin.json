@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "personal identification number (PIN)",
+	"headingTranslation": {
+		"text": "個人識別番号 (PIN)",
+		"sourceHash": "471e6b95daf29e2893a9abdf9241f125d2abe4241119694ee23c4f30343e1a51"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63b.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "password"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that typically consists of only decimal digits."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "通常、10 進数の数字だけから成る"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "パスワード"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。"
+							}
+						]
+					}
+				],
+				"sourceHash": "066a8d90589233832609248477d6cfd9c66ed6293647c5811e4fa5171e3a28b1"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63b-4",
+				"term": "password"
+			},
+			"start": 2,
+			"end": 10,
+			"text": "password",
+			"criterion": "emphasis"
+		}
+	]
+}
