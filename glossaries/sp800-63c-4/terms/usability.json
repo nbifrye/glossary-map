@@ -1,0 +1,61 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "usability",
+	"headingTranslation": {
+		"text": "ユーザビリティ",
+		"sourceHash": "b33edbd4fa3116ad21c6b0dfc8401ba5e60507905a2d5d58e56b3bb885fff341"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use. "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-ISOIEC9241",
+							"children": [
+								{
+									"type": "text",
+									"value": "[ISO/IEC9241-11]"
+								}
+							]
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "特定の利用の状況において、特定の利用者が、特定の目標を有効さ・効率・満足度をもって達成するために、製品を使える度合い。"
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-ISOIEC9241",
+								"children": [
+									{
+										"type": "text",
+										"value": "[ISO/IEC9241-11]"
+									}
+								]
+							}
+						]
+					}
+				],
+				"sourceHash": "f26a843847d0a6abbe47d66f5fbe6542a444a9dfd274e12648352ef40caf4a85"
+			}
+		}
+	],
+	"references": []
+}

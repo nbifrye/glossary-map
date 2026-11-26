@@ -1,0 +1,190 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authenticator binding",
+	"headingTranslation": {
+		"text": "認証器のバインディング",
+		"sourceHash": "2164cc95971594f942d21cf90619b22c53813f8307d00cb5124efd033b39590d"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The establishment of an association between a specific "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber account"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that allows the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticator"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to authenticate the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " associated with the account, possibly in conjunction with other authenticators."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "特定の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber account"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の間に関連付けを確立すること。これにより、場合によってはほかの認証器と組み合わせて、その"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証器"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "でアカウントに関連付けられた "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を認証できるようになる。"
+							}
+						]
+					}
+				],
+				"sourceHash": "d630de8b5d317dd83ddbfe7bfe867b7fd24fe3bc448e44a42b53bc86f92e691e"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "authenticator"
+			},
+			"start": 55,
+			"end": 68,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber-account"
+			},
+			"start": 75,
+			"end": 93,
+			"text": "subscriber account",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "authenticator"
+			},
+			"start": 110,
+			"end": 123,
+			"text": "authenticator",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 144,
+			"end": 154,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}

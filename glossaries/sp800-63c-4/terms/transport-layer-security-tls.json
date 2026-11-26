@@ -1,0 +1,97 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "Transport Layer Security (TLS)",
+	"headingTranslation": {
+		"text": "トランスポート層セキュリティ (TLS)",
+		"sourceHash": "9507d4ac72d66333e672b706dec4d4c278150753852ba3bb607554dc9bfb64f9"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An authentication and security protocol that is widely implemented in browsers and web servers. TLS provides confidentiality, certificate-based authentication of the receiving (server) endpoint, and certificate-based authentication of the originating (client) endpoint. TLS is specified in "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-RFC8446",
+							"children": [
+								{
+									"type": "text",
+									"value": "[RFC8446]"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-SP800-52",
+							"children": [
+								{
+									"type": "text",
+									"value": "[SP800-52]"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "ブラウザーとウェブサーバーで広く実装されている、認証とセキュリティのためのプロトコル。TLS は、機密性と、受信側 (サーバー) のエンドポイントの証明書による認証と、発信側 (クライアント) のエンドポイントの証明書による認証を提供する。TLS は "
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-RFC8446",
+								"children": [
+									{
+										"type": "text",
+										"value": "[RFC8446]"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " と "
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-SP800-52",
+								"children": [
+									{
+										"type": "text",
+										"value": "[SP800-52]"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " で規定されている。"
+							}
+						]
+					}
+				],
+				"sourceHash": "f1e4c197d7dc0285e0b715bffa8a87336aa74687dc7c4b3d81a6d8795168eb54"
+			}
+		}
+	],
+	"references": []
+}

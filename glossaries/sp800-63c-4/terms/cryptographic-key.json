@@ -1,0 +1,144 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "cryptographic key",
+	"headingTranslation": {
+		"text": "暗号鍵",
+		"sourceHash": "c98956f559f317f9d46b51be17ca96c2b69d046803f1e0409e82f1a5da33ce2d"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A value used to control cryptographic operations, such as decryption, encryption, signature generation, or signature verification. For the purposes of these guidelines, key requirements shall meet the minimum requirements stated in Table 2 of "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-SP800-57P1",
+							"children": [
+								{
+									"type": "text",
+									"value": "[SP800-57Part1]"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". See "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "asymmetric keys"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "symmetric keys"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "復号・暗号化・署名の生成・署名の検証などの暗号の操作を制御するために使われる値。このガイドラインにおいて、鍵に関する要件は "
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-SP800-57P1",
+								"children": [
+									{
+										"type": "text",
+										"value": "[SP800-57Part1]"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の表 2 に記載された最低限の要件を満たさなければならない。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "非対称鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "または"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "対称鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "f30bc8c78548f4dfd3ae8632ec6f32605e153cc0257f62dac9c19158fb77d18b"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "asymmetric-keys"
+			},
+			"start": 264,
+			"end": 279,
+			"text": "asymmetric keys",
+			"criterion": "see"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "symmetric-key"
+			},
+			"start": 283,
+			"end": 297,
+			"text": "symmetric keys",
+			"criterion": "see"
+		}
+	]
+}

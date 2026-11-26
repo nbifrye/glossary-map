@@ -1,0 +1,136 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "disassociability",
+	"headingTranslation": {
+		"text": "分離可能性",
+		"sourceHash": "49d28c0c80268f3f8080bc34f6f42a82892f8ef9c6232a86caa07f16d5299497"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Enabling the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "processing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "personal information"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or events without association to individuals or devices beyond the operational requirements of the system. "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-NISTIR8062",
+							"children": [
+								{
+									"type": "text",
+									"value": "[NISTIR8062]"
+								}
+							]
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "システムの運用上の要件を超えて個人やデバイスと関連付けることなく、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "個人情報"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "やイベントの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "処理"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を行えるようにすること。"
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-NISTIR8062",
+								"children": [
+									{
+										"type": "text",
+										"value": "[NISTIR8062]"
+									}
+								]
+							}
+						]
+					}
+				],
+				"sourceHash": "47d7dedddc4a280141ea8d935eca29771deaf2737afa46300c528b18acf10934"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "processing"
+			},
+			"start": 13,
+			"end": 23,
+			"text": "processing",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "personal-information"
+			},
+			"start": 27,
+			"end": 47,
+			"text": "personal information",
+			"criterion": "emphasis"
+		}
+	]
+}

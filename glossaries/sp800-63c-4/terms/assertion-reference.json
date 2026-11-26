@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "assertion reference",
+	"headingTranslation": {
+		"text": "アサーション参照",
+		"sourceHash": "dc6e0430e574046d6b0c88d0aa38a5877e65ed1c522a2c9199ca282a41d8d128"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A data object that is created in conjunction with an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertion"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and used by the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to retrieve an assertion over an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticated protected channel"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "とともに作成され、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証された保護チャネル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を通じてアサーションを取得するために使うデータオブジェクト。"
+							}
+						]
+					}
+				],
+				"sourceHash": "1720e7fe2898bcb008500018750766121048a9eb715adccd05ecafcb75db7278"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "assertion"
+			},
+			"start": 53,
+			"end": 62,
+			"text": "assertion",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 79,
+			"end": 81,
+			"text": "RP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "authenticated-protected-channel"
+			},
+			"start": 115,
+			"end": 146,
+			"text": "authenticated protected channel",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authenticate",
+	"headingTranslation": {
+		"text": "認証する",
+		"sourceHash": "20dc65af899cb0b5bc44df4b9f9ec38f90705e46eefb7b995c2fcbf9e0500e3d"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "See "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "b24fc6977cbf873a4574d763924f937b88a3b4ec2d88f8d4844cb222841df47f"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "authentication"
+			},
+			"start": 4,
+			"end": 18,
+			"text": "authentication",
+			"criterion": "see"
+		}
+	]
+}

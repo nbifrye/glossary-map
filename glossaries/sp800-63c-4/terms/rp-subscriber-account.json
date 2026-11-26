@@ -1,0 +1,227 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "RP subscriber account",
+	"headingTranslation": {
+		"text": "RP subscriber account",
+		"sourceHash": "ab5b46a79a380d8de9dc29374537b6d648b12f35b58b64ba164e2b6a29bf42bb"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An account established and managed by the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in a federated system based on the RP’s view of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber account"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " from the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". An RP subscriber account is associated with one or more "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federated identifiers"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and allows the subscriber to access the account through a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation transaction"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " with the IdP."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "フェデレーションのシステムにおいて、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber account"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に対する RP の見方に基づいて、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が確立し管理するアカウント。RP subscriber account は、1 つ以上の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーション識別子"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に関連付けられ、subscriber が IdP との"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーショントランザクション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を通じてアカウントにアクセスできるようにする。"
+							}
+						]
+					}
+				],
+				"sourceHash": "0e7f50d2b41f236521910608b95c7904124e317f11eb4cc545a72d4963a87e68"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 42,
+			"end": 44,
+			"text": "RP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber-account"
+			},
+			"start": 97,
+			"end": 115,
+			"text": "subscriber account",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 125,
+			"end": 128,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "federated-identifier"
+			},
+			"start": 186,
+			"end": 207,
+			"text": "federated identifiers",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "federation-transaction"
+			},
+			"start": 266,
+			"end": 288,
+			"text": "federation transaction",
+			"criterion": "emphasis"
+		}
+	]
+}

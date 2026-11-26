@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "identity",
+	"headingTranslation": {
+		"text": "アイデンティティ",
+		"sourceHash": "689f6a627384c7dcb2dcc1487e540223e77bdf9dcd0d8be8a326eda65b0ce9a4"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "See "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "digital identity"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "デジタルアイデンティティ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "73ae5077bb1dc098eac2f24f2d3072789591f2f3c2830fbe38bc9293b17d2ae4"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "digital-identity"
+			},
+			"start": 4,
+			"end": 20,
+			"text": "digital identity",
+			"criterion": "see"
+		}
+	]
+}

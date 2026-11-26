@@ -1,0 +1,186 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "attribute provider",
+	"headingTranslation": {
+		"text": "属性プロバイダー",
+		"sourceHash": "c845136710ead9a1074a894e3f2fd420724d1fa4293a58d96f342236d78e152d"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The provider of an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity API"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that provides access to a subscriber’s "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attributes"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " without necessarily asserting that the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " is present to the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の前にいることを必ずしも主張することなく、subscriber の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "へのアクセスを提供する"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アイデンティティ API"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の提供者。"
+							}
+						]
+					}
+				],
+				"sourceHash": "dc1cb981eb270537f305f2844fdc5879ee7d5761e6b64c01988181744ceed0f0"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "identity-api"
+			},
+			"start": 19,
+			"end": 31,
+			"text": "identity API",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "attribute"
+			},
+			"start": 71,
+			"end": 81,
+			"text": "attributes",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 121,
+			"end": 131,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 150,
+			"end": 152,
+			"text": "RP",
+			"criterion": "emphasis"
+		}
+	]
+}

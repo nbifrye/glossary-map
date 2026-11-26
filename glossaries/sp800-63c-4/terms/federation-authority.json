@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "federation authority",
+	"headingTranslation": {
+		"text": "federation authority",
+		"sourceHash": "0f3a5fbc0cce3320ddfaf05d77d9c6ec8238cf6b225dc4b71a0ae5b767755c45"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A party that facilitates the establishment and management of one or more "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "trust agreements"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " between federated parties. The federation authority can also provide other services, such as a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation proxy"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", discovery and registration support, and conformance evaluation."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "フェデレーションに参加する当事者の間で、1 つ以上の "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "trust agreement"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の確立と管理を促進する当事者。federation authority は、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーションプロキシ"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・ディスカバリーと登録の支援・適合性評価などのほかのサービスを提供することもある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "7b55072bce11277cce54d639fd4d0b923e0aa597f58485ccb4b5abdfa118b00c"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "trust-agreement"
+			},
+			"start": 73,
+			"end": 89,
+			"text": "trust agreements",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "federation-proxy"
+			},
+			"start": 185,
+			"end": 201,
+			"text": "federation proxy",
+			"criterion": "emphasis"
+		}
+	]
+}

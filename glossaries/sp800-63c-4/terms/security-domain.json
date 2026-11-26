@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "security domain",
+	"headingTranslation": {
+		"text": "セキュリティドメイン",
+		"sourceHash": "22cc7c4c7944591c702bb9a1f44fe87d6cde75c256afb13720496b3bf67b0770"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A set of systems under common administrative and access control."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "共通の管理とアクセス制御の下にあるシステムの集合。"
+							}
+						]
+					}
+				],
+				"sourceHash": "794df96c014fe6c4926fb6d563b4f8501051f95e8566f133f4ede27a9fbc9906"
+			}
+		}
+	],
+	"references": []
+}

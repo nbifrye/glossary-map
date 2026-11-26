@@ -1,0 +1,190 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "assertion injection attack",
+	"headingTranslation": {
+		"text": "アサーションインジェクション攻撃",
+		"sourceHash": "631addc854f5dfef90ca38e97a6d7b26939e0efc4cb1f7439504cd983e2c9893"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "In the context of a federated protocol, consists of an attacker attempting to force an RP to accept or process an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertion"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertion reference"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " in order to gain access to the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or deny a legitimate "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " access to the RP. The attacker does this by taking an assertion or assertion reference and injecting it into a vulnerable RP."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "フェデレーションプロトコルの文脈において、攻撃者が、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " にアクセスするため、または正当な "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " による RP へのアクセスを妨げるために、RP に"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "や"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション参照"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を受け入れさせたり処理させたりしようとすること。攻撃者は、アサーションやアサーション参照を入手し、脆弱な RP に注入することでこれを行う。"
+							}
+						]
+					}
+				],
+				"sourceHash": "388951bd13cfc98e297e8a6854fb90c97b552bef6d61746eabef742f02e3a095"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "assertion"
+			},
+			"start": 114,
+			"end": 123,
+			"text": "assertion",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "assertion-reference"
+			},
+			"start": 127,
+			"end": 146,
+			"text": "assertion reference",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 178,
+			"end": 180,
+			"text": "RP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 202,
+			"end": 212,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}

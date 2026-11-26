@@ -1,0 +1,153 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "pseudonymous identifier",
+	"headingTranslation": {
+		"text": "仮名識別子",
+		"sourceHash": "35d60a5fe0a26852e24529ce830f59af956796ed24e3cde691d105324a71fb72"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A meaningless but unique "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that does not allow the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to infer anything regarding the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " but that does permit the RP to associate multiple interactions with a single subscriber."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "意味を持たないが一意な"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "識別子"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " について何も推測できないようにしつつ、RP が複数のやり取りを単一の subscriber に関連付けられるようにする。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ce87e60a6a8af087e40c009b088d96a43a3f6a35bfd4f759bdc54aab2ab16bfc"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "identifier"
+			},
+			"start": 25,
+			"end": 35,
+			"text": "identifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 60,
+			"end": 62,
+			"text": "RP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 95,
+			"end": 105,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		}
+	]
+}
