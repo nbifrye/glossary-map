@@ -2,7 +2,7 @@
 	"$schema": "../../../schemas/term.schema.json",
 	"heading": "authoritative source",
 	"headingTranslation": {
-		"text": "権威ある情報源",
+		"text": "authoritative source",
 		"sourceHash": "2f18dcc9083d922543ebecbd1132a0482cf53fb564aea1d91a57e7f758c829c4"
 	},
 	"definitions": [
@@ -141,7 +141,7 @@
 							},
 							{
 								"type": "text",
-								"value": " が高い確信を持てる組織。発行元が権威ある情報源を兼ねることもある。権威ある情報源は、身元確認の"
+								"value": " が高い確信を持てる組織。発行元が authoritative source を兼ねることもある。authoritative source は、身元確認の"
 							},
 							{
 								"type": "emphasis",

@@ -61,13 +61,13 @@
 								"children": [
 									{
 										"type": "text",
-										"value": "主体"
+										"value": "subject"
 									}
 								]
 							},
 							{
 								"type": "text",
-								"value": "の"
+								"value": " の"
 							},
 							{
 								"type": "emphasis",

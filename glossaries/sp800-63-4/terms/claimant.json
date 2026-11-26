@@ -67,14 +67,14 @@
 							},
 							{
 								"type": "text",
-								"value": "を使ってアイデンティティを検証される"
+								"value": "を使ってアイデンティティを検証される "
 							},
 							{
 								"type": "emphasis",
 								"children": [
 									{
 										"type": "text",
-										"value": "主体"
+										"value": "subject"
 									}
 								]
 							},
