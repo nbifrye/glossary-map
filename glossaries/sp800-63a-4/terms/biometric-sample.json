@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "biometric sample",
+	"headingTranslation": {
+		"text": "生体サンプル",
+		"sourceHash": "636e073d2b33ed914e33a0e2e2979425cb1b4005d60ad854c7af81cf7b8b6cae"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An analog or digital representation of biometric characteristics prior to biometric feature extraction, such as a record that contains a fingerprint image."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "生体の特徴量を抽出する前の、生体の特性のアナログまたはデジタルの表現。たとえば、指紋の画像を含む記録などがある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "84ff6fa5b52b4be2d9863f15e2d86dd395f93088cb44edbcda24ffd2e209d116"
+			}
+		}
+	],
+	"references": []
+}

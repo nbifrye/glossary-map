@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "pseudonymity",
+	"headingTranslation": {
+		"text": "仮名性",
+		"sourceHash": "b9fa8619d0b80bb8103ddc7bf5fa9c4e5d19f06d7a3965902ed553bea4e31af6"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The use of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "pseudonym"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to identify a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subject"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subject"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を識別するために"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "仮名"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を使うこと。"
+							}
+						]
+					}
+				],
+				"sourceHash": "65c6ce731f305cbdf01d4181d77ca9c4d43eac6c13300403aad2b534669c2f37"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "pseudonym"
+			},
+			"start": 13,
+			"end": 22,
+			"text": "pseudonym",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "subject"
+			},
+			"start": 37,
+			"end": 44,
+			"text": "subject",
+			"criterion": "emphasis"
+		}
+	]
+}

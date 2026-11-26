@@ -1,0 +1,223 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authoritative source",
+	"headingTranslation": {
+		"text": "authoritative source",
+		"sourceHash": "2f18dcc9083d922543ebecbd1132a0482cf53fb564aea1d91a57e7f758c829c4"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An entity that has access to or verified copies of accurate information from an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "issuing source"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " such that a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " has high confidence that the source can confirm the validity of the identity attributes or evidence supplied by an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "applicant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " during "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity proofing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". An issuing source may also be an authoritative source. Often, authoritative sources are determined by a policy decision of the agency or CSP before they can be used in the identity proofing "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "validation"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " phase."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "発行元"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の正確な情報またはその検証済みの写しにアクセスでき、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "身元確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の際に "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "applicant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が提出したアイデンティティの属性や証拠の有効性を確認できると "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が高い確信を持てる組織。発行元が authoritative source を兼ねることもある。authoritative source は、身元確認の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "妥当性確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の段階で使う前に、機関や CSP のポリシーに基づく決定によって定められることが多い。"
+							}
+						]
+					}
+				],
+				"sourceHash": "34a60013d4fe04393b995ece6314281e0313783f3f02ba4ca58ead2be4973a90"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "issuing-source"
+			},
+			"start": 80,
+			"end": 94,
+			"text": "issuing source",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 107,
+			"end": 110,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "applicant"
+			},
+			"start": 226,
+			"end": 235,
+			"text": "applicant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "identity-proofing"
+			},
+			"start": 243,
+			"end": 260,
+			"text": "identity proofing",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "validation"
+			},
+			"start": 452,
+			"end": 462,
+			"text": "validation",
+			"criterion": "emphasis"
+		}
+	]
+}

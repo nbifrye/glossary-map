@@ -1,0 +1,149 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "presentation attack detection (PAD)",
+	"headingTranslation": {
+		"text": "プレゼンテーション攻撃検知 (PAD)",
+		"sourceHash": "33d2f4905361b44f99ab302f0e06ba70d489201f373d81ac7880280344019a49"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Automated determination of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "presentation attack"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". A subset of presentation attack determination methods (i.e., liveness detection) involves the measurement and analysis of anatomical characteristics or voluntary or involuntary reactions to determine whether a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "biometric sample"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " is being captured from a living "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subject"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that is present at the point of capture."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "プレゼンテーション攻撃"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を自動的に判定すること。プレゼンテーション攻撃の判定方法の一部 (つまり、生体検知) では、解剖学的な特性や、随意または不随意の反応を計測・分析し、取得の時点でその場にいる生きた "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subject"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " から"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "生体サンプル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "が取得されているかどうかを判定する。"
+							}
+						]
+					}
+				],
+				"sourceHash": "9a2c27776a5c3c855126584c8a6ccc4025b303993c683e5d900331470edc064f"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "presentation-attack"
+			},
+			"start": 29,
+			"end": 48,
+			"text": "presentation attack",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "biometric-sample"
+			},
+			"start": 260,
+			"end": 276,
+			"text": "biometric sample",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "subject"
+			},
+			"start": 309,
+			"end": 316,
+			"text": "subject",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "biometric reference",
+	"headingTranslation": {
+		"text": "biometric reference",
+		"sourceHash": "b68fbfc5a8c6cdf28f21633e790bbfd7d07e855e4b382986db2347b90b9c867f"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "One or more stored "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "biometric samples"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", templates, or models attributed to an individual and used as the object of biometric comparison in a database, such as a facial image stored digitally on a passport, fingerprint minutiae template on a National ID card, or Gaussian Mixture Model for speaker recognition."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "個人に帰属し、データベース内で生体照合の対象として使われる、保存された 1 つ以上の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "生体サンプル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・テンプレート・モデル。たとえば、パスポートにデジタルで保存された顔画像、国民 ID カード上の指紋の特徴点のテンプレート、話者認識のためのガウス混合モデルなどがある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "5acc05e374f5b7e064df672626b4dba865eef9812495e221b1d556c55392043b"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "biometric-sample"
+			},
+			"start": 19,
+			"end": 36,
+			"text": "biometric samples",
+			"criterion": "emphasis"
+		}
+	]
+}

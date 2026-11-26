@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authentication assurance level (AAL)",
+	"headingTranslation": {
+		"text": "認証保証レベル (AAL)",
+		"sourceHash": "1ab6baa2d4bf342a60a2310558133c5ee03ac95053bf9cec6229d5878a119c85"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A category that describes the strength of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " process."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "プロセスの強度を表す区分。"
+							}
+						]
+					}
+				],
+				"sourceHash": "6c335aa029f31317708f0ec3c4592c9e35a2fb5f2747a94bd55c532a841493d6"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "authentication"
+			},
+			"start": 46,
+			"end": 60,
+			"text": "authentication",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,164 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "trusted referee",
+	"headingTranslation": {
+		"text": "trusted referee",
+		"sourceHash": "dcc6452c2a05aab7e40c257a80d6573cd2f40e738069d407e0384be8a18e569b"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An agent of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " who is trained to make risk-based decisions regarding an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "applicant’s"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity proofing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " case when that applicant is unable to meet the expected requirements of a defined IAL proofing process."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "定められた IAL の身元確認プロセスで求められる要件を "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "applicant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が満たせない場合に、その applicant の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "身元確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の案件について、リスクに基づく判断を行う訓練を受けた "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の担当者。"
+							}
+						]
+					}
+				],
+				"sourceHash": "c58b1b6ac2b9a60f6985925670e5cc5622e3cb182c2fe9a9fe556e6695e08b3c"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 16,
+			"end": 19,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "applicant"
+			},
+			"start": 77,
+			"end": 88,
+			"text": "applicant’s",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "identity-proofing"
+			},
+			"start": 89,
+			"end": 106,
+			"text": "identity proofing",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "identity-assurance-level-ial"
+			},
+			"start": 189,
+			"end": 192,
+			"text": "IAL",
+			"criterion": "unmarked"
+		}
+	]
+}

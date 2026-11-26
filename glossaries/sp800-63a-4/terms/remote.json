@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "remote",
+	"headingTranslation": {
+		"text": "リモート",
+		"sourceHash": "b71199ebd070b36beab7317920c2c2f1d777df8d05e5527d8458fda57cb17a7a"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A process or transaction that is conducted through connected devices over a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "network"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " rather than in person."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "対面ではなく、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ネットワーク"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "上で接続された機器を通じて行われるプロセスやトランザクション。"
+							}
+						]
+					}
+				],
+				"sourceHash": "fe39ae7df0e693146876dc42cbc4d2f877692880b2966db97635758df2af59a8"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "network"
+			},
+			"start": 76,
+			"end": 83,
+			"text": "network",
+			"criterion": "emphasis"
+		}
+	]
+}

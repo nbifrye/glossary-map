@@ -1,0 +1,75 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "online service",
+	"headingTranslation": {
+		"text": "オンラインサービス",
+		"sourceHash": "a8d6f757a1077253d975c41cbc5dc2ca24fa76b9683fee6cde526d2fc5f700b7"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A service that is accessed remotely via a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "network"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", typically the internet."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ネットワーク"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を介して、通常はインターネットを介して、リモートでアクセスされるサービス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "c85b69787f83b7c856c976fbd6963984239dc8af07fee52838ce40a4f2c31751"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "network"
+			},
+			"start": 42,
+			"end": 49,
+			"text": "network",
+			"criterion": "emphasis"
+		}
+	]
+}

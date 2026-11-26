@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "issuing source",
+	"headingTranslation": {
+		"text": "発行元",
+		"sourceHash": "384e2d018e647b1a77efab1dd5ba15e63385704da16ced4a19ab9656e9c9f2d4"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An authority responsible for the generation of data, digital evidence (i.e., "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertions"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "), or physical documents that can be used as "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity evidence"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "identity evidence"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " として使えるデータ・デジタルの証拠 (つまり"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": ")・物理的な書類の生成に責任を負う機関。"
+							}
+						]
+					}
+				],
+				"sourceHash": "dc3eadb20b309d4ce3f95be393f66a9b675e24e1b2f1cbf6505fd41d317228b9"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "assertion"
+			},
+			"start": 77,
+			"end": 87,
+			"text": "assertions",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "identity-evidence"
+			},
+			"start": 132,
+			"end": 149,
+			"text": "identity evidence",
+			"criterion": "emphasis"
+		}
+	]
+}
