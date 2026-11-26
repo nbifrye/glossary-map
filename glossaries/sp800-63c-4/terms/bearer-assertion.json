@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "bearer assertion",
+	"headingTranslation": {
+		"text": "ベアラーアサーション",
+		"sourceHash": "54c005c9f73fa13129e72188b577b3ddb8f457153cbe0c795f73996e68297102"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertion"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that can be presented on its own as proof of the identity of the presenter."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "それ単独で、提示者のアイデンティティの証明として提示できる"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。"
+							}
+						]
+					}
+				],
+				"sourceHash": "8313c171e382babe7dd963ab4b3ee7583ccde50e075a437e792468ace142cfd2"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "assertion"
+			},
+			"start": 3,
+			"end": 12,
+			"text": "assertion",
+			"criterion": "emphasis"
+		}
+	]
+}

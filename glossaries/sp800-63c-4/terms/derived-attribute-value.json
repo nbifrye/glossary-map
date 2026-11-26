@@ -1,0 +1,123 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "derived attribute value",
+	"headingTranslation": {
+		"text": "派生属性値",
+		"sourceHash": "86ff5b4f4eb2a4cf2b8d22ae36d448e3233d8aff698619eeb7168665e83da200"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A statement that asserts a limited identity "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attribute"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " without containing the attribute value from which it is derived, independent of format. For example, instead of requesting the attribute “birthday,” a derived value could be “older than 18.” Instead of requesting the attribute for “physical address,” a derived value could be “currently residing in this district.” Previous versions of these guidelines referred to this construct as an “attribute reference.”"
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のアイデンティティの限定的な"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を、派生元の属性値を含めずに、形式によらず主張する言明。たとえば、「誕生日」という属性を要求する代わりに、派生した値として「18 歳以上」を使える。「住所」という属性を要求する代わりに、派生した値として「現在この地区に居住している」を使える。このガイドラインの以前のバージョンでは、この構成要素を「属性参照」と呼んでいた。"
+							}
+						]
+					}
+				],
+				"sourceHash": "1e45c0d330c59d9159883d5ac3be27138753d05cc86d97e36c783ca1ffe658de"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "attribute"
+			},
+			"start": 44,
+			"end": 53,
+			"text": "attribute",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 59,
+			"end": 69,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "attribute-value"
+			},
+			"start": 93,
+			"end": 108,
+			"text": "attribute value",
+			"criterion": "unmarked"
+		}
+	]
+}

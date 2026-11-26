@@ -1,0 +1,105 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "risk assessment",
+	"headingTranslation": {
+		"text": "リスクアセスメント",
+		"sourceHash": "6c42dd8107ae87e06c49c2e827de9347658d178af72d54a979ebf8de8ed6ab12"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process of identifying, estimating, and prioritizing risks to organizational operations (i.e., mission, functions, image, reputation), organizational assets, individuals, and other organizations that result from the operation of a system. A risk assessment is part of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "risk management"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", incorporates threat and vulnerability analyses, and considers mitigations provided by security "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "controls"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that are planned or in place. It is synonymous with “risk analysis.”"
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "システムの運用から生じる、組織の業務 (つまり、使命・機能・イメージ・評判)・組織の資産・個人・ほかの組織に対するリスクを特定し、見積もり、優先順位を付けるプロセス。リスクアセスメントは"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "リスクマネジメント"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の一部であり、脅威と脆弱性の分析を取り入れ、計画済みまたは導入済みのセキュリティ"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "管理策"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "による軽減を考慮する。「リスク分析」と同義である。"
+							}
+						]
+					}
+				],
+				"sourceHash": "23a44e9248e2a4961d018f290039523a3299cbf0554ce54cb72b4b869c8db025"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "risk-management"
+			},
+			"start": 272,
+			"end": 287,
+			"text": "risk management",
+			"criterion": "emphasis"
+		}
+	]
+}

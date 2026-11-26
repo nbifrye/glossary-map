@@ -1,0 +1,212 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "session hijack attack",
+	"headingTranslation": {
+		"text": "セッションハイジャック攻撃",
+		"sourceHash": "06d6915dd9f3c0355875fd2222fc45021152fa57fb8779541098c97b6897be07"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack in which the attacker is able to insert themselves between a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "claimant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "verifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " after a successful authentication exchange between the latter two parties. The attacker is able to pose as a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to the verifier or vice versa to control "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "session"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " data exchange. Sessions between the claimant and the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " can be similarly compromised."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "claimant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " と "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "verifier"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の間の認証のやり取りが成功した後に、攻撃者がその 2 者の間に割り込む攻撃。攻撃者は、verifier に対して "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を装う、またはその逆を行うことで、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "セッション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のデータのやり取りを制御できる。claimant と "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の間のセッションも、同じように侵害されることがある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "f807721e2b78e2ba5f2f85fde41dc04bae25353093a562be28bf5c7c7d324166"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "verifier"
+			},
+			"start": 86,
+			"end": 94,
+			"text": "verifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 204,
+			"end": 214,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "session"
+			},
+			"start": 256,
+			"end": 263,
+			"text": "session",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 317,
+			"end": 319,
+			"text": "RP",
+			"criterion": "emphasis"
+		}
+	]
+}

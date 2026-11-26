@@ -1,0 +1,138 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "core attributes",
+	"headingTranslation": {
+		"text": "コア属性",
+		"sourceHash": "2d32e8cb39b048d3768a366ac30a388d9edc493b43a9e5932ec9a0b6183af8da"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The set of identity "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attributes"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " has determined and documented to be required for "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity proofing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and to provide services."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "身元確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "とサービスの提供に必要であると "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が判断し、文書化した一連のアイデンティティの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "。"
+							}
+						]
+					}
+				],
+				"sourceHash": "bcbea0b327e862f08215e81ce1e1c1fedaaff17ef9519266c964d44e80de9ee1"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "attribute"
+			},
+			"start": 20,
+			"end": 30,
+			"text": "attributes",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 40,
+			"end": 43,
+			"text": "CSP",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,132 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "processing",
+	"headingTranslation": {
+		"text": "処理",
+		"sourceHash": "0a63dd9aa0a90420bef07f7cd5411b183caca9cb3150cf19733a0316f5335858"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An operation or set of operations performed on "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "personal information"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " that can include, but is not limited to, the collection, retention, logging, generation, transformation, use, disclosure, transfer, or disposal of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "personal information"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-NISTIR8062",
+							"children": [
+								{
+									"type": "text",
+									"value": "[NISTIR8062]"
+								}
+							]
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "個人情報"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に対して行われる操作または一連の操作。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "個人情報"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の収集・保持・ログの記録・生成・変換・使用・開示・移転・廃棄などを含むが、これらに限らない。"
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-NISTIR8062",
+								"children": [
+									{
+										"type": "text",
+										"value": "[NISTIR8062]"
+									}
+								]
+							}
+						]
+					}
+				],
+				"sourceHash": "0d144ab6fa5dc54edfc87bb2f0eb84c21f513318c4b068606ca9a9089f0627ff"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "personal-information"
+			},
+			"start": 47,
+			"end": 67,
+			"text": "personal information",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "personal-information"
+			},
+			"start": 215,
+			"end": 235,
+			"text": "personal information",
+			"criterion": "emphasis"
+		}
+	]
+}

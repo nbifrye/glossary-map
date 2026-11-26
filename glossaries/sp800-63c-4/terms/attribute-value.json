@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "attribute value",
+	"headingTranslation": {
+		"text": "属性値",
+		"sourceHash": "1793cfa4d260930abbf295ae820d929a8c4b63bd4e97044caafeb6c87c5b6f16"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A complete statement that asserts an identity attribute of a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", independent of format. For example, for the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attribute"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " “birthday,” a value could be “12/1/1980” or “December 1, 1980.”"
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " のアイデンティティの属性を、形式によらず主張する完全な言明。たとえば、「誕生日」という"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に対して、値は「12/1/1980」や「December 1, 1980」になり得る。"
+							}
+						]
+					}
+				],
+				"sourceHash": "80c3900b4420dbd3d69e09b2c67a7caaaaf6e5d75ade0c2ae96d6586638509b1"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 61,
+			"end": 71,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "attribute"
+			},
+			"start": 117,
+			"end": 126,
+			"text": "attribute",
+			"criterion": "emphasis"
+		}
+	]
+}

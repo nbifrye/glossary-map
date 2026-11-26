@@ -1,0 +1,186 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "cross-site request forgery (CSRF)",
+	"headingTranslation": {
+		"text": "クロスサイトリクエストフォージェリ (CSRF)",
+		"sourceHash": "d4a82697cc19c6659f9f17172aa68fb10abca503b85374a71b0464bb3e90ca2d"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An attack in which a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " who is currently "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authenticated"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and connected through a secure session browses an attacker’s website, causing the subscriber to unknowingly invoke unwanted actions at the RP. For example, if a bank website is vulnerable to a CSRF attack, it may be possible for a subscriber to unintentionally "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authorize"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " a large money transfer by clicking on a malicious link in an email while a connection to the bank is open in another browser window."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に現在"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "されており、安全なセッションで接続している "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が攻撃者のウェブサイトを閲覧し、それと知らずに RP で望まない操作を実行させられる攻撃。たとえば、銀行のウェブサイトが CSRF 攻撃に対して脆弱な場合、別のブラウザーのウィンドウで銀行との接続を開いたまま電子メール内の悪意あるリンクをクリックすることで、subscriber が意図せず多額の送金を"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認可"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "してしまう可能性がある。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ccb45b51bdd619babf10e520e5b065378fa20669f874f80de15269907e4d8fb8"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 21,
+			"end": 31,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "authenticate"
+			},
+			"start": 49,
+			"end": 62,
+			"text": "authenticated",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 69,
+			"end": 71,
+			"text": "RP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "authorize"
+			},
+			"start": 333,
+			"end": 342,
+			"text": "authorize",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,255 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "public-key certificate",
+	"headingTranslation": {
+		"text": "公開鍵証明書",
+		"sourceHash": "9d78db4a5ef01e2887a965020322a386e0847cf8308bbeee782fdc489db280e6"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A digital document issued and digitally signed by the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "private key"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " of a certificate authority that binds an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identifier"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to a subscriber’s "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "public key"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". The certificate indicates that the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " identified in the certificate has sole control of and access to the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "private key"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ". See also "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-RFC5280",
+							"children": [
+								{
+									"type": "text",
+									"value": "[RFC5280]"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "認証局の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "秘密鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "によって発行され、デジタル署名された電子文書で、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "識別子"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を subscriber の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "公開鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "にバインドするもの。証明書は、証明書で識別される "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " が"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "秘密鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を単独で管理し、単独でアクセスできることを示す。"
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-RFC5280",
+								"children": [
+									{
+										"type": "text",
+										"value": "[RFC5280]"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " も参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "879d500a49a7ff0049ee58eadb644fb38775248164d6526949e9754564bda601"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "private-key"
+			},
+			"start": 54,
+			"end": 65,
+			"text": "private key",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "identifier"
+			},
+			"start": 107,
+			"end": 117,
+			"text": "identifier",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "public-key"
+			},
+			"start": 136,
+			"end": 146,
+			"text": "public key",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 183,
+			"end": 193,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "private-key"
+			},
+			"start": 262,
+			"end": 273,
+			"text": "private key",
+			"criterion": "emphasis"
+		}
+	]
+}

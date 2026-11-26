@@ -1,0 +1,136 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "predictability",
+	"headingTranslation": {
+		"text": "予測可能性",
+		"sourceHash": "42237d6463e640a0f0d966919de9bf54c50651b63ac347416030fd4156273afa"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Enabling reliable assumptions by individuals, owners, and operators about "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "personal information"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and its "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "processing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " by an information system. "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-NISTIR8062",
+							"children": [
+								{
+									"type": "text",
+									"value": "[NISTIR8062]"
+								}
+							]
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "個人・所有者・運用者が、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "個人情報"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "と、情報システムによるその"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "処理"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "について、信頼できる想定を持てるようにすること。"
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63c/references/#ref-NISTIR8062",
+								"children": [
+									{
+										"type": "text",
+										"value": "[NISTIR8062]"
+									}
+								]
+							}
+						]
+					}
+				],
+				"sourceHash": "60e49b21a75ac64c26dec2378a79f4e38c3ac1da46010ba638795dd9bff15b40"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "personal-information"
+			},
+			"start": 74,
+			"end": 94,
+			"text": "personal information",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "processing"
+			},
+			"start": 103,
+			"end": 113,
+			"text": "processing",
+			"criterion": "emphasis"
+		}
+	]
+}

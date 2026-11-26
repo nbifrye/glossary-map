@@ -1,0 +1,127 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "decryption key",
+	"headingTranslation": {
+		"text": "復号鍵",
+		"sourceHash": "ce067b5ce7b8165674750ce91d1573c1d46de330a60fcc1d0ccfe7d98c290414"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The cryptographic key used to decrypt the encrypted payload. In asymmetric cryptography, the decryption key refers to the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "private key"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " of the cryptographic key pair. In symmetric cryptography, the decryption key is the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "symmetric key"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "暗号化されたペイロードを復号するために使われる暗号鍵。非対称暗号では、復号鍵は暗号鍵のペアのうちの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "秘密鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を指す。対称暗号では、復号鍵は"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "対称鍵"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "である。"
+							}
+						]
+					}
+				],
+				"sourceHash": "ffe570c9df4959932e3ae8db499dc27c2e0ca8828ae616444305ad1bea137e56"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "cryptographic-key"
+			},
+			"start": 4,
+			"end": 21,
+			"text": "cryptographic key",
+			"criterion": "unmarked"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "private-key"
+			},
+			"start": 122,
+			"end": 133,
+			"text": "private key",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "symmetric-key"
+			},
+			"start": 218,
+			"end": 231,
+			"text": "symmetric key",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,264 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "federation transaction",
+	"headingTranslation": {
+		"text": "フェデレーショントランザクション",
+		"sourceHash": "b813cfab9cfa1faa0f4e48105ff1e56dc55fdf59cba64d6327804be498f52abd"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A specific instance of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "processing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " an authentication using a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " process for a specific "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subscriber"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " by conveying an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertion"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " from an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "IdP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "特定の "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subscriber"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " について、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "IdP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " から "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を伝達することで、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "のプロセスを使って認証を"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "処理"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "する個々の事例。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a4d6102856ae6abf09cca1932025412b4ce6f5ad46e0d4c2eb9bf6d072c3e77f"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "processing"
+			},
+			"start": 23,
+			"end": 33,
+			"text": "processing",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "federation"
+			},
+			"start": 60,
+			"end": 70,
+			"text": "federation",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "subscriber"
+			},
+			"start": 94,
+			"end": 104,
+			"text": "subscriber",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "assertion"
+			},
+			"start": 121,
+			"end": 130,
+			"text": "assertion",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "identity-provider-idp"
+			},
+			"start": 139,
+			"end": 142,
+			"text": "IdP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 149,
+			"end": 151,
+			"text": "RP",
+			"criterion": "emphasis"
+		}
+	]
+}

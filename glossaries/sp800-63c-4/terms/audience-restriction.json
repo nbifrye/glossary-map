@@ -1,0 +1,190 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "audience restriction",
+	"headingTranslation": {
+		"text": "オーディエンス制限",
+		"sourceHash": "57cf5c548d8cdfacaf15fb359000921408c8c87fa383ec4fba198be6216015b8"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63c.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The restriction of a message to a specific target audience to prevent a receiver from unknowingly "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "processing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " a message that is intended for another recipient. In "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "federation protocols"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "assertions"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " are audience-restricted to specific "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "RPs"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to prevent an RP from accepting an assertion that was generated for a different RP."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "受信者が別の受信者に宛てたメッセージをそれと知らずに"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "処理"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "することを防ぐために、メッセージを特定の宛先に制限すること。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "フェデレーションプロトコル"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "では、ある RP が別の RP のために生成されたアサーションを受け入れることを防ぐために、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "アサーション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の宛先を特定の "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "RP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に制限する。"
+							}
+						]
+					}
+				],
+				"sourceHash": "c95709d6e19a6f3fe37705e3f95e4fd4a4214efa63445de0e5c467f45aa07d6d"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "processing"
+			},
+			"start": 98,
+			"end": 108,
+			"text": "processing",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "federation-protocol"
+			},
+			"start": 162,
+			"end": 182,
+			"text": "federation protocols",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "assertion"
+			},
+			"start": 184,
+			"end": 194,
+			"text": "assertions",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63c-4",
+				"term": "relying-party-rp"
+			},
+			"start": 231,
+			"end": 234,
+			"text": "RPs",
+			"criterion": "emphasis"
+		}
+	]
+}
