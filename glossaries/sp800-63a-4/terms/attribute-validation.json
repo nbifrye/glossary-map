@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "attribute validation",
+	"headingTranslation": {
+		"text": "属性の妥当性確認",
+		"sourceHash": "b57e2a09f5c030877934e1c037f57e974cace1f92fa6a9db47a82f4b589cd9e1"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process or act of confirming that a set of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attributes"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " are accurate and associated with a real-life identity. See "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "validation"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "一連の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "が正確であり、実在のアイデンティティに関連付けられていることを確認するプロセスまたは行為。"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "妥当性確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "を参照。"
+							}
+						]
+					}
+				],
+				"sourceHash": "371878ae9c0dbd93149c124043a3659f2c9afd2a31352d0c48e7bbfe1daf922b"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "attribute"
+			},
+			"start": 47,
+			"end": 57,
+			"text": "attributes",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "validation"
+			},
+			"start": 117,
+			"end": 127,
+			"text": "validation",
+			"criterion": "see"
+		}
+	]
+}

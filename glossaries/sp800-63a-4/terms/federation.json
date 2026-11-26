@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "federation",
+	"headingTranslation": {
+		"text": "フェデレーション",
+		"sourceHash": "8ce333c5811acbdc46a0ba06bc27621a23b2550b1469b3b679a9f4a3c7470772"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A process that allows for the conveyance of identity and "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "authentication"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " information across a set of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "networked"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " systems."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ネットワークでつながった"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "システムの集合の間で、アイデンティティと"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "認証"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の情報を伝達できるようにするプロセス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "15a16525597059851b6bf5de560c71b67add0316cca1cea77c236185a523f307"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "authentication"
+			},
+			"start": 57,
+			"end": 71,
+			"text": "authentication",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "network"
+			},
+			"start": 100,
+			"end": 109,
+			"text": "networked",
+			"criterion": "emphasis"
+		}
+	]
+}

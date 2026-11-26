@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "subject",
+	"headingTranslation": {
+		"text": "subject",
+		"sourceHash": "a9491f4c1bf7b0cffbadcba2db8f028e4b3f2867cb59e1f3a0bc1968f3c51242"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A person, organization, device, hardware, "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "network"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", software, or service. In these guidelines, a subject is a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "natural person"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "人・組織・機器・ハードウェア・"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "ネットワーク"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "・ソフトウェア・サービス。このガイドラインでは、subject は"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "自然人"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "である。"
+							}
+						]
+					}
+				],
+				"sourceHash": "17855d0ab747756b9196a8f0ddbee57337b0995449d760a833ea6ba9f97d6cd0"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "network"
+			},
+			"start": 42,
+			"end": 49,
+			"text": "network",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "natural-person"
+			},
+			"start": 109,
+			"end": 123,
+			"text": "natural person",
+			"criterion": "emphasis"
+		}
+	]
+}

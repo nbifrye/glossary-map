@@ -1,0 +1,112 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "identity resolution",
+	"headingTranslation": {
+		"text": "identity resolution",
+		"sourceHash": "3c89dc1f658bbc219ead4157b783ac4ffa73c0bfbc8a8d5ab9fa56bb50d878f0"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The process of collecting information about an "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "applicant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to uniquely distinguish an individual within the context of the population that the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " serves."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " がサービスを提供する人々の中で個人を一意に区別するために、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "applicant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " に関する情報を収集するプロセス。"
+							}
+						]
+					}
+				],
+				"sourceHash": "6e09d6f7735ac38726fa5fd8d9b8af34f8df05ab693a0ae4060a9394dcfa803d"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "applicant"
+			},
+			"start": 47,
+			"end": 56,
+			"text": "applicant",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 141,
+			"end": 144,
+			"text": "CSP",
+			"criterion": "emphasis"
+		}
+	]
+}

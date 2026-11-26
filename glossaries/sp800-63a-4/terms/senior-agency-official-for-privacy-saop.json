@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "Senior Agency Official for Privacy (SAOP)",
+	"headingTranslation": {
+		"text": "Senior Agency Official for Privacy (SAOP)",
+		"sourceHash": "867fd3b38535bc49a8ce4f307fb8b1389946edad23c89e4d10edb962f1ccae82"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Person responsible for ensuring that an agency complies with privacy requirements, manages privacy risks, and considers the privacy impacts of all agency actions and policies that involve "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "personal information"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "機関がプライバシーの要件を遵守し、プライバシーのリスクを管理し、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "個人情報"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に関わる機関のすべての活動とポリシーがプライバシーに与える影響を考慮することを確実にする責任者。"
+							}
+						]
+					}
+				],
+				"sourceHash": "95bf8d08551b76a87a8f99a1c55790f0a322d6d612a7f0d22cdc3eb3f5923027"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "personal-information"
+			},
+			"start": 188,
+			"end": 208,
+			"text": "personal information",
+			"criterion": "emphasis"
+		}
+	]
+}

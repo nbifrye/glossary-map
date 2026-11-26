@@ -1,0 +1,223 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "proofing agent",
+	"headingTranslation": {
+		"text": "proofing agent",
+		"sourceHash": "32d43b81e9946777fd0ceb20e9b76a1c880c2ca77a2abceeaa088821eb024450"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An agent of the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "CSP"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " who is trained to attend "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity proofing"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "sessions"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and can make limited risk-based decisions, such as physically inspecting "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "identity evidence"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " and comparing the "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "applicant"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " to the identity evidence."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "身元確認"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "の"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "セッション"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "に立ち会う訓練を受け、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "identity evidence"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を物理的に調べたり、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "applicant"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " と identity evidence を照合したりするなど、リスクに基づく限られた判断を行える "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "CSP"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " の担当者。"
+							}
+						]
+					}
+				],
+				"sourceHash": "b1061ae7859f2496cd62ff6550abb7c744a2b8f58ec8179b29382454c18581a9"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "credential-service-provider-csp"
+			},
+			"start": 16,
+			"end": 19,
+			"text": "CSP",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "identity-proofing"
+			},
+			"start": 45,
+			"end": 62,
+			"text": "identity proofing",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "session"
+			},
+			"start": 63,
+			"end": 71,
+			"text": "sessions",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "identity-evidence"
+			},
+			"start": 145,
+			"end": 162,
+			"text": "identity evidence",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "applicant"
+			},
+			"start": 181,
+			"end": 190,
+			"text": "applicant",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,116 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "digital identity",
+	"headingTranslation": {
+		"text": "デジタルアイデンティティ",
+		"sourceHash": "9e1cab8dcfc7180d9effc9eac0c2792799f249c54ce80ced2e63fb74b4f25ef0"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "An "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "attribute"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " or set of attributes that uniquely describes a "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "subject"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": " within a given context."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "特定の文脈の中で "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "subject"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を一意に表す、1 つの"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "属性"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "または属性の集合。"
+							}
+						]
+					}
+				],
+				"sourceHash": "b43d5944b4793c113f1be0bcd2f6721e985ea69b3673b05153db1444c574ef52"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "attribute"
+			},
+			"start": 3,
+			"end": 12,
+			"text": "attribute",
+			"criterion": "emphasis"
+		},
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "subject"
+			},
+			"start": 60,
+			"end": 67,
+			"text": "subject",
+			"criterion": "emphasis"
+		}
+	]
+}

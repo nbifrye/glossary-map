@@ -1,0 +1,99 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "manageability",
+	"headingTranslation": {
+		"text": "管理可能性",
+		"sourceHash": "5268b96e41b07d6e975f0c4afeeca4c52d7703b1d15008a0caa306df4ef112f9"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "Providing the capability for the granular administration of "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "personal information"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": ", including alteration, deletion, and selective disclosure. "
+						},
+						{
+							"type": "link",
+							"href": "https://pages.nist.gov/800-63-4/sp800-63a/references/#ref-NISTIR8062",
+							"children": [
+								{
+									"type": "text",
+									"value": "[NISTIR8062]"
+								}
+							]
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "変更・削除・選択的な開示を含め、"
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "個人情報"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": "をきめ細かく管理できるようにすること。"
+							},
+							{
+								"type": "link",
+								"href": "https://pages.nist.gov/800-63-4/sp800-63a/references/#ref-NISTIR8062",
+								"children": [
+									{
+										"type": "text",
+										"value": "[NISTIR8062]"
+									}
+								]
+							}
+						]
+					}
+				],
+				"sourceHash": "6702fe8d133f9c5433698eca19aa5b7a04fdf01b97b5d5de53d6d3bc3634923e"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "personal-information"
+			},
+			"start": 60,
+			"end": 80,
+			"text": "personal information",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,79 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "System of Records Notice (SORN)",
+	"headingTranslation": {
+		"text": "System of Records Notice (SORN)",
+		"sourceHash": "82554cdd150ce937670e20e0acbd59a91cdfc0c366cde91455bc184f06f0db34"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "A notice that federal agencies publish in the Federal Register to describe their "
+						},
+						{
+							"type": "emphasis",
+							"children": [
+								{
+									"type": "text",
+									"value": "system of record"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"value": "."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "連邦政府の機関が、自らの "
+							},
+							{
+								"type": "emphasis",
+								"children": [
+									{
+										"type": "text",
+										"value": "system of record"
+									}
+								]
+							},
+							{
+								"type": "text",
+								"value": " を説明するために連邦官報で公告する通知。"
+							}
+						]
+					}
+				],
+				"sourceHash": "7cc1890491f8d4ef52e439a0d556e6a71c091205c5bb5a12cc19ed1bfb059472"
+			}
+		}
+	],
+	"references": [
+		{
+			"definition": 0,
+			"target": {
+				"glossary": "sp800-63a-4",
+				"term": "system-of-record-sor"
+			},
+			"start": 81,
+			"end": 97,
+			"text": "system of record",
+			"criterion": "emphasis"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "../../../schemas/term.schema.json",
+	"heading": "authenticity",
+	"headingTranslation": {
+		"text": "真正性",
+		"sourceHash": "c62eda8e53de8f7a7d1447fd083d98a6ac20b93617443f4e36d30242d3063e24"
+	},
+	"definitions": [
+		{
+			"location": {
+				"url": "https://pages.nist.gov/800-63-4/sp800-63a.html#def-and-acr"
+			},
+			"source": [
+				{
+					"type": "paragraph",
+					"children": [
+						{
+							"type": "text",
+							"value": "The property that data originated from its purported source."
+						}
+					]
+				}
+			],
+			"translation": {
+				"content": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "text",
+								"value": "データが、発信元とされるところから発信されたものであるという性質。"
+							}
+						]
+					}
+				],
+				"sourceHash": "a77a22d8612c165d0ff972c077d09c520b3ad7b95c7f98f5a41b53f4f2880cf7"
+			}
+		}
+	],
+	"references": []
+}
