@@ -59,8 +59,8 @@ export function seededRandom(seed: number): () => number {
 const compare = (a: string, b: string) => (a < b ? -1 : a > b ? 1 : 0);
 
 /**
- * 用語集のグラフを計算する。用語をノード、参照を辺とし、同じ参照元から同じ参照先への参照は 1 本の辺にまとめる。
- * 自分自身への参照は辺にしない。ノードは常にスラッグの順に処理する
+ * 用語集のグラフを計算する。用語をノード、参照を線とし、同じ参照元から同じ参照先への参照は 1 本の線にまとめる。
+ * 自分自身への参照は線にしない。ノードは常にスラッグの順に処理する
  */
 export function computeGraph(entry: SiteGlossary): GraphData {
 	const slugs = entry.terms.map((item) => item.slug).toSorted(compare);

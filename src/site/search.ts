@@ -1,4 +1,4 @@
-/** 検索の入力と見出しを比較できるように、NFKC で正規化して小文字にする */
+/** 検索の入力と、見出しやその訳文を比較できるように、NFKC で正規化して小文字にする */
 export function normalize(text: string): string {
 	return text.normalize("NFKC").toLowerCase();
 }
