@@ -1,0 +1,18 @@
+---
+interface Props {
+	/** 絞り込む用語の一覧の要素の ID */
+	list: string;
+}
+
+const { list } = Astro.props;
+---
+
+<search data-search={list} hidden>
+	<label for={`${list}-query`}>見出しと訳文で検索</label>
+	<input id={`${list}-query`} type="search" autocomplete="off" />
+	<p data-search-status aria-live="polite"></p>
+</search>
+
+<script>
+	import "../scripts/search.ts";
+</script>

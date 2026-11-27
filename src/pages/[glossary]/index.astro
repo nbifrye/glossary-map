@@ -1,8 +1,11 @@
 ---
+import GlossaryGraph from "../../components/GlossaryGraph.astro";
 import ReferenceNote from "../../components/ReferenceNote.astro";
 import TermLink from "../../components/TermLink.astro";
+import TermSearch from "../../components/TermSearch.astro";
 import Page from "../../layouts/Page.astro";
 import { loadSite, type SiteGlossary } from "../../site/data.ts";
+import { keywords } from "../../site/search.ts";
 
 export async function getStaticPaths() {
 	const site = await loadSite();
@@ -27,19 +30,25 @@ const referenceCount = terms.reduce(
 <Page title={glossary.title}>
 	<h1>{glossary.title}</h1>
 
-	<h2>原典</h2>
-	<dl class="fields">
-		<dt>名称</dt>
-		<dd lang="en">{glossary.source.name}</dd>
-		<dt>バージョン</dt>
-		<dd lang="en">{glossary.source.version}</dd>
-		<dt>公開日</dt>
-		<dd>{glossary.source.published}</dd>
-		<dt>URL</dt>
-		<dd><a href={glossary.source.url}>{glossary.source.url}</a></dd>
-		<dt>取得日</dt>
-		<dd>{glossary.source.retrieved}</dd>
-	</dl>
+	<GlossaryGraph glossary={glossary.id} />
+
+	<h2>用語</h2>
+	<p>{terms.length} 語の用語と、{referenceCount} 件の参照があります。</p>
+	<TermSearch list="terms" />
+	<ul id="terms">
+		{
+			terms.map((item) => (
+				<li
+					data-keywords={keywords(
+						item.term.heading,
+						item.term.headingTranslation.text,
+					)}
+				>
+					<TermLink glossary={glossary.id} item={item} />
+				</li>
+			))
+		}
+	</ul>
 
 	<h2>参照と判定する基準</h2>
 	<ReferenceNote />
@@ -56,15 +65,17 @@ const referenceCount = terms.reduce(
 		}
 	</dl>
 
-	<h2>用語</h2>
-	<p>{terms.length} 語の用語と、{referenceCount} 件の参照があります。</p>
-	<ul>
-		{
-			terms.map((item) => (
-				<li>
-					<TermLink glossary={glossary.id} item={item} />
-				</li>
-			))
-		}
-	</ul>
+	<h2>原典</h2>
+	<dl class="fields">
+		<dt>名称</dt>
+		<dd lang="en">{glossary.source.name}</dd>
+		<dt>バージョン</dt>
+		<dd lang="en">{glossary.source.version}</dd>
+		<dt>公開日</dt>
+		<dd>{glossary.source.published}</dd>
+		<dt>URL</dt>
+		<dd><a href={glossary.source.url}>{glossary.source.url}</a></dd>
+		<dt>取得日</dt>
+		<dd>{glossary.source.retrieved}</dd>
+	</dl>
 </Page>
