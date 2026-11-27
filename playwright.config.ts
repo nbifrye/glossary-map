@@ -10,7 +10,14 @@ export default defineConfig({
 	},
 	projects: [
 		{ name: "chromium", use: { ...devices["Desktop Chrome"] } },
-		{ name: "firefox", use: { ...devices["Desktop Firefox"] } },
+		{
+			name: "firefox",
+			use: {
+				...devices["Desktop Firefox"],
+				// GPU のない環境でも全体グラフを描画できるように、WebGL を有効にする
+				launchOptions: { firefoxUserPrefs: { "webgl.force-enabled": true } },
+			},
+		},
 		{ name: "webkit", use: { ...devices["Desktop Safari"] } },
 	],
 	webServer: {

@@ -10,7 +10,12 @@ test("用語集のページに全体グラフを表示できる", async ({ page 
 	page.on("pageerror", (error) => errors.push(error.message));
 	await page.goto("./sp800-63-4/");
 	const graph = page.locator("[data-graph]");
-	await expect(graph).toHaveAttribute("data-graph-state", "ready");
+	await expect(graph).toHaveAttribute("data-graph-state", /ready|error/);
+	// 失敗した場合は、画面に表示した理由をテストの結果に示す
+	expect(
+		await graph.getAttribute("data-graph-state"),
+		(await page.locator("[data-graph-status]").textContent()) ?? "",
+	).toBe("ready");
 	await expect(graph.locator("canvas").first()).toBeVisible();
 	await expect(page.locator("[data-graph-status]")).toHaveText(
 		/189 語の用語と 444 本の線を表示しています。/,
