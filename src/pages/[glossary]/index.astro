@@ -1,0 +1,70 @@
+---
+import ReferenceNote from "../../components/ReferenceNote.astro";
+import TermLink from "../../components/TermLink.astro";
+import Page from "../../layouts/Page.astro";
+import { loadSite, type SiteGlossary } from "../../site/data.ts";
+
+export async function getStaticPaths() {
+	const site = await loadSite();
+	return site.map((entry) => ({
+		params: { glossary: entry.glossary.id },
+		props: { entry },
+	}));
+}
+
+interface Props {
+	entry: SiteGlossary;
+}
+
+const { entry } = Astro.props;
+const { glossary, terms } = entry;
+const referenceCount = terms.reduce(
+	(sum, { term }) => sum + term.references.length,
+	0,
+);
+---
+
+<Page title={glossary.title}>
+	<h1>{glossary.title}</h1>
+
+	<h2>原典</h2>
+	<dl class="fields">
+		<dt>名称</dt>
+		<dd lang="en">{glossary.source.name}</dd>
+		<dt>バージョン</dt>
+		<dd lang="en">{glossary.source.version}</dd>
+		<dt>公開日</dt>
+		<dd>{glossary.source.published}</dd>
+		<dt>URL</dt>
+		<dd><a href={glossary.source.url}>{glossary.source.url}</a></dd>
+		<dt>取得日</dt>
+		<dd>{glossary.source.retrieved}</dd>
+	</dl>
+
+	<h2>参照と判定する基準</h2>
+	<ReferenceNote />
+	<dl>
+		{
+			glossary.criteria.map((criterion) => (
+				<>
+					<dt id={`criterion-${criterion.id}`}>
+						<code>{criterion.id}</code>
+					</dt>
+					<dd>{criterion.description}</dd>
+				</>
+			))
+		}
+	</dl>
+
+	<h2>用語</h2>
+	<p>{terms.length} 語の用語と、{referenceCount} 件の参照があります。</p>
+	<ul>
+		{
+			terms.map((item) => (
+				<li>
+					<TermLink glossary={glossary.id} item={item} />
+				</li>
+			))
+		}
+	</ul>
+</Page>

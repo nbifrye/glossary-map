@@ -1,0 +1,28 @@
+---
+import type { RichInline } from "../site/rich-text.ts";
+
+interface Props {
+	inlines: RichInline[];
+}
+
+const { inlines } = Astro.props;
+---
+
+{
+	inlines.map((node) =>
+		node.type === "text" ? (
+			node.value
+		) : node.type === "emphasis" ? (
+			<em>
+				<Astro.self inlines={node.children} />
+			</em>
+		) : (
+			<a
+				class={node.type === "reference" ? "reference" : undefined}
+				href={node.href}
+			>
+				<Astro.self inlines={node.children} />
+			</a>
+		),
+	)
+}

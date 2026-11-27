@@ -1,0 +1,21 @@
+---
+import type { SiteTerm } from "../site/data.ts";
+import { termPath } from "../site/paths.ts";
+
+interface Props {
+	glossary: string;
+	item: SiteTerm;
+}
+
+/** 用語のページへのリンクと、見出しと異なる場合は見出しの訳文 */
+const { glossary, item } = Astro.props;
+const { heading, headingTranslation } = item.term;
+---
+
+<a href={termPath(glossary, item.slug)} lang="en">{heading}</a>
+{" "}
+{
+	headingTranslation.text !== heading && (
+		<span class="translation">{headingTranslation.text}</span>
+	)
+}

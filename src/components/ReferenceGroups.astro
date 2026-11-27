@@ -1,0 +1,52 @@
+---
+import type { Reference } from "../data/types.ts";
+import type { SiteTerm } from "../site/data.ts";
+import { glossaryPath } from "../site/paths.ts";
+import TermLink from "./TermLink.astro";
+
+export interface ReferenceGroup {
+	/** 一覧に示す用語 */
+	term: SiteTerm;
+	/** 参照を含む定義を持つ用語 */
+	source: SiteTerm;
+	references: Reference[];
+}
+
+interface Props {
+	glossary: string;
+	groups: ReferenceGroup[];
+}
+
+const { glossary, groups } = Astro.props;
+
+/** 根拠の位置。参照元の用語に定義が複数ある場合は、定義の番号も示す */
+const evidence = (reference: Reference, source: SiteTerm) =>
+	`${source.term.definitions.length > 1 ? `定義 ${reference.definition + 1} の ` : ""}${reference.start + 1} 〜 ${reference.end} 文字目`;
+const criterionHref = (id: string) =>
+	`${glossaryPath(glossary)}#criterion-${id}`;
+---
+
+{
+	groups.length === 0 ? (
+		<p>ありません。</p>
+	) : (
+		<ul>
+			{groups.map(({ term, source, references }) => (
+				<li>
+					<TermLink glossary={glossary} item={term} />
+					<ul>
+						{references.map((reference) => (
+							<li>
+								「<span lang="en">{reference.text}</span>」 ({evidence(reference, source)}、基準:{" "}
+								<a href={criterionHref(reference.criterion)}>
+									<code>{reference.criterion}</code>
+								</a>
+								)
+							</li>
+						))}
+					</ul>
+				</li>
+			))}
+		</ul>
+	)
+}

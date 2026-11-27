@@ -1,0 +1,32 @@
+---
+import type { RichBlock } from "../site/rich-text.ts";
+import Inlines from "./Inlines.astro";
+
+interface Props {
+	blocks: RichBlock[];
+}
+
+const { blocks } = Astro.props;
+---
+
+{
+	blocks.map((block) => {
+		if (block.type === "paragraph") {
+			return (
+				<p>
+					<Inlines inlines={block.children} />
+				</p>
+			);
+		}
+		const List = block.ordered ? "ol" : "ul";
+		return (
+			<List>
+				{block.items.map((item) => (
+					<li>
+						<Astro.self blocks={item} />
+					</li>
+				))}
+			</List>
+		);
+	})
+}
