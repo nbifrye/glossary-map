@@ -16,12 +16,11 @@ const { inlines } = Astro.props;
 			<em>
 				<Astro.self inlines={node.children} />
 			</em>
-		) : node.type === "reference" ? (
-			<a class="reference" href={node.href}>
-				<Astro.self inlines={node.children} />
-			</a>
 		) : (
-			<a href={node.href}>
+			<a
+				class={node.type === "reference" ? "reference" : undefined}
+				href={node.href}
+			>
 				<Astro.self inlines={node.children} />
 			</a>
 		),

@@ -190,4 +190,31 @@ describe("applyReferences", () => {
 			},
 		]);
 	});
+
+	test("位置の順に並んでいない参照も、それぞれの範囲をリンクにする", () => {
+		const blocks: Block[] = [
+			{ type: "paragraph", children: [text("a b")] },
+			{ type: "paragraph", children: [text("c")] },
+		];
+		expect(
+			applyReferences(blocks, [
+				{ start: 3, end: 4, href: "/c/" },
+				{ start: 0, end: 1, href: "/a/" },
+				{ start: 2, end: 3, href: "/b/" },
+			]),
+		).toEqual([
+			{
+				type: "paragraph",
+				children: [
+					{ type: "reference", href: "/a/", children: [text("a")] },
+					text(" "),
+					{ type: "reference", href: "/b/", children: [text("b")] },
+				],
+			},
+			{
+				type: "paragraph",
+				children: [{ type: "reference", href: "/c/", children: [text("c")] }],
+			},
+		]);
+	});
 });

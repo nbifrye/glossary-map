@@ -68,10 +68,18 @@ export function applyReferences(
 	references: ReferenceSpan[],
 ): RichBlock[] {
 	let offset = 0;
-	const referenceAt = (position: number) =>
-		references.find(
-			(reference) => reference.start <= position && position < reference.end,
-		);
+	// 位置は先頭から順に調べるため、参照を位置の順に並べ、終わった参照を読み飛ばしていく
+	const sorted = references.toSorted((a, b) => a.start - b.start);
+	let next = 0;
+	const referenceAt = (position: number) => {
+		while ((sorted[next]?.end ?? Number.POSITIVE_INFINITY) <= position) {
+			next++;
+		}
+		const reference = sorted[next];
+		return reference !== undefined && reference.start <= position
+			? reference
+			: undefined;
+	};
 
 	const paragraph = (children: Inline[]): RichInline[] => {
 		// 段落を、参照の境界で区切った文字列の断片に分ける

@@ -1,10 +1,10 @@
 import { loadGlossaries } from "../data/load.ts";
-import { slugify } from "../data/slug.ts";
 import type { Glossary, Reference, Term } from "../data/types.ts";
 import { validateGlossary } from "../data/validate.ts";
 
 export interface SiteTerm {
 	slug: string;
+	/** 参照を、定義の順と原文中の位置の順に並べ替えた用語 */
 	term: Term;
 }
 
@@ -31,22 +31,32 @@ function compareHeadings(a: SiteTerm, b: SiteTerm): number {
 	);
 }
 
-let cache: Promise<SiteGlossary[]> | undefined;
+function compareReferences(a: Reference, b: Reference): number {
+	return a.definition - b.definition || a.start - b.start;
+}
+
+const cache = new Map<string, Promise<SiteGlossary[]>>();
 
 /**
  * glossaries ディレクトリの用語集を読み込む。
- * 検証で問題が見つかった場合は、不完全なサイトを生成しないように例外を投げる
+ * 検証で問題が見つかった場合は、不完全なサイトを生成しないように例外を投げる。
+ * 読み込みに失敗した結果は、用語集を直してから読み込み直せるように保持しない
  */
 export function loadSite(root = "glossaries"): Promise<SiteGlossary[]> {
-	cache ??= load(root);
-	return cache;
+	let site = cache.get(root);
+	if (site === undefined) {
+		site = load(root);
+		cache.set(root, site);
+		site.catch(() => cache.delete(root));
+	}
+	return site;
 }
 
 async function load(root: string): Promise<SiteGlossary[]> {
 	const inputs = await loadGlossaries(root);
 	const issues = inputs.flatMap((input) =>
 		validateGlossary(input).map(
-			(issue) => `${input.directory}/${issue.file}: ${issue.message}`,
+			(issue) => `${root}/${input.directory}/${issue.file}: ${issue.message}`,
 		),
 	);
 	if (issues.length > 0) {
@@ -54,10 +64,17 @@ async function load(root: string): Promise<SiteGlossary[]> {
 	}
 	return inputs.map((input) => {
 		const glossary = (input.glossary as { data: Glossary }).data;
+		// 検証済みのため、ファイル名から拡張子を除いたものがスラッグと一致する
 		const terms = input.terms
-			.map(({ content }) => {
+			.map(({ fileName, content }) => {
 				const term = (content as { data: Term }).data;
-				return { slug: term.slug ?? slugify(term.heading), term };
+				return {
+					slug: fileName.slice(0, -".json".length),
+					term: {
+						...term,
+						references: term.references.toSorted(compareReferences),
+					},
+				};
 			})
 			.toSorted(compareHeadings);
 		const bySlug = new Map(terms.map((item) => [item.slug, item]));

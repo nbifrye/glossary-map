@@ -2,7 +2,8 @@
 import { homePath } from "../site/paths.ts";
 
 interface Props {
-	title: string;
+	/** ページの題名。トップページでは省略し、サイト名だけを題名にする */
+	title?: string;
 }
 
 const { title } = Astro.props;
@@ -14,7 +15,7 @@ const siteName = "Glossary Map";
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>{title === siteName ? siteName : `${title} | ${siteName}`}</title>
+		<title>{title === undefined ? siteName : `${title} | ${siteName}`}</title>
 	</head>
 	<body>
 		<header>

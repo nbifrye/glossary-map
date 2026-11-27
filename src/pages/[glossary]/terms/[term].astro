@@ -1,9 +1,9 @@
 ---
 import Blocks from "../../../components/Blocks.astro";
-import type { Reference } from "../../../data/types.ts";
+import ReferenceGroups from "../../../components/ReferenceGroups.astro";
+import ReferenceNote from "../../../components/ReferenceNote.astro";
 import Page from "../../../layouts/Page.astro";
 import {
-	type IncomingReference,
 	loadSite,
 	type SiteGlossary,
 	type SiteTerm,
@@ -49,29 +49,26 @@ const definitions = term.definitions.map((definition, index) => ({
 			.map((reference) => ({
 				start: reference.start,
 				end: reference.end,
-				href: termPath(reference.target.glossary, reference.target.term),
+				href: termPath(glossaryId, target(reference.target.term).slug),
 			})),
 	),
 	translation: applyReferences(definition.translation.content, []),
 }));
 
 /** 参照先ごとに、原文に現れる順に参照をまとめる */
-const outgoing = Map.groupBy(term.references, (reference) =>
-	target(reference.target.term),
-);
-const incoming = Map.groupBy(
-	entry.incoming.get(item.slug) ?? [],
-	(reference: IncomingReference) => reference.source,
-);
-
-/** 根拠の位置。参照元の用語に定義が複数ある場合は、定義の番号も示す */
-const evidence = (reference: Reference, source: SiteTerm) =>
-	`${source.term.definitions.length > 1 ? `定義 ${reference.definition + 1} の ` : ""}${reference.start + 1} 〜 ${reference.end} 文字目`;
-const criterionHref = (id: string) =>
-	`${glossaryPath(glossaryId)}#criterion-${id}`;
+const outgoing = [
+	...Map.groupBy(term.references, (reference) => target(reference.target.term)),
+].map(([to, references]) => ({ term: to, source: item, references }));
+const incoming = [
+	...Map.groupBy(entry.incoming.get(item.slug) ?? [], ({ source }) => source),
+].map(([from, list]) => ({
+	term: from,
+	source: from,
+	references: list.map(({ reference }) => reference),
+}));
 ---
 
-<Page title={term.heading}>
+<Page title={`${term.heading} | ${glossary.title}`}>
 	<nav aria-label="現在位置">
 		<a href={glossaryPath(glossaryId)}>{glossary.title}</a>
 	</nav>
@@ -110,78 +107,14 @@ const criterionHref = (id: string) =>
 
 	<section>
 		<h2>参照</h2>
-		<p class="note">
-			参照は、ある用語の定義の中でほかの用語を指している箇所を示します。概念上の必須の依存関係や、推奨される学習順序を示すものではありません。
-		</p>
+		<ReferenceNote />
 
-		<h3>参照先 ({outgoing.size} 語)</h3>
+		<h3>参照先 ({outgoing.length} 語)</h3>
 		<p>この用語の定義が参照している用語です。</p>
-		{
-			outgoing.size === 0 ? (
-				<p>ありません。</p>
-			) : (
-				<ul>
-					{[...outgoing].map(([to, references]) => (
-						<li>
-							<a href={termPath(glossaryId, to.slug)} lang="en">
-								{to.term.heading}
-							</a>
-							{" "}
-							{to.term.headingTranslation.text !== to.term.heading && (
-								<span class="translation">
-									{to.term.headingTranslation.text}
-								</span>
-							)}
-							<ul>
-								{references.map((reference) => (
-									<li>
-										「<span lang="en">{reference.text}</span>」 ({evidence(reference, item)}、基準:{" "}
-										<a href={criterionHref(reference.criterion)}>
-											<code>{reference.criterion}</code>
-										</a>
-										)
-									</li>
-								))}
-							</ul>
-						</li>
-					))}
-				</ul>
-			)
-		}
+		<ReferenceGroups glossary={glossaryId} groups={outgoing} />
 
-		<h3>参照元 ({incoming.size} 語)</h3>
+		<h3>参照元 ({incoming.length} 語)</h3>
 		<p>定義の中でこの用語を参照している用語です。</p>
-		{
-			incoming.size === 0 ? (
-				<p>ありません。</p>
-			) : (
-				<ul>
-					{[...incoming].map(([from, references]) => (
-						<li>
-							<a href={termPath(glossaryId, from.slug)} lang="en">
-								{from.term.heading}
-							</a>
-							{" "}
-							{from.term.headingTranslation.text !== from.term.heading && (
-								<span class="translation">
-									{from.term.headingTranslation.text}
-								</span>
-							)}
-							<ul>
-								{references.map(({ reference }) => (
-									<li>
-										「<span lang="en">{reference.text}</span>」 ({evidence(reference, from)}、基準:{" "}
-										<a href={criterionHref(reference.criterion)}>
-											<code>{reference.criterion}</code>
-										</a>
-										)
-									</li>
-								))}
-							</ul>
-						</li>
-					))}
-				</ul>
-			)
-		}
+		<ReferenceGroups glossary={glossaryId} groups={incoming} />
 	</section>
 </Page>

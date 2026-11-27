@@ -1,7 +1,8 @@
 ---
+import ReferenceNote from "../../components/ReferenceNote.astro";
+import TermLink from "../../components/TermLink.astro";
 import Page from "../../layouts/Page.astro";
 import { loadSite, type SiteGlossary } from "../../site/data.ts";
-import { termPath } from "../../site/paths.ts";
 
 export async function getStaticPaths() {
 	const site = await loadSite();
@@ -41,9 +42,7 @@ const referenceCount = terms.reduce(
 	</dl>
 
 	<h2>参照と判定する基準</h2>
-	<p class="note">
-		参照は、ある用語の定義の中でほかの用語を指している箇所を示します。概念上の必須の依存関係や、推奨される学習順序を示すものではありません。
-	</p>
+	<ReferenceNote />
 	<dl>
 		{
 			glossary.criteria.map((criterion) => (
@@ -61,15 +60,9 @@ const referenceCount = terms.reduce(
 	<p>{terms.length} 語の用語と、{referenceCount} 件の参照があります。</p>
 	<ul>
 		{
-			terms.map(({ slug, term }) => (
+			terms.map((item) => (
 				<li>
-					<a href={termPath(glossary.id, slug)} lang="en">
-						{term.heading}
-					</a>
-					{" "}
-					{term.headingTranslation.text !== term.heading && (
-						<span class="translation">{term.headingTranslation.text}</span>
-					)}
+					<TermLink glossary={glossary.id} item={item} />
 				</li>
 			))
 		}
