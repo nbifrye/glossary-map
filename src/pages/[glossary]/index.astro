@@ -1,10 +1,12 @@
 ---
-import GlossaryGraph from "../../components/GlossaryGraph.astro";
+import ClusterList from "../../components/ClusterList.astro";
+import GraphView from "../../components/GraphView.astro";
 import ReferenceNote from "../../components/ReferenceNote.astro";
 import TermLink from "../../components/TermLink.astro";
 import TermSearch from "../../components/TermSearch.astro";
 import Page from "../../layouts/Page.astro";
 import { loadSite, type SiteGlossary } from "../../site/data.ts";
+import { glossaryGraph } from "../../site/graph.ts";
 import { keywords } from "../../site/search.ts";
 
 export async function getStaticPaths() {
@@ -30,7 +32,7 @@ const referenceCount = terms.reduce(
 <Page title={glossary.title}>
 	<h1>{glossary.title}</h1>
 
-	<GlossaryGraph glossary={glossary.id} />
+	<GraphView glossary={glossary.id} />
 
 	<h2>用語</h2>
 	<p>{terms.length} 語の用語と、{referenceCount} 件の参照があります。</p>
@@ -49,6 +51,8 @@ const referenceCount = terms.reduce(
 			))
 		}
 	</ul>
+
+	<ClusterList entry={entry} data={glossaryGraph(entry)} />
 
 	<h2>参照と判定する基準</h2>
 	<ReferenceNote />

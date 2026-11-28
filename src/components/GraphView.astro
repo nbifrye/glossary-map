@@ -1,0 +1,130 @@
+---
+import { glossaryPath, termPath, termsBasePath } from "../site/paths.ts";
+import ReferenceNote from "./ReferenceNote.astro";
+
+interface Props {
+	glossary: string;
+	/** 用語のページでは、その用語のスラッグ。周辺グラフを表示できるようにする */
+	term?: string;
+}
+
+const { glossary, term } = Astro.props;
+---
+
+<section
+	class:list={["graph-section", { "graph-section-wide": term === undefined }]}
+	aria-labelledby="graph-heading"
+>
+	<h2 id="graph-heading">グラフ</h2>
+	<ReferenceNote />
+	<p class="note">
+		ノードの色は、参照が密な用語のまとまり (用語群) を表します。用語群は参照をもとに自動的に算出したもので、原典の公式な分類ではありません。
+	</p>
+	<div
+		class="graph"
+		data-graph
+		data-full-src={`${glossaryPath(glossary)}graph.json`}
+		data-neighborhood-src={term === undefined
+			? undefined
+			: `${termPath(glossary, term)}graph.json`}
+		data-term={term}
+		data-term-base={termsBasePath(glossary)}
+		data-criterion-base={glossaryPath(glossary)}
+	>
+		<form class="graph-controls" data-graph-controls hidden>
+			{
+				term !== undefined && (
+					<span class="graph-view-control">
+						<label for="graph-view">表示</label>
+						<select id="graph-view" name="view">
+							<option value="neighborhood">周辺グラフ</option>
+							<option value="full">全体グラフ</option>
+						</select>
+					</span>
+				)
+			}
+			<span>
+				<label for="graph-cluster">用語群</label>
+				<select id="graph-cluster" name="cluster">
+					<option value="louvain">Louvain 法</option>
+					<option value="leiden">Leiden 法</option>
+				</select>
+			</span>
+			<span>
+				<label for="graph-layout">配置</label>
+				<select id="graph-layout" name="layout">
+					<option value="forceatlas2">ForceAtlas2</option>
+					<option value="clusters">用語群別</option>
+					<option value="hierarchy">階層</option>
+				</select>
+			</span>
+		</form>
+		<div class="graph-body">
+			<div class="graph-canvas" data-graph-canvas></div>
+			<div class="graph-side">
+				<p data-graph-status aria-live="polite">グラフを読み込んでいます。</p>
+				<p>
+					ノードを選ぶと用語のページを開き、線を選ぶとその線に含まれる参照の根拠を表示します。グラフの用語と参照は、用語の一覧と各用語のページでも確認できます。
+				</p>
+				<div data-graph-detail hidden></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	import "../scripts/graph-view.ts";
+</script>
+
+<style>
+	/* 用語集のページの全体グラフは、狭い画面では表示しない */
+	.graph-section-wide {
+		display: none;
+	}
+
+	.graph-controls {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 1.5rem;
+		margin-block-end: 0.5rem;
+	}
+
+	.graph-controls > span {
+		display: inline-flex;
+		gap: 0.5rem;
+		align-items: center;
+	}
+
+	/* 狭い画面では周辺グラフだけを表示するため、表示の切り替えを隠す */
+	.graph-controls .graph-view-control {
+		display: none;
+	}
+
+	.graph-canvas {
+		block-size: 24rem;
+		border: 1px solid light-dark(#ccc, #555);
+		/* ノードのラベルを読めるように、配色によらず明るい背景にする */
+		background: #fcfcfb;
+		color: #1a1a19;
+	}
+
+	@media (min-width: 48rem) {
+		.graph-section-wide {
+			display: block;
+		}
+
+		.graph-controls .graph-view-control {
+			display: inline-flex;
+		}
+
+		.graph-body {
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			gap: 1rem;
+		}
+
+		.graph-canvas {
+			block-size: 36rem;
+		}
+	}
+</style>

@@ -1,7 +1,15 @@
 import { describe, expect, test } from "vitest";
 import type { Term } from "../../src/data/types.ts";
+import { summarizeClusters } from "../../src/site/clusters.ts";
 import type { SiteGlossary, SiteTerm } from "../../src/site/data.ts";
-import { computeGraph, seededRandom } from "../../src/site/graph.ts";
+import {
+	CLUSTERINGS,
+	computeGraph,
+	computeNeighborhood,
+	LAYOUTS,
+	layoutKey,
+	seededRandom,
+} from "../../src/site/graph.ts";
 
 /** 参照先のスラッグの一覧から、用語集を組み立てる */
 function glossary(terms: Record<string, string[]>): SiteGlossary {
@@ -82,23 +90,85 @@ describe("computeGraph", () => {
 		);
 	});
 
-	test("用語群の番号を、大きい用語群から順に振る", () => {
+	test.each(CLUSTERINGS)(
+		"%s: 用語群の番号を、大きい用語群から順に振る",
+		(clustering) => {
+			const data = computeGraph(
+				glossary({
+					a: [],
+					b: ["c"],
+					c: ["d"],
+					d: ["b"],
+					e: ["f"],
+					f: [],
+				}),
+			);
+			const { assignment, sizes } = data.clusterings[clustering];
+			expect(sizes).toEqual([3, 2, 1]);
+			// ノードはスラッグの順 (a 〜 f) に並ぶ
+			expect(assignment).toEqual([2, 0, 0, 0, 1, 1]);
+		},
+	);
+
+	test("すべての配置で、ノードごとに座標を持つ", () => {
 		const data = computeGraph(
-			glossary({
-				a: [],
-				b: ["c"],
-				c: ["d"],
-				d: ["b"],
-				e: ["f"],
-				f: [],
-			}),
+			glossary({ a: ["b"], b: ["c"], c: ["a"], d: ["a"], e: [] }),
 		);
-		expect(data.clusterSizes).toEqual([3, 2, 1]);
-		const cluster = (slug: string) =>
-			data.nodes.find((node) => node.slug === slug)?.cluster;
-		expect([cluster("b"), cluster("c"), cluster("d")]).toEqual([0, 0, 0]);
-		expect([cluster("e"), cluster("f")]).toEqual([1, 1]);
-		expect(cluster("a")).toBe(2);
+		for (const clustering of CLUSTERINGS) {
+			for (const layout of LAYOUTS) {
+				const positions = data.layouts[layoutKey(layout, clustering)];
+				expect(positions).toHaveLength(data.nodes.length * 2);
+				expect(positions?.every(Number.isFinite)).toBe(true);
+			}
+		}
+	});
+
+	test("階層配置では、参照元を参照先より上に置く", () => {
+		const data = computeGraph(glossary({ a: ["b"], b: ["c"], c: [] }));
+		const y = (node: number) => data.layouts.hierarchy?.[node * 2 + 1] ?? 0;
+		expect(y(0)).toBeGreaterThan(y(1));
+		expect(y(1)).toBeGreaterThan(y(2));
+	});
+
+	test("周辺グラフは、選択した用語と参照先・参照元の用語と、それらの間の線から成る", () => {
+		const full = computeGraph(
+			glossary({ a: ["b"], b: ["c"], c: ["a"], d: ["b"], e: ["d"] }),
+		);
+		const neighborhood = computeNeighborhood(full, "b");
+		expect(neighborhood.nodes.map(({ slug }) => slug)).toEqual([
+			"a",
+			"b",
+			"c",
+			"d",
+		]);
+		expect(
+			neighborhood.edges.map(({ source, target }) => [source, target]),
+		).toEqual([
+			[0, 1],
+			[1, 2],
+			[2, 0],
+			[3, 1],
+		]);
+		// 用語群は全体グラフの結果を使う
+		for (const clustering of CLUSTERINGS) {
+			expect(neighborhood.clusterings[clustering].sizes).toEqual(
+				full.clusterings[clustering].sizes,
+			);
+		}
+		expect(neighborhood.layouts.forceatlas2).toHaveLength(8);
+	});
+
+	test("用語群ごとに、構成する用語と用語群内の線をまとめる", () => {
+		const data = computeGraph(
+			glossary({ a: [], b: ["c"], c: ["d"], d: ["b"], e: ["f", "b"], f: [] }),
+		);
+		const [first] = summarizeClusters(data, "louvain");
+		expect(first?.members).toEqual([1, 2, 3]);
+		expect(first?.edges.map(({ source, target }) => [source, target])).toEqual([
+			[1, 2],
+			[2, 3],
+			[3, 1],
+		]);
 	});
 
 	test("見出しと同じ訳文は省く", () => {

@@ -1,13 +1,16 @@
 ---
 import Blocks from "../../../components/Blocks.astro";
+import GraphView from "../../../components/GraphView.astro";
 import ReferenceGroups from "../../../components/ReferenceGroups.astro";
 import ReferenceNote from "../../../components/ReferenceNote.astro";
 import Page from "../../../layouts/Page.astro";
+import { CLUSTERING_NAMES, clusterAnchor } from "../../../site/clusters.ts";
 import {
 	loadSite,
 	type SiteGlossary,
 	type SiteTerm,
 } from "../../../site/data.ts";
+import { CLUSTERINGS, glossaryGraph } from "../../../site/graph.ts";
 import { glossaryPath, termPath } from "../../../site/paths.ts";
 import { applyReferences } from "../../../site/rich-text.ts";
 
@@ -66,6 +69,20 @@ const incoming = [
 	source: from,
 	references: list.map(({ reference }) => reference),
 }));
+
+/** 用語が属する用語群。1 語だけの用語群に属する用語は、どの用語群にも属さないものとして扱う */
+const graph = glossaryGraph(entry);
+const node = graph.nodes.findIndex((candidate) => candidate.slug === item.slug);
+const memberships = CLUSTERINGS.map((clustering) => {
+	const { assignment, sizes } = graph.clusterings[clustering];
+	const cluster = assignment[node] ?? 0;
+	return {
+		clustering,
+		cluster,
+		size: sizes[cluster] ?? 0,
+		href: `${glossaryPath(glossaryId)}?cluster=${clustering}#${clusterAnchor(clustering, cluster)}`,
+	};
+});
 ---
 
 <Page title={`${term.heading} | ${glossary.title}`}>
@@ -105,6 +122,8 @@ const incoming = [
 		))
 	}
 
+	<GraphView glossary={glossaryId} term={item.slug} />
+
 	<section>
 		<h2>参照</h2>
 		<ReferenceNote />
@@ -116,5 +135,28 @@ const incoming = [
 		<h3>参照元 ({incoming.length} 語)</h3>
 		<p>定義の中でこの用語を参照している用語です。</p>
 		<ReferenceGroups glossary={glossaryId} groups={incoming} />
+	</section>
+
+	<section>
+		<h2>所属する用語群</h2>
+		<p>
+			用語群は、参照をもとに自動的に算出したもので、原典の公式な分類ではありません。
+		</p>
+		<dl class="fields">
+			{
+				memberships.map(({ clustering, cluster, size, href }) => (
+					<>
+						<dt>{CLUSTERING_NAMES[clustering]}</dt>
+						<dd>
+							{size >= 2 ? (
+								<a href={href}>{`用語群 ${cluster + 1} (${size} 語)`}</a>
+							) : (
+								"どの用語ともまとまっていません"
+							)}
+						</dd>
+					</>
+				))
+			}
+		</dl>
 	</section>
 </Page>
