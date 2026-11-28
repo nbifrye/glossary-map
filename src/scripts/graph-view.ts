@@ -1,28 +1,81 @@
 import Graph from "graphology";
 import Sigma from "sigma";
 import { extremityArrow } from "sigma/rendering";
-import type { GraphData, GraphEdge, GraphNode } from "../site/graph.ts";
+import {
+	CLUSTER_COLORS,
+	clusterColorIndex,
+	OTHER_COLOR,
+} from "../site/colors.ts";
+import {
+	CLUSTERINGS,
+	type ClusteringId,
+	type GraphData,
+	type GraphEdge,
+	type GraphNode,
+	LAYOUTS,
+	type LayoutId,
+	layoutKey,
+} from "../site/graph-data.ts";
 
-/** 用語群の色。大きい用語群から順に割り当て、9 番目以降の用語群は OTHER_COLOR にする */
-const CLUSTER_COLORS = [
-	"#2a78d6",
-	"#eb6834",
-	"#1baf7a",
-	"#eda100",
-	"#e87ba4",
-	"#008300",
-	"#6250d6",
-	"#e34948",
-];
-const OTHER_COLOR = "#8a8984";
 const EDGE_COLOR = "#c3c2b7";
+const VIEWS = ["full", "neighborhood"] as const;
+type ViewId = (typeof VIEWS)[number];
 
-function nodeColor(node: GraphNode, clusterSizes: number[]): string {
-	// 1 語だけの用語群は、まとまりを表さないため色を付けない
-	if ((clusterSizes[node.cluster] ?? 0) < 2) {
-		return OTHER_COLOR;
+/** URL で共有する表示の状態 */
+interface ViewState {
+	view: ViewId;
+	cluster: ClusteringId;
+	layout: LayoutId;
+}
+
+const wide = matchMedia("(min-width: 48rem)");
+
+function pick<T extends string>(
+	values: readonly T[],
+	value: string | null,
+	fallback: T,
+): T {
+	return values.find((candidate) => candidate === value) ?? fallback;
+}
+
+/** URL のクエリーパラメーターから表示の状態を読む。不正な値は既定値にする */
+function readState(hasNeighborhood: boolean): ViewState {
+	const params = new URLSearchParams(location.search);
+	const defaultView: ViewId = hasNeighborhood ? "neighborhood" : "full";
+	return {
+		view: hasNeighborhood
+			? pick(VIEWS, params.get("view"), defaultView)
+			: "full",
+		cluster: pick(CLUSTERINGS, params.get("cluster"), "louvain"),
+		layout: pick(LAYOUTS, params.get("layout"), "forceatlas2"),
+	};
+}
+
+/** 表示の状態を URL に書く。既定値と同じものは省く */
+function stateUrl(state: ViewState, hasNeighborhood: boolean): string {
+	const url = new URL(location.href);
+	const defaults: ViewState = {
+		view: hasNeighborhood ? "neighborhood" : "full",
+		cluster: "louvain",
+		layout: "forceatlas2",
+	};
+	for (const key of ["view", "cluster", "layout"] as const) {
+		if (state[key] === defaults[key]) {
+			url.searchParams.delete(key);
+		} else {
+			url.searchParams.set(key, state[key]);
+		}
 	}
-	return CLUSTER_COLORS[node.cluster] ?? OTHER_COLOR;
+	return url.href;
+}
+
+/** 選択したクラスタリングの用語群の一覧だけを表示する */
+function showClusterLists(cluster: ClusteringId) {
+	for (const list of document.querySelectorAll<HTMLElement>(
+		"[data-clustering]",
+	)) {
+		list.hidden = list.dataset.clustering !== cluster;
+	}
 }
 
 function element<K extends keyof HTMLElementTagNameMap>(
@@ -38,7 +91,7 @@ function element<K extends keyof HTMLElementTagNameMap>(
 
 function termLink(base: string, node: GraphNode): HTMLAnchorElement {
 	const link = element("a", node.heading);
-	link.href = `${base}${node.slug}/`;
+	link.href = `${base}${node.slug}/${location.search}`;
 	link.lang = "en";
 	return link;
 }
@@ -84,76 +137,161 @@ function showEdge(
 	detail.hidden = false;
 }
 
-async function mount(root: HTMLElement) {
+function nodeColor(cluster: number, sizes: readonly number[]): string {
+	const index = clusterColorIndex(cluster, sizes);
+	return index === undefined
+		? OTHER_COLOR
+		: (CLUSTER_COLORS[index] ?? OTHER_COLOR);
+}
+
+function mount(root: HTMLElement) {
 	const container = root.querySelector<HTMLElement>("[data-graph-canvas]");
 	const status = root.querySelector<HTMLElement>("[data-graph-status]");
 	const detail = root.querySelector<HTMLElement>("[data-graph-detail]");
-	const { src, termBase, criterionBase } = root.dataset;
+	const form = root.querySelector<HTMLFormElement>("[data-graph-controls]");
+	const { fullSrc, neighborhoodSrc, term, termBase, criterionBase } =
+		root.dataset;
 	if (
 		container === null ||
 		status === null ||
 		detail === null ||
-		src === undefined ||
+		form === null ||
+		fullSrc === undefined ||
 		termBase === undefined ||
 		criterionBase === undefined
 	) {
 		return;
 	}
-	try {
-		const response = await fetch(src);
-		if (!response.ok) {
-			throw new Error(`HTTP ${response.status}`);
-		}
-		const data = (await response.json()) as GraphData;
-		const graph = new Graph({ type: "directed", multi: false });
-		for (const node of data.nodes) {
-			graph.addNode(node.slug, {
-				label: node.heading,
-				x: node.x,
-				y: node.y,
-				size: 3 + Math.sqrt(node.degree) * 1.5,
-				color: nodeColor(node, data.clusterSizes),
+	const hasNeighborhood = neighborhoodSrc !== undefined;
+	const cache = new Map<string, Promise<GraphData>>();
+	const load = (src: string) => {
+		let data = cache.get(src);
+		if (data === undefined) {
+			data = fetch(src).then((response) => {
+				if (!response.ok) {
+					throw new Error(`HTTP ${response.status}`);
+				}
+				return response.json() as Promise<GraphData>;
 			});
+			cache.set(src, data);
 		}
-		data.edges.forEach((edge, index) => {
-			const source = data.nodes[edge.source]?.slug;
-			const target = data.nodes[edge.target]?.slug;
-			if (source !== undefined && target !== undefined) {
-				graph.addEdgeWithKey(String(index), source, target, {
-					size: 1 + Math.log2(edge.references.length),
-					color: EDGE_COLOR,
+		return data;
+	};
+	let renderer: Sigma | undefined;
+	let generation = 0;
+
+	const render = async (state: ViewState) => {
+		const current = ++generation;
+		// 狭い画面では全体グラフを表示しない
+		const view = hasNeighborhood && !wide.matches ? "neighborhood" : state.view;
+		const src = view === "neighborhood" ? neighborhoodSrc : fullSrc;
+		if (src === undefined || (view === "full" && !wide.matches)) {
+			return;
+		}
+		status.textContent = "グラフを読み込んでいます。";
+		try {
+			const data = await load(src);
+			if (current !== generation) {
+				return;
+			}
+			const positions = data.layouts[layoutKey(state.layout, state.cluster)];
+			const clustering = data.clusterings[state.cluster];
+			if (positions === undefined) {
+				throw new Error("配置の結果がありません");
+			}
+			const graph = new Graph({ type: "directed", multi: false });
+			data.nodes.forEach((node, index) => {
+				const selected = node.slug === term;
+				graph.addNode(node.slug, {
+					label: node.heading,
+					x: positions[index * 2] ?? 0,
+					y: positions[index * 2 + 1] ?? 0,
+					size: (selected ? 6 : 3) + Math.sqrt(node.degree) * 1.5,
+					color: nodeColor(clustering.assignment[index] ?? 0, clustering.sizes),
 				});
+			});
+			data.edges.forEach((edge, index) => {
+				const source = data.nodes[edge.source]?.slug;
+				const target = data.nodes[edge.target]?.slug;
+				if (source !== undefined && target !== undefined) {
+					graph.addEdgeWithKey(String(index), source, target, {
+						size: 1 + Math.log2(edge.references.length),
+						color: EDGE_COLOR,
+					});
+				}
+			});
+			renderer?.kill();
+			detail.hidden = true;
+			renderer = new Sigma(graph, container, {
+				primitives: {
+					edges: { extremities: [extremityArrow()], defaultHead: "arrow" },
+				},
+				settings: {
+					enableEdgeEvents: true,
+					enableNodeDrag: true,
+					// 配置ごとに座標の尺度が違っても同じ大きさで描くように、ノードの大きさを画面のピクセルで指定する
+					itemSizesReference: "screen",
+				},
+			});
+			renderer.on("clickNode", ({ node }) => {
+				location.assign(`${termBase}${node}/${location.search}`);
+			});
+			renderer.on("clickEdge", ({ edge }) => {
+				const selected = data.edges[Number(edge)];
+				if (selected !== undefined) {
+					showEdge(detail, data, selected, termBase, criterionBase);
+				}
+			});
+			status.textContent = `${data.nodes.length} 語の用語と ${data.edges.length} 本の線を表示しています。`;
+			root.dataset.graphState = "ready";
+		} catch (error) {
+			status.textContent = `グラフを表示できませんでした: ${error instanceof Error ? error.message : String(error)}`;
+			root.dataset.graphState = "error";
+		}
+	};
+
+	const setControls = (state: ViewState) => {
+		for (const key of ["view", "cluster", "layout"] as const) {
+			const control = form.elements.namedItem(key);
+			if (control instanceof HTMLSelectElement) {
+				control.value = state[key];
 			}
-		});
-		const renderer = new Sigma(graph, container, {
-			primitives: {
-				edges: { extremities: [extremityArrow()], defaultHead: "arrow" },
-			},
-			settings: { enableEdgeEvents: true, enableNodeDrag: true },
-		});
-		renderer.on("clickNode", ({ node }) => {
-			location.assign(`${termBase}${node}/`);
-		});
-		renderer.on("clickEdge", ({ edge }) => {
-			const selected = data.edges[Number(edge)];
-			if (selected !== undefined) {
-				showEdge(detail, data, selected, termBase, criterionBase);
-			}
-		});
-		status.textContent = `${data.nodes.length} 語の用語と ${data.edges.length} 本の線を表示しています。`;
-		root.dataset.graphState = "ready";
-	} catch (error) {
-		status.textContent = `グラフを表示できませんでした: ${error instanceof Error ? error.message : String(error)}`;
-		root.dataset.graphState = "error";
-	}
+		}
+	};
+	const formState = (): ViewState => {
+		const value = (name: string) => {
+			const control = form.elements.namedItem(name);
+			return control instanceof HTMLSelectElement ? control.value : null;
+		};
+		return {
+			view: hasNeighborhood
+				? pick(VIEWS, value("view"), "neighborhood")
+				: "full",
+			cluster: pick(CLUSTERINGS, value("cluster"), "louvain"),
+			layout: pick(LAYOUTS, value("layout"), "forceatlas2"),
+		};
+	};
+
+	const apply = (state: ViewState) => {
+		setControls(state);
+		showClusterLists(state.cluster);
+		void render(state);
+	};
+
+	form.addEventListener("change", () => {
+		const state = formState();
+		history.pushState(null, "", stateUrl(state, hasNeighborhood));
+		showClusterLists(state.cluster);
+		void render(state);
+	});
+	// JavaScript が動く場合は、送信せずにその場で表示を切り替える
+	form.addEventListener("submit", (event) => event.preventDefault());
+	addEventListener("popstate", () => apply(readState(hasNeighborhood)));
+	wide.addEventListener("change", () => apply(readState(hasNeighborhood)));
+	form.hidden = false;
+	apply(readState(hasNeighborhood));
 }
 
-// 狭い画面では全体グラフを表示しない
-const wide = matchMedia("(min-width: 48rem)");
 for (const root of document.querySelectorAll<HTMLElement>("[data-graph]")) {
-	if (wide.matches) {
-		void mount(root);
-	} else {
-		wide.addEventListener("change", () => void mount(root), { once: true });
-	}
+	mount(root);
 }

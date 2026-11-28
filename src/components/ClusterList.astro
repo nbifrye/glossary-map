@@ -1,0 +1,130 @@
+---
+import {
+	CLUSTERING_NAMES,
+	clusterAnchor,
+	summarizeClusters,
+} from "../site/clusters.ts";
+import { CLUSTER_COLORS, clusterColorIndex } from "../site/colors.ts";
+import type { SiteGlossary } from "../site/data.ts";
+import { CLUSTERINGS, type GraphData } from "../site/graph-data.ts";
+import TermLink from "./TermLink.astro";
+
+interface Props {
+	entry: SiteGlossary;
+	data: GraphData;
+}
+
+const { entry, data } = Astro.props;
+const glossaryId = entry.glossary.id;
+const item = (node: number) => {
+	const slug = data.nodes[node]?.slug ?? "";
+	const found = entry.bySlug.get(slug);
+	if (found === undefined) {
+		throw new Error(`${glossaryId}: 用語 ${slug} がありません`);
+	}
+	return found;
+};
+const referenceCount = (edges: GraphData["edges"]) =>
+	edges.reduce((sum, edge) => sum + edge.references.length, 0);
+---
+
+<h2>用語群</h2>
+<p class="note">
+	用語群は、参照をもとに自動的に算出した、参照が密な用語のまとまりです。原典の公式な分類ではありません。グラフでは、用語群ごとにノードの色を分けています。
+</p>
+{
+	CLUSTERINGS.map((clustering) => {
+		const summaries = summarizeClusters(data, clustering);
+		const groups = summaries.filter(({ members }) => members.length >= 2);
+		const singles = summaries.filter(({ members }) => members.length === 1);
+		return (
+			<div data-clustering={clustering} hidden={clustering !== "louvain"}>
+				<h3>{CLUSTERING_NAMES[clustering]}による用語群</h3>
+				<p>
+					{groups.length} 個の用語群と、どの用語ともまとまらなかった{" "}
+					{singles.length} 語の用語があります。
+				</p>
+				{groups.map(({ cluster, members, edges }) => {
+					const color = clusterColorIndex(
+						cluster,
+						data.clusterings[clustering].sizes,
+					);
+					return (
+						<details id={clusterAnchor(clustering, cluster)}>
+							<summary>
+								{color !== undefined && (
+									<svg
+										class="swatch"
+										width="12"
+										height="12"
+										viewBox="0 0 12 12"
+										aria-hidden="true"
+									>
+										<circle cx="6" cy="6" r="6" fill={CLUSTER_COLORS[color]} />
+									</svg>
+								)}
+								用語群 {cluster + 1} ({members.length} 語、用語群内の参照{" "}
+								{referenceCount(edges)} 件)
+							</summary>
+							<h4>構成する用語</h4>
+							<ul>
+								{members.map((node) => (
+									<li>
+										<TermLink glossary={glossaryId} item={item(node)} />
+									</li>
+								))}
+							</ul>
+							<h4>用語群内の参照</h4>
+							{edges.length === 0 ? (
+								<p>ありません。</p>
+							) : (
+								<ul>
+									{edges.map((edge) => (
+										<li>
+											<TermLink glossary={glossaryId} item={item(edge.source)} />
+											{" から "}
+											<TermLink glossary={glossaryId} item={item(edge.target)} />
+											{` へ (${edge.references.length} 件)`}
+										</li>
+									))}
+								</ul>
+							)}
+						</details>
+					);
+				})}
+				{singles.length > 0 && (
+					<details>
+						<summary>どの用語ともまとまらなかった用語 ({singles.length} 語)</summary>
+						<ul>
+							{singles.map(({ members }) =>
+								members.map((node) => (
+									<li>
+										<TermLink glossary={glossaryId} item={item(node)} />
+									</li>
+								)),
+							)}
+						</ul>
+					</details>
+				)}
+			</div>
+		);
+	})
+}
+
+<script>
+	// URL のフラグメントで用語群を指定した場合は、その用語群を開く
+	const open = () => {
+		const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+		if (target instanceof HTMLDetailsElement) {
+			target.open = true;
+		}
+	};
+	addEventListener("hashchange", open);
+	open();
+</script>
+
+<style>
+	.swatch {
+		margin-inline-end: 0.25rem;
+	}
+</style>
