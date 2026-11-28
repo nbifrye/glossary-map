@@ -98,7 +98,7 @@ function leidenClustering(count: number, edges: GraphEdge[]): number[] {
 		sortedEdges: false,
 		checkIntegrity: true,
 	});
-	// ノードの重みを線の重みの合計にし、解像度を 1 / (2m) にすると、モジュラリティを最大化する
+	// ノードの重みを線の重みの合計にし、解像度を 1 / (2m) にすると、モジュラリティを最大化することになる
 	const algorithm = new LeidenAlgorithm();
 	algorithm.initializeBasedOnResolutionAndNIterationsAndRandomnessAndRandom(
 		1 / (2 * network.getTotalEdgeWeight()),

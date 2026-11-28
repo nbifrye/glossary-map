@@ -105,7 +105,7 @@ describe("computeGraph", () => {
 			);
 			const { assignment, sizes } = data.clusterings[clustering];
 			expect(sizes).toEqual([3, 2, 1]);
-			// ノードはスラッグの順 (a〜f) に並ぶ
+			// ノードはスラッグの順 (a 〜 f) に並ぶ
 			expect(assignment).toEqual([2, 0, 0, 0, 1, 1]);
 		},
 	);

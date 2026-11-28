@@ -70,7 +70,7 @@ const incoming = [
 	references: list.map(({ reference }) => reference),
 }));
 
-/** 用語が属する用語群。1 語だけの用語群は、どの用語群にも属さないものとして扱う */
+/** 用語が属する用語群。1 語だけの用語群に属する用語は、どの用語群にも属さないものとして扱う */
 const graph = glossaryGraph(entry);
 const node = graph.nodes.findIndex((candidate) => candidate.slug === item.slug);
 const memberships = CLUSTERINGS.map((clustering) => {
