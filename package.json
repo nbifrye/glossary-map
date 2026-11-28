@@ -17,7 +17,11 @@
   },
   "dependencies": {
     "ajv": "8.20.0",
-    "astro": "7.4.13"
+    "astro": "7.4.13",
+    "graphology": "0.26.0",
+    "graphology-communities-louvain": "2.0.2",
+    "graphology-layout-forceatlas2": "0.10.1",
+    "sigma": "4.0.6"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",
@@ -25,6 +29,7 @@
     "@biomejs/biome": "2.6.8",
     "@playwright/test": "1.65.1",
     "@types/node": "26.6.6",
+    "graphology-types": "0.24.8",
     "typescript": "6.0.3",
     "vitest": "5.1.1"
   }
